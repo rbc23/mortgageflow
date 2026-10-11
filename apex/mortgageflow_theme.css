@@ -1,0 +1,858 @@
+/* ==========================================================================
+   MortgageFlow — Oracle APEX Universal Theme override
+   Target: Oracle APEX Universal Theme (24.x–26.x style DOM/classes)
+   Upload as a Static Application File and reference with:
+   #APP_FILES#mortgageflow_theme.css
+   ========================================================================== */
+
+/* ------------------------------
+   1. Design tokens
+   ------------------------------ */
+:root {
+  --mf-lime: #b8e313;
+  --mf-lime-strong: #a7d600;
+  --mf-lime-soft: #f1f9d9;
+
+  --mf-navy: #08174a;
+  --mf-navy-2: #13235d;
+  --mf-text: #182b56;
+  --mf-muted: #6e7ea5;
+
+  --mf-bg: #f7faff;
+  --mf-surface: #ffffff;
+  --mf-border: #e5ebf3;
+
+  --mf-blue: #2f80ed;
+  --mf-blue-soft: #eaf3ff;
+  --mf-green: #35b34a;
+  --mf-green-soft: #e8f8e9;
+  --mf-yellow: #d89a17;
+  --mf-yellow-soft: #fff5d8;
+  --mf-red: #e94a4a;
+  --mf-red-soft: #ffe8e8;
+  --mf-purple: #7c4ae2;
+  --mf-purple-soft: #f0ebff;
+
+  --mf-radius-sm: 9px;
+  --mf-radius: 14px;
+  --mf-radius-lg: 18px;
+
+  --mf-shadow:
+    0 1px 2px rgba(8, 23, 74, .03),
+    0 8px 28px rgba(8, 23, 74, .055);
+
+  --mf-header-height: 72px;
+  --mf-nav-width: 264px;
+}
+
+/* ------------------------------
+   2. Base
+   ------------------------------ */
+html,
+body {
+  background: var(--mf-bg);
+}
+
+body,
+.t-Body,
+.t-Region,
+.t-Button,
+.a-IRR,
+.a-GV,
+.apex-item-text,
+.apex-item-select,
+.apex-item-textarea {
+  font-family:
+    Inter,
+    "Segoe UI",
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif;
+}
+
+.t-Body {
+  color: var(--mf-text);
+  background: var(--mf-bg);
+}
+
+.t-Body-main {
+  background:
+    linear-gradient(180deg, #fbfdff 0, var(--mf-bg) 210px);
+}
+
+.t-Body-contentInner {
+  max-width: 1560px;
+  margin: 0 auto;
+  padding: 24px 30px 40px;
+}
+
+/* ------------------------------
+   3. Header
+   ------------------------------ */
+.t-Header {
+  min-height: var(--mf-header-height);
+  background: rgba(255, 255, 255, .98);
+  border-bottom: 1px solid var(--mf-border);
+  box-shadow: none;
+}
+
+.t-Header-branding {
+  min-height: var(--mf-header-height);
+}
+
+.t-Header-logo {
+  min-height: var(--mf-header-height);
+  display: flex;
+  align-items: center;
+}
+
+.t-Header-logo-link {
+  color: var(--mf-navy) !important;
+  font-weight: 800;
+  font-size: 24px;
+}
+
+.t-Header-logo img {
+  max-height: 46px;
+  width: auto;
+}
+
+.t-Header-navBar .t-Button {
+  color: var(--mf-navy);
+}
+
+/* ------------------------------
+   4. Left navigation
+   ------------------------------ */
+.t-Body-nav {
+  width: var(--mf-nav-width);
+  background: #fff;
+  border-right: 1px solid var(--mf-border);
+  box-shadow: none;
+}
+
+.t-Body-nav .t-TreeNav {
+  padding-top: 18px;
+}
+
+.t-TreeNav .a-TreeView-content {
+  margin: 4px 10px;
+  min-height: 48px;
+  border-radius: 10px;
+  color: var(--mf-navy);
+  transition: background .18s ease, color .18s ease;
+}
+
+.t-TreeNav .a-TreeView-content:hover {
+  background: #f6faed;
+}
+
+.t-TreeNav .a-TreeView-row.is-selected,
+.t-TreeNav .a-TreeView-content.is-selected {
+  background: linear-gradient(90deg, #f0f8d7, #f8fce9);
+  box-shadow: inset 4px 0 0 var(--mf-lime);
+}
+
+.t-TreeNav .a-TreeView-row.is-selected + .a-TreeView-content,
+.t-TreeNav .a-TreeView-content.is-selected {
+  color: var(--mf-navy);
+  font-weight: 700;
+}
+
+.t-TreeNav .a-TreeView-node--topLevel > .a-TreeView-content .fa,
+.t-TreeNav .a-TreeView-content .fa {
+  color: var(--mf-navy-2);
+}
+
+.t-TreeNav .a-TreeView-row.is-selected + .a-TreeView-content .fa,
+.t-TreeNav .a-TreeView-content.is-selected .fa {
+  color: #78a900;
+}
+
+/* ------------------------------
+   5. Page title
+   ------------------------------ */
+.t-Body-title {
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+}
+
+.t-Body-title .t-BreadcrumbRegion {
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+}
+
+.t-BreadcrumbRegion-titleText,
+.t-Body-title .t-BreadcrumbRegion-titleText {
+  color: var(--mf-navy);
+  font-weight: 800;
+  letter-spacing: -.035em;
+}
+
+.mf-page-kicker {
+  margin: 0 0 5px;
+  color: #7586ad;
+  text-transform: uppercase;
+  letter-spacing: .09em;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.mf-page-title {
+  color: var(--mf-navy);
+  margin: 0;
+  font-size: clamp(30px, 3vw, 44px);
+  line-height: 1.08;
+  letter-spacing: -.035em;
+  font-weight: 800;
+}
+
+.mf-page-subtitle {
+  color: var(--mf-muted);
+  font-size: 17px;
+  margin-top: 6px;
+}
+
+/* ------------------------------
+   6. Regions / panels
+   ------------------------------ */
+.t-Region {
+  background: var(--mf-surface);
+  border: 1px solid var(--mf-border);
+  border-radius: var(--mf-radius);
+  box-shadow: var(--mf-shadow);
+  overflow: hidden;
+}
+
+.t-Region-header {
+  background: #fff;
+  border-bottom: 0;
+  padding: 16px 18px 8px;
+}
+
+.t-Region-title {
+  color: var(--mf-navy);
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.t-Region-body {
+  padding: 18px;
+}
+
+.mf-flat-region.t-Region {
+  box-shadow: none;
+}
+
+.mf-no-header .t-Region-header {
+  display: none;
+}
+
+/* ------------------------------
+   7. Buttons
+   ------------------------------ */
+.t-Button {
+  border-radius: 9px;
+  min-height: 42px;
+  font-weight: 700;
+  box-shadow: none;
+  transition:
+    transform .15s ease,
+    box-shadow .15s ease,
+    background .15s ease;
+}
+
+.t-Button:hover {
+  transform: translateY(-1px);
+}
+
+.t-Button--hot,
+.t-Button--hot:not(.t-Button--simple) {
+  color: #102000;
+  background: linear-gradient(135deg, #c7ec1e, var(--mf-lime));
+  border-color: var(--mf-lime-strong);
+  box-shadow: 0 7px 18px rgba(167, 214, 0, .18);
+}
+
+.t-Button--hot:hover {
+  background: linear-gradient(135deg, #d1f237, #aee000);
+}
+
+.t-Button--danger {
+  color: #b62424;
+  background: #fff;
+  border-color: #ef6060;
+}
+
+.t-Button--success {
+  color: #123c13;
+  background: var(--mf-lime);
+  border-color: var(--mf-lime-strong);
+}
+
+.mf-btn-outline {
+  color: var(--mf-navy) !important;
+  background: #fff !important;
+  border: 1px solid #d8e1ee !important;
+}
+
+/* ------------------------------
+   8. Form fields
+   ------------------------------ */
+.apex-item-text,
+.apex-item-select,
+.apex-item-textarea,
+.apex-item-number,
+.a-Button--calendar {
+  border: 1px solid #d8e1ee;
+  border-radius: 9px;
+  background: #fff;
+  color: var(--mf-navy);
+  min-height: 42px;
+  box-shadow: none;
+}
+
+.apex-item-text:focus,
+.apex-item-select:focus,
+.apex-item-textarea:focus,
+.apex-item-number:focus {
+  border-color: #9ec900;
+  box-shadow: 0 0 0 3px rgba(184, 227, 19, .16);
+}
+
+.t-Form-label {
+  color: var(--mf-navy);
+  font-weight: 700;
+}
+
+/* ------------------------------
+   9. Interactive Report / Grid
+   ------------------------------ */
+.a-IRR,
+.a-GV {
+  border: 0;
+  background: transparent;
+}
+
+.a-IRR-toolbar,
+.a-GV-toolbar {
+  background: #fff;
+  border: 0;
+  border-bottom: 1px solid var(--mf-border);
+  padding: 10px 12px;
+}
+
+.a-IRR-table,
+.a-GV-table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.a-IRR-table th,
+.a-GV-table th {
+  background: #f6f9fc;
+  color: var(--mf-navy);
+  border-color: var(--mf-border);
+  font-weight: 800;
+  font-size: 13px;
+}
+
+.a-IRR-table td,
+.a-GV-table td {
+  background: #fff;
+  border-color: var(--mf-border);
+  color: var(--mf-text);
+  padding-top: 11px;
+  padding-bottom: 11px;
+}
+
+.a-IRR-table tr:hover td,
+.a-GV-table tr:hover td {
+  background: #fbfdff;
+}
+
+.a-IRR-paginationWrap,
+.a-GV-footer {
+  border-top: 1px solid var(--mf-border);
+  background: #fff;
+}
+
+/* ------------------------------
+   10. Cards
+   ------------------------------ */
+.t-Cards-item {
+  border-radius: var(--mf-radius);
+}
+
+.t-Card-wrap {
+  background: #fff;
+  border: 1px solid var(--mf-border);
+  border-radius: var(--mf-radius);
+  box-shadow: var(--mf-shadow);
+  transition:
+    transform .16s ease,
+    box-shadow .16s ease;
+}
+
+.t-Card-wrap:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 2px 4px rgba(8, 23, 74, .04),
+    0 12px 30px rgba(8, 23, 74, .08);
+}
+
+.t-Card-title {
+  color: var(--mf-navy);
+  font-weight: 800;
+}
+
+.t-Card-desc {
+  color: var(--mf-muted);
+}
+
+/* ------------------------------
+   11. MortgageFlow KPI cards
+   Use Static Content region with class mf-kpi
+   ------------------------------ */
+.mf-kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.mf-kpi {
+  min-height: 104px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 17px 18px;
+  background: #fff;
+  border: 1px solid var(--mf-border);
+  border-radius: var(--mf-radius);
+  box-shadow: var(--mf-shadow);
+}
+
+.mf-kpi__icon {
+  width: 50px;
+  height: 50px;
+  flex: 0 0 50px;
+  display: grid;
+  place-items: center;
+  border-radius: 13px;
+  color: var(--mf-blue);
+  background: var(--mf-blue-soft);
+  font-size: 21px;
+}
+
+.mf-kpi--success .mf-kpi__icon {
+  color: var(--mf-green);
+  background: var(--mf-green-soft);
+}
+
+.mf-kpi--warning .mf-kpi__icon {
+  color: var(--mf-yellow);
+  background: var(--mf-yellow-soft);
+}
+
+.mf-kpi--danger .mf-kpi__icon {
+  color: var(--mf-red);
+  background: var(--mf-red-soft);
+}
+
+.mf-kpi--purple .mf-kpi__icon {
+  color: var(--mf-purple);
+  background: var(--mf-purple-soft);
+}
+
+.mf-kpi__label {
+  color: #586b94;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.mf-kpi__value {
+  margin-top: 2px;
+  color: var(--mf-navy);
+  font-size: 27px;
+  line-height: 1.05;
+  font-weight: 800;
+}
+
+/* ------------------------------
+   12. Status / risk badges
+   ------------------------------ */
+.mf-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-width: 76px;
+  min-height: 27px;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.mf-badge--blue {
+  color: #1767d1;
+  background: var(--mf-blue-soft);
+}
+
+.mf-badge--green {
+  color: #218a32;
+  background: var(--mf-green-soft);
+}
+
+.mf-badge--yellow {
+  color: #aa7410;
+  background: var(--mf-yellow-soft);
+}
+
+.mf-badge--red {
+  color: #c62e2e;
+  background: var(--mf-red-soft);
+}
+
+.mf-badge--gray {
+  color: #62708b;
+  background: #eef2f7;
+}
+
+/* ------------------------------
+   13. Hero / welcome region
+   Add region CSS class: mf-hero
+   Set page/region inline style:
+   --mf-hero-image:url('#APP_FILES#mf-house.jpg')
+   ------------------------------ */
+.mf-hero {
+  position: relative;
+  min-height: 230px;
+  overflow: hidden;
+  border-radius: var(--mf-radius-lg);
+  border: 1px solid var(--mf-border);
+  background:
+    linear-gradient(
+      90deg,
+      rgba(255,255,255,.99) 0%,
+      rgba(255,255,255,.96) 33%,
+      rgba(255,255,255,.72) 52%,
+      rgba(255,255,255,.12) 78%
+    ),
+    var(--mf-hero-image);
+  background-size: cover;
+  background-position: center right;
+  box-shadow: var(--mf-shadow);
+}
+
+.mf-hero .t-Region-body {
+  position: relative;
+  z-index: 2;
+  max-width: 770px;
+  padding: 34px 34px 30px;
+}
+
+.mf-hero__title {
+  margin: 0 0 8px;
+  color: var(--mf-navy);
+  font-size: clamp(34px, 4vw, 48px);
+  line-height: 1.02;
+  letter-spacing: -.04em;
+  font-weight: 850;
+}
+
+.mf-hero__text {
+  max-width: 580px;
+  margin: 0 0 22px;
+  color: #65769b;
+  font-size: 18px;
+  line-height: 1.45;
+}
+
+.mf-hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+/* ------------------------------
+   14. Rate product cards
+   ------------------------------ */
+.mf-rate-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.mf-rate-card {
+  padding: 18px;
+  border: 1px solid var(--mf-border);
+  border-radius: var(--mf-radius);
+  background:
+    linear-gradient(135deg, #fff 0%, #f4f8ff 100%);
+}
+
+.mf-rate-card:nth-child(2) {
+  background:
+    linear-gradient(135deg, #fff 0%, #eefaf1 100%);
+}
+
+.mf-rate-card:nth-child(3) {
+  background:
+    linear-gradient(135deg, #fff 0%, #f4efff 100%);
+}
+
+.mf-rate-card__product {
+  color: var(--mf-navy);
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.mf-rate-card__rate {
+  color: var(--mf-navy);
+  font-size: 31px;
+  font-weight: 850;
+  margin: 5px 0 15px;
+}
+
+/* ------------------------------
+   15. User chip
+   ------------------------------ */
+.mf-user-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.mf-avatar {
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #eef2fa;
+  color: var(--mf-navy);
+  font-weight: 800;
+}
+
+.mf-user-chip__name {
+  display: block;
+  color: var(--mf-navy);
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.mf-user-chip__role {
+  display: block;
+  margin-top: 3px;
+  color: var(--mf-muted);
+  font-size: 12px;
+}
+
+/* ------------------------------
+   16. Login page
+   Page CSS class: mf-login-page
+   ------------------------------ */
+.mf-login-page .t-Body {
+  background: #fff;
+}
+
+.mf-login-page .t-Body-contentInner {
+  max-width: none;
+  padding: 0;
+}
+
+.mf-login-shell {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: minmax(520px, 58%) minmax(440px, 42%);
+  background: #fff;
+}
+
+.mf-login-visual {
+  position: relative;
+  min-height: 100vh;
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.06), rgba(8,23,74,.02)),
+    var(--mf-login-image);
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.mf-login-visual::after {
+  content: "";
+  position: absolute;
+  left: -2%;
+  bottom: -120px;
+  width: 84%;
+  height: 290px;
+  border-radius: 70px 180px 0 0;
+  background: linear-gradient(135deg, #c8ef24, #a9dc00);
+  transform: rotate(0deg);
+}
+
+.mf-login-brand {
+  position: absolute;
+  left: 48px;
+  top: 42px;
+  z-index: 2;
+}
+
+.mf-login-panel-wrap {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  padding: 40px;
+  background:
+    radial-gradient(circle at 50% 30%, #fff 0, #fbfdff 52%, #f7faff 100%);
+}
+
+.mf-login-panel {
+  width: min(500px, 100%);
+  padding: 34px 34px 30px;
+  background: #fff;
+  border: 1px solid var(--mf-border);
+  border-radius: 18px;
+  box-shadow: 0 18px 60px rgba(8,23,74,.08);
+}
+
+.mf-login-title {
+  margin: 8px 0 4px;
+  text-align: center;
+  color: var(--mf-navy);
+  font-size: 31px;
+  font-weight: 850;
+}
+
+.mf-login-subtitle {
+  margin: 0 0 26px;
+  text-align: center;
+  color: var(--mf-muted);
+}
+
+/* ------------------------------
+   17. Authority-style lower-left decorative mark
+   Optional Static Content region class: mf-corner-brand
+   ------------------------------ */
+.mf-corner-brand {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 235px;
+  height: 145px;
+  pointer-events: none;
+  z-index: 2;
+  opacity: .96;
+  background:
+    linear-gradient(135deg, rgba(202,239,42,.92), rgba(167,214,0,.88));
+  clip-path: polygon(
+    0 100%,
+    0 62%,
+    15% 73%,
+    25% 54%,
+    44% 77%,
+    58% 48%,
+    77% 76%,
+    100% 75%,
+    100% 100%
+  );
+}
+
+/* ------------------------------
+   18. Timeline
+   ------------------------------ */
+.mf-timeline {
+  position: relative;
+  padding-left: 28px;
+}
+
+.mf-timeline::before {
+  content: "";
+  position: absolute;
+  left: 9px;
+  top: 8px;
+  bottom: 8px;
+  width: 2px;
+  background: #dce4ef;
+}
+
+.mf-timeline__item {
+  position: relative;
+  padding: 0 0 22px;
+}
+
+.mf-timeline__dot {
+  position: absolute;
+  left: -28px;
+  top: 2px;
+  width: 20px;
+  height: 20px;
+  border: 4px solid #fff;
+  border-radius: 50%;
+  background: #bfc9da;
+  box-shadow: 0 0 0 2px #bfc9da;
+}
+
+.mf-timeline__item.is-done .mf-timeline__dot {
+  background: var(--mf-green);
+  box-shadow: 0 0 0 2px var(--mf-green);
+}
+
+.mf-timeline__item.is-current .mf-timeline__dot {
+  background: var(--mf-blue);
+  box-shadow: 0 0 0 2px var(--mf-blue);
+}
+
+/* ------------------------------
+   19. Responsive
+   ------------------------------ */
+@media (max-width: 1100px) {
+  .mf-kpi-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .mf-rate-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mf-login-shell {
+    grid-template-columns: 1fr;
+  }
+
+  .mf-login-visual {
+    min-height: 38vh;
+  }
+
+  .mf-login-panel-wrap {
+    min-height: 62vh;
+  }
+}
+
+@media (max-width: 640px) {
+  .t-Body-contentInner {
+    padding: 16px;
+  }
+
+  .mf-kpi-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mf-hero {
+    background:
+      linear-gradient(rgba(255,255,255,.94), rgba(255,255,255,.94)),
+      var(--mf-hero-image);
+  }
+
+  .mf-hero .t-Region-body {
+    padding: 24px;
+  }
+
+  .mf-login-panel {
+    padding: 26px 20px;
+  }
+}
