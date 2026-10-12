@@ -33,17 +33,17 @@ prompt APPLICATION 182896 - MortgageFlow
 -- Application Export:
 --   Application:     182896
 --   Name:            MortgageFlow
---   Date and Time:   15:44 Sunday October 11, 2026
+--   Date and Time:   06:15 Monday October 12, 2026
 --   Exported By:     RAFAELBRAYNER23@GMAIL.COM
 --   Flashback:       0
 --   Export Type:     Application Export
---     Pages:                     19
---       Items:                   37
+--     Pages:                     20
+--       Items:                   88
 --       Validations:              6
---       Processes:               15
---       Regions:                 41
---       Buttons:                 13
---       Dynamic Actions:          3
+--       Processes:               22
+--       Regions:                 66
+--       Buttons:                 17
+--       Dynamic Actions:          4
 --     Shared Components:
 --       Logic:
 --         Items:                  4
@@ -51,7 +51,7 @@ prompt APPLICATION 182896 - MortgageFlow
 --       Navigation:
 --         Lists:                  2
 --         Breadcrumbs:            1
---           Entries:             13
+--           Entries:             14
 --       Security:
 --         Authentication:         2
 --         Authorization:          4
@@ -109,12 +109,12 @@ wwv_imp_workspace.create_flow(
 ,p_substitution_string_01=>'APP_NAME'
 ,p_substitution_value_01=>'mortgageflow'
 ,p_created_on=>wwv_flow_imp.dz('20261010002917Z')
-,p_last_updated_on=>wwv_flow_imp.dz('20261011154046Z')
+,p_last_updated_on=>wwv_flow_imp.dz('20261011223804Z')
 ,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
 ,p_last_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
 ,p_file_prefix=>nvl(wwv_flow_application_install.get_static_app_file_prefix,'')
 ,p_files_version=>2461325154046
-,p_version_scn=>'15844575681974'
+,p_version_scn=>'15844665112912'
 ,p_print_server_type=>'INSTANCE'
 ,p_file_storage=>'DB'
 ,p_is_pwa=>'Y'
@@ -379,9 +379,9 @@ wwv_flow_imp_shared.create_list(
  p_id=>wwv_flow_imp.id(1661520724292227882)
 ,p_name=>'Navigation Menu'
 ,p_static_id=>'navigation-menu'
-,p_version_scn=>'SH256:WAV_SFU6RTrDBHfGhMPR1vVgn1WKqGlcgY2BjXxf4lA'
+,p_version_scn=>'SH256:tIetSkRmz1kd-ZrLKclvt7fGgvKQtnUu6vLllYZ5ufA'
 ,p_created_on=>wwv_flow_imp.dz('20261010002917Z')
-,p_updated_on=>wwv_flow_imp.dz('20261011011730Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011173110Z')
 ,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
 ,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
 );
@@ -546,21 +546,6 @@ wwv_flow_imp_shared.create_list_item(
 ,p_list_item_current_for_pages=>'4'
 ,p_created_on=>wwv_flow_imp.dz('20261010003525Z')
 ,p_updated_on=>wwv_flow_imp.dz('20261010212324Z')
-,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
-,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
-);
-wwv_flow_imp_shared.create_list_item(
- p_id=>wwv_flow_imp.id(1664150624990328689)
-,p_list_item_display_sequence=>50
-,p_list_item_link_text=>'My Profile'
-,p_static_id=>'my-profile'
-,p_list_item_link_target=>'f?p=&APP_ID.:9:&SESSION.::&DEBUG.::::'
-,p_list_item_icon=>'fa-user'
-,p_security_scheme=>wwv_flow_imp.id(1895704909272701392)
-,p_list_item_current_type=>'COLON_DELIMITED_PAGE_LIST'
-,p_list_item_current_for_pages=>'9'
-,p_created_on=>wwv_flow_imp.dz('20261010003841Z')
-,p_updated_on=>wwv_flow_imp.dz('20261010212254Z')
 ,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
 ,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
 );
@@ -17582,7 +17567,7 @@ wwv_flow_imp_shared.create_menu(
 ,p_name=>'Breadcrumb'
 ,p_static_id=>'breadcrumb'
 ,p_created_on=>wwv_flow_imp.dz('20261010002917Z')
-,p_updated_on=>wwv_flow_imp.dz('20261011001606Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011212057Z')
 ,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
 ,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
 );
@@ -17594,6 +17579,18 @@ wwv_flow_imp_shared.create_menu_option(
 ,p_page_id=>40
 ,p_created_on=>wwv_flow_imp.dz('20261010004218Z')
 ,p_updated_on=>wwv_flow_imp.dz('20261010233305Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_shared.create_menu_option(
+ p_id=>wwv_flow_imp.id(2138721589724062823)
+,p_parent_id=>wwv_flow_imp.id(1661763165392264758)
+,p_short_name=>'Application Details'
+,p_static_id=>'application-details'
+,p_link=>'f?p=&APP_ID.:5:&APP_SESSION.::&DEBUG.:::'
+,p_page_id=>5
+,p_created_on=>wwv_flow_imp.dz('20261011173423Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011173423Z')
 ,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
 ,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
 );
@@ -17728,14 +17725,14 @@ wwv_flow_imp_shared.create_menu_option(
 ,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
 );
 wwv_flow_imp_shared.create_menu_option(
- p_id=>wwv_flow_imp.id(1664151547716328699)
-,p_parent_id=>wwv_flow_imp.id(1661520442822227881)
-,p_short_name=>'My Profile'
-,p_static_id=>'my-profile'
-,p_link=>'f?p=&APP_ID.:9:&SESSION.::&DEBUG.:::'
-,p_page_id=>9
-,p_created_on=>wwv_flow_imp.dz('20261010003842Z')
-,p_updated_on=>wwv_flow_imp.dz('20261010205818Z')
+ p_id=>wwv_flow_imp.id(2173173792920371471)
+,p_parent_id=>wwv_flow_imp.id(1661763165392264758)
+,p_short_name=>'New Mortgage Application'
+,p_static_id=>'new-mortgage-application'
+,p_link=>'f?p=&APP_ID.:3:&SESSION.::&DEBUG.:::'
+,p_page_id=>3
+,p_created_on=>wwv_flow_imp.dz('20261011211953Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011212057Z')
 ,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
 ,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
 );
@@ -17957,35 +17954,1239 @@ wwv_flow_imp_page.create_page(
  p_id=>1
 ,p_name=>'Home'
 ,p_alias=>'HOME'
-,p_step_title=>'mortgageflow'
+,p_step_title=>'Home'
 ,p_autocomplete_on_off=>'OFF'
+,p_inline_css=>wwv_flow_string.join(wwv_flow_t_varchar2(
+'#home-welcome {',
+'    border: 0;',
+'    border-radius: 16px;',
+'    overflow: hidden;',
+'    box-shadow: 0 3px 14px rgba(15, 35, 65, 0.10);',
+'}',
+'',
+'#home-welcome .t-Region-body {',
+'    padding: 0 !important;',
+'}',
+'',
+'.home-welcome-content {',
+'    min-height: 210px;',
+'',
+'    padding: 32px 36px;',
+'',
+'    display: flex;',
+'    align-items: center;',
+'',
+'    background-image:',
+'        linear-gradient(',
+'            90deg,',
+'            rgba(255,255,255,0.98) 0%,',
+'            rgba(255,255,255,0.92) 30%,',
+'            rgba(255,255,255,0.45) 55%,',
+'            rgba(255,255,255,0.00) 75%',
+'        ),',
+'        url(''#APP_FILES#welcome.png'');',
+'',
+'    background-size: cover;',
+'    background-position: center right;',
+'    background-repeat: no-repeat;',
+'}',
+'',
+'.home-welcome-text {',
+'    max-width: 520px;',
+'}',
+'',
+'.home-welcome-text h1 {',
+'    margin: 0 0 10px 0;',
+'',
+'    font-size: 36px;',
+'    line-height: 1.15;',
+'',
+'    font-weight: 800;',
+'',
+'    color: #0b2145;',
+'}',
+'',
+'.home-welcome-text p {',
+'    margin: 0;',
+'',
+'    max-width: 500px;',
+'',
+'    font-size: 17px;',
+'    line-height: 1.45;',
+'',
+'    font-weight: 500;',
+'',
+'    color: #63749a;',
+'}',
+'',
+'',
+'/* =========================================================',
+'   STATUS AND RISK PILLS',
+'   ========================================================= */',
+'',
+'.mf-status,',
+'.mf-risk {',
+'    display: inline-flex !important;',
+'    align-items: center;',
+'    justify-content: center;',
+'',
+'    min-width: 76px;',
+'',
+'    padding: 5px 12px !important;',
+'',
+'    border-radius: 999px !important;',
+'',
+'    font-size: 12px;',
+'    font-weight: 600;',
+'',
+'    line-height: 1.2;',
+'}',
+'',
+'',
+'/* =========================',
+'   STATUS',
+'   ========================= */',
+'',
+'.mf-status-draft {',
+'    background-color: #eef2f7 !important;',
+'    color: #596579 !important;',
+'}',
+'',
+'',
+'.mf-status-submitted {',
+'    background-color: #fff3d9 !important;',
+'    color: #b9780b !important;',
+'}',
+'',
+'',
+'.mf-status-review {',
+'    background-color: #e7f1ff !important;',
+'    color: #176ff2 !important;',
+'}',
+'',
+'',
+'.mf-status-approved {',
+'    background-color: #e4f7e8 !important;',
+'    color: #248b38 !important;',
+'}',
+'',
+'',
+'.mf-status-rejected {',
+'    background-color: #ffe7e7 !important;',
+'    color: #d83d3d !important;',
+'}',
+'',
+'',
+'/* =========================',
+'   RISK',
+'   ========================= */',
+'',
+'.mf-risk-low {',
+'    background-color: #e4f7e8 !important;',
+'    color: #248b38 !important;',
+'}',
+'',
+'',
+'.mf-risk-medium {',
+'    background-color: #fff3d9 !important;',
+'    color: #b9780b !important;',
+'}',
+'',
+'',
+'.mf-risk-high {',
+'    background-color: #ffe7e7 !important;',
+'    color: #d83d3d !important;',
+'}',
+'',
+'',
+'',
+'',
+'',
+'',
+'/* =========================================================',
+'   CURRENT MORTGAGE RATES - OUTER REGION',
+'   ========================================================= */',
+'',
+'#mortgage-rates {',
+'    background: #fbfdff;',
+'    border: 1px solid #dfe7f1;',
+'    border-radius: 10px;',
+'    box-shadow: 0 2px 10px rgba(15, 23, 42, 0.06);',
+'    overflow: hidden;',
+'}',
+'',
+'',
+'/* Region header */',
+'',
+'#mortgage-rates > .t-Region-header {',
+'    background: transparent;',
+'    border: 0;',
+'    padding: 14px 18px 4px 18px;',
+'}',
+'',
+'',
+'/* Region title */',
+'',
+'#mortgage-rates .t-Region-title {',
+'    color: #0a1f44;',
+'    font-size: 21px;',
+'    font-weight: 700;',
+'    line-height: 1.2;',
+'}',
+'',
+'',
+'/* Main body */',
+'',
+'#mortgage-rates > .t-Region-bodyWrap > .t-Region-body {',
+'    background: transparent;',
+'    padding: 10px 18px 18px 18px;',
+'}',
+'',
+'',
+'/* =========================================================',
+'   VIEW ALL PRODUCTS',
+'   ========================================================= */',
+'',
+'#mortgage-rates .mf-view-all,',
+'#mortgage-rates .t-Button.mf-view-all {',
+'    background: transparent !important;',
+'    border: 0 !important;',
+'    box-shadow: none !important;',
+'',
+'    color: #075de8 !important;',
+'',
+'    font-size: 13px;',
+'    font-weight: 500;',
+'',
+'    padding: 4px 0 !important;',
+'}',
+'',
+'#mortgage-rates .mf-view-all:hover {',
+'    text-decoration: underline;',
+'    background: transparent !important;',
+'}',
+'',
+'',
+'/* =========================================================',
+'   REMOVE DEFAULT APEX CARD APPEARANCE',
+'   ========================================================= */',
+'',
+'#mortgage-rate-cards {',
+'    background: transparent;',
+'}',
+'',
+'#mortgage-rate-cards .a-CardView,',
+'#mortgage-rate-cards .t-Card {',
+'    border: 0 !important;',
+'    background: transparent !important;',
+'    box-shadow: none !important;',
+'}',
+'',
+'',
+'/* Hide native APEX card header */',
+'',
+'#mortgage-rate-cards .a-CardView-header {',
+'    display: none;',
+'}',
+'',
+'',
+'/* Remove default padding */',
+'',
+'#mortgage-rate-cards .a-CardView-body {',
+'    padding: 0 !important;',
+'}',
+'',
+'',
+'/* Grid spacing */',
+'',
+'#mortgage-rate-cards .a-CardView-items {',
+'    gap: 14px;',
+'}',
+'',
+'',
+'/* =========================================================',
+'   INDIVIDUAL RATE CARD',
+'   ========================================================= */',
+'',
+'.mf-rate-card {',
+'    min-height: 150px;',
+'',
+'    border-radius: 9px;',
+'',
+'    padding: 13px 15px 14px 15px;',
+'',
+'    border: 1px solid rgba(15, 35, 70, 0.04);',
+'',
+'    box-shadow:',
+'        0 1px 2px rgba(15, 23, 42, 0.02),',
+'        0 3px 8px rgba(15, 23, 42, 0.025);',
+'',
+'    transition:',
+'        transform 0.18s ease,',
+'        box-shadow 0.18s ease;',
+'',
+'    cursor: pointer;',
+'}',
+'',
+'',
+'.mf-rate-card:hover {',
+'    transform: translateY(-2px);',
+'',
+'    box-shadow:',
+'        0 4px 10px rgba(15, 23, 42, 0.08);',
+'}',
+'',
+'',
+'/* =========================================================',
+'   CARD BACKGROUNDS',
+'   ========================================================= */',
+'',
+'',
+'/* 30 year */',
+'',
+'.mf-rate-card.mf-blue {',
+'    background:',
+'        linear-gradient(',
+'            135deg,',
+'            #f2f8ff 0%,',
+'            #edf5ff 100%',
+'        );',
+'}',
+'',
+'',
+'/* 20 year */',
+'',
+'.mf-rate-card.mf-green {',
+'    background:',
+'        linear-gradient(',
+'            135deg,',
+'            #f3fff8 0%,',
+'            #edfbf3 100%',
+'        );',
+'}',
+'',
+'',
+'/* 15 year */',
+'',
+'.mf-rate-card.mf-purple {',
+'    background:',
+'        linear-gradient(',
+'            135deg,',
+'            #f8f5ff 0%,',
+'            #f4f0ff 100%',
+'        );',
+'}',
+'',
+'',
+'/* =========================================================',
+'   TOP PART',
+'   ========================================================= */',
+'',
+'.mf-rate-top {',
+'    display: grid;',
+'',
+'    grid-template-columns:',
+'        62px',
+'        minmax(0, 1fr)',
+'        24px;',
+'',
+'    align-items: start;',
+'',
+'    column-gap: 14px;',
+'}',
+'',
+'',
+'/* =========================================================',
+'   ICON BOX',
+'   ========================================================= */',
+'',
+'.mf-rate-icon {',
+'    width: 62px;',
+'    height: 60px;',
+'',
+'    border-radius: 12px;',
+'',
+'    display: flex;',
+'    align-items: center;',
+'    justify-content: center;',
+'',
+'    font-size: 30px;',
+'}',
+'',
+'',
+'/* Blue */',
+'',
+'.mf-blue .mf-rate-icon {',
+'    background: #dfedff;',
+'    color: #075de8;',
+'}',
+'',
+'',
+'/* Green */',
+'',
+'.mf-green .mf-rate-icon {',
+'    background: #ddf7e7;',
+'    color: #169238;',
+'}',
+'',
+'',
+'/* Purple */',
+'',
+'.mf-purple .mf-rate-icon {',
+'    background: #e9e1ff;',
+'    color: #5a31dc;',
+'}',
+'',
+'',
+'/* =========================================================',
+'   PRODUCT NAME',
+'   ========================================================= */',
+'',
+'.mf-product-name {',
+'    color: #0a1f44;',
+'',
+'    font-size: 16px;',
+'    font-weight: 600;',
+'',
+'    line-height: 1.2;',
+'',
+'    margin-top: 5px;',
+'}',
+'',
+'',
+'/* =========================================================',
+'   RATE',
+'   ========================================================= */',
+'',
+'.mf-interest-rate {',
+'    color: #071d46;',
+'',
+'    font-size: 30px;',
+'    font-weight: 800;',
+'',
+'    line-height: 1;',
+'',
+'    letter-spacing: -0.7px;',
+'',
+'    margin-top: 7px;',
+'}',
+'',
+'',
+'/* =========================================================',
+'   ARROW',
+'   ========================================================= */',
+'',
+'.mf-rate-arrow {',
+'    font-size: 24px;',
+'',
+'    line-height: 1;',
+'',
+'    margin-top: 14px;',
+'',
+'    text-align: right;',
+'}',
+'',
+'',
+'.mf-arrow-blue {',
+'    color: #075de8;',
+'}',
+'',
+'',
+'.mf-arrow-green {',
+'    color: #138b32;',
+'}',
+'',
+'',
+'.mf-arrow-purple {',
+'    color: #5423d9;',
+'}',
+'',
+'',
+'/* =========================================================',
+'   DETAILS',
+'   ========================================================= */',
+'',
+'.mf-rate-details {',
+'    display: grid;',
+'',
+'    grid-template-columns:',
+'        0.9fr',
+'        1.15fr',
+'        1.15fr;',
+'',
+'    column-gap: 20px;',
+'',
+'    margin-top: 19px;',
+'',
+'    padding-left: 10px;',
+'}',
+'',
+'',
+'/* Label */',
+'',
+'.mf-detail-label {',
+'    color: #66728b;',
+'',
+'    font-size: 12px;',
+'    font-weight: 400;',
+'',
+'    line-height: 1.2;',
+'',
+'    white-space: nowrap;',
+'}',
+'',
+'',
+'/* Value */',
+'',
+'.mf-detail-value {',
+'    color: #17284c;',
+'',
+'    font-size: 14px;',
+'    font-weight: 600;',
+'',
+'    margin-top: 6px;',
+'',
+'    line-height: 1.2;',
+'}',
+'',
+'',
+'/* =========================================================',
+'   RESPONSIVE',
+'   ========================================================= */',
+'',
+'@media (max-width: 900px) {',
+'',
+'    #mortgage-rate-cards .a-CardView-items {',
+'        grid-template-columns:',
+'            repeat(2, minmax(0, 1fr)) !important;',
+'    }',
+'',
+'}',
+'',
+'',
+'@media (max-width: 650px) {',
+'',
+'    #mortgage-rate-cards .a-CardView-items {',
+'        grid-template-columns:',
+'            1fr !important;',
+'    }',
+'',
+'    .mf-rate-details {',
+'        grid-template-columns:',
+'            repeat(3, minmax(0, 1fr));',
+'',
+'        column-gap: 10px;',
+'    }',
+'',
+'}',
+'',
+'',
+'@media (max-width: 430px) {',
+'',
+'    .mf-rate-details {',
+'        grid-template-columns: 1fr;',
+'        row-gap: 13px;',
+'    }',
+'',
+'}'))
 ,p_step_template=>4075783602716660119
 ,p_page_template_options=>'#DEFAULT#'
 ,p_required_role=>wwv_flow_imp.id(1895704909272701392)
 ,p_protection_level=>'C'
-,p_page_component_map=>'11'
+,p_page_component_map=>'23'
 ,p_created_on=>wwv_flow_imp.dz('20261010002917Z')
-,p_last_updated_on=>wwv_flow_imp.dz('20261010210850Z')
+,p_last_updated_on=>wwv_flow_imp.dz('20261011201409Z')
 ,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
 ,p_last_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
 );
 wwv_flow_imp_page.create_page_plug(
- p_id=>wwv_flow_imp.id(1661533283468227942)
-,p_plug_name=>'mortgageflow'
-,p_static_id=>'mortgageflow'
-,p_region_template_options=>'#DEFAULT#'
+ p_id=>wwv_flow_imp.id(3980024441198763628)
+,p_plug_name=>'Applications by Status'
+,p_static_id=>'applications-by-status'
+,p_region_template_options=>'#DEFAULT#:t-Region--scrollBody'
 ,p_escape_on_http_output=>'Y'
-,p_plug_template=>2677445476673898083
-,p_plug_display_sequence=>10
-,p_plug_display_point=>'REGION_POSITION_01'
+,p_plug_template=>4075786578761660127
+,p_plug_display_sequence=>30
+,p_plug_new_grid_row=>false
 ,p_plug_item_display_point=>'ABOVE'
-,p_plug_query_num_rows=>15
-,p_region_image=>'#APP_FILES#icons/app-icon-512.png'
+,p_location=>null
+,p_plug_source_type=>'NATIVE_JET_CHART'
+,p_created_on=>wwv_flow_imp.dz('20261011161618Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011201409Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_jet_chart(
+ p_id=>wwv_flow_imp.id(2118715669732550051)
+,p_region_id=>wwv_flow_imp.id(3980024441198763628)
+,p_chart_type=>'bar'
+,p_height=>'400'
+,p_lazy_loading=>false
+,p_animation_on_display=>'auto'
+,p_animation_on_data_change=>'auto'
+,p_orientation=>'vertical'
+,p_data_cursor=>'auto'
+,p_data_cursor_behavior=>'auto'
+,p_hover_behavior=>'dim'
+,p_stack=>'off'
+,p_connect_nulls=>'Y'
+,p_sorting=>'label-asc'
+,p_fill_multi_series_gaps=>true
+,p_zoom_and_scroll=>'off'
+,p_tooltip_rendered=>'Y'
+,p_show_series_name=>true
+,p_show_group_name=>true
+,p_show_value=>true
+,p_legend_rendered=>'off'
+,p_javascript_code=>wwv_flow_string.join(wwv_flow_t_varchar2(
+'function(options) {',
+'',
+'    options.orientation = "vertical";',
+'',
+'    options.dataFilter = function(data) {',
+'',
+'        var colors = [',
+'            "#5B9CF6",  // Draft',
+'            "#FFC845",  // Submitted',
+'            "#66C56C",  // Under Review',
+'            "#4A86F7",  // Approved',
+'            "#F45757"   // Rejected',
+'        ];',
+'',
+'        if (',
+'            data.series &&',
+'            data.series.length > 0 &&',
+'            data.series[0].items',
+'        ) {',
+'',
+'            data.series[0].items.forEach(function(item, index) {',
+'',
+'                if (colors[index]) {',
+'                    item.color = colors[index];',
+'                }',
+'',
+'            });',
+'',
+'        }',
+'',
+'        return data;',
+'    };',
+'',
+'    return options;',
+'}'))
+,p_created_on=>wwv_flow_imp.dz('20261011161618Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011201409Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_jet_chart_series(
+ p_id=>wwv_flow_imp.id(2118717388854550052)
+,p_chart_id=>wwv_flow_imp.id(2118715669732550051)
+,p_static_id=>'applications'
+,p_seq=>30
+,p_name=>'Applications'
+,p_data_source_type=>'SQL'
+,p_data_source=>wwv_flow_string.join(wwv_flow_t_varchar2(
+'select',
+'    case status',
+'        when ''DRAFT''        then ''Draft''',
+'        when ''SUBMITTED''    then ''Submitted''',
+'        when ''UNDER_REVIEW'' then ''Under Review''',
+'        when ''APPROVED''     then ''Approved''',
+'        when ''REJECTED''     then ''Rejected''',
+'    end as label,',
+'',
+'    count(*) as value,',
+'',
+'    case status',
+'        when ''DRAFT''        then 1',
+'        when ''SUBMITTED''    then 2',
+'        when ''UNDER_REVIEW'' then 3',
+'        when ''APPROVED''     then 4',
+'        when ''REJECTED''     then 5',
+'    end as sort_order',
+'',
+'from mortgage_applications',
+'',
+'where applicant_user_id = :G_USER_ID',
+'group by status',
+'',
+'order by sort_order'))
+,p_items_value_column_name=>'VALUE'
+,p_items_label_column_name=>'LABEL'
+,p_assigned_to_y2=>'off'
+,p_items_label_rendered=>false
+,p_created_on=>wwv_flow_imp.dz('20261011161618Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011201409Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_jet_chart_axis(
+ p_id=>wwv_flow_imp.id(2118716104077550052)
+,p_chart_id=>wwv_flow_imp.id(2118715669732550051)
+,p_static_id=>'x'
+,p_axis=>'x'
+,p_is_rendered=>'on'
+,p_format_scaling=>'auto'
+,p_scaling=>'linear'
+,p_baseline_scaling=>'zero'
+,p_major_tick_rendered=>'on'
+,p_minor_tick_rendered=>'auto'
+,p_tick_label_rendered=>'on'
+,p_tick_label_rotation=>'auto'
+,p_tick_label_position=>'outside'
+,p_created_on=>wwv_flow_imp.dz('20261011161618Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011161618Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_jet_chart_axis(
+ p_id=>wwv_flow_imp.id(2118716742398550052)
+,p_chart_id=>wwv_flow_imp.id(2118715669732550051)
+,p_static_id=>'y'
+,p_axis=>'y'
+,p_is_rendered=>'on'
+,p_format_type=>'decimal'
+,p_decimal_places=>0
+,p_format_scaling=>'none'
+,p_scaling=>'linear'
+,p_baseline_scaling=>'zero'
+,p_position=>'auto'
+,p_major_tick_rendered=>'on'
+,p_minor_tick_rendered=>'auto'
+,p_tick_label_rendered=>'on'
+,p_created_on=>wwv_flow_imp.dz('20261011161618Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011161618Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_plug(
+ p_id=>wwv_flow_imp.id(1973228080503976433)
+,p_plug_name=>'Current Mortgage Rates'
+,p_static_id=>'current-mortgage-rates'
+,p_region_template_options=>'#DEFAULT#:t-Region--scrollBody'
+,p_plug_template=>4075786578761660127
+,p_plug_display_sequence=>10
+,p_plug_item_display_point=>'ABOVE'
+,p_location=>null
 ,p_attributes=>wwv_flow_t_plugin_attributes(wwv_flow_t_varchar2(
   'expand_shortcuts', 'N',
   'output_as', 'HTML')).to_clob
-,p_created_on=>wwv_flow_imp.dz('20261010002917Z')
-,p_updated_on=>wwv_flow_imp.dz('20261010002917Z')
+,p_created_on=>wwv_flow_imp.dz('20261011164017Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011170351Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_plug(
+ p_id=>wwv_flow_imp.id(1973227964605976432)
+,p_plug_name=>'Home'
+,p_static_id=>'home-welcome'
+,p_region_template_options=>'#DEFAULT#'
+,p_plug_template=>4504868307683981366
+,p_plug_display_sequence=>20
+,p_plug_display_point=>'REGION_POSITION_01'
+,p_plug_item_display_point=>'ABOVE'
+,p_location=>null
+,p_plug_source=>wwv_flow_string.join(wwv_flow_t_varchar2(
+'<div class="home-welcome-content">',
+'',
+'    <div class="home-welcome-text">',
+'',
+'        <h1>',
+'            Welcome back, &APP_USER.',
+'        </h1>',
+'',
+'        <p>',
+'            Track your mortgage journey, view your applications,',
+unistr('            and explore loan options \2014 all in one place.'),
+'        </p>',
+'',
+'    </div>',
+'',
+'</div>'))
+,p_attributes=>wwv_flow_t_plugin_attributes(wwv_flow_t_varchar2(
+  'expand_shortcuts', 'N',
+  'output_as', 'HTML')).to_clob
+,p_created_on=>wwv_flow_imp.dz('20261011155518Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011155530Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_plug(
+ p_id=>wwv_flow_imp.id(1973228189777976434)
+,p_plug_name=>'Mortgage Rate Cards'
+,p_static_id=>'mortgage-rate-cards'
+,p_parent_plug_id=>wwv_flow_imp.id(1973228080503976433)
+,p_region_template_options=>'#DEFAULT#:t-CardsRegion--hideHeader js-addHiddenHeadingRoleDesc'
+,p_plug_template=>2076152157930740558
+,p_plug_display_sequence=>10
+,p_plug_display_point=>'SUB_REGIONS'
+,p_plug_item_display_point=>'ABOVE'
+,p_query_type=>'SQL'
+,p_plug_source=>wwv_flow_string.join(wwv_flow_t_varchar2(
+'with current_rates as (',
+'    select',
+'        ir.loan_product_id,',
+'        ir.interest_rate,',
+'        row_number() over (',
+'            partition by ir.loan_product_id',
+'            order by ir.effective_from desc',
+'        ) as rn',
+'    from interest_rates ir',
+'    where ir.active_yn = ''Y''',
+'      and ir.effective_from <= sysdate',
+'      and (',
+'            ir.effective_to is null',
+'            or ir.effective_to >= sysdate',
+'          )',
+'),',
+'products as (',
+'    select',
+'        lp.loan_product_id,',
+'        lp.product_name,',
+'        lp.term_years,',
+'        cr.interest_rate,',
+'',
+'        row_number() over (',
+'            order by lp.term_years desc',
+'        ) as display_order',
+'',
+'    from loan_products lp',
+'',
+'    join current_rates cr',
+'        on cr.loan_product_id = lp.loan_product_id',
+'       and cr.rn = 1',
+'',
+'    where lp.active_yn = ''Y''',
+')',
+'',
+'select',
+'    loan_product_id,',
+'    product_name,',
+'    term_years,',
+'',
+'    to_char(',
+'        interest_rate,',
+'        ''FM990D000'',',
+'        ''NLS_NUMERIC_CHARACTERS=''''.,''''''',
+'    ) || ''%'' as rate_display,',
+'',
+'    term_years || '' years'' as term_display,',
+'',
+'    /* Display values from your design */',
+'    ''$100,000'' as min_loan_display,',
+'    ''$1,000,000'' as max_loan_display,',
+'',
+'    case',
+'        when term_years = 30 then ''mf-blue''',
+'        when term_years = 20 then ''mf-green''',
+'        when term_years = 15 then ''mf-purple''',
+'        else ''mf-blue''',
+'    end as card_tone,',
+'',
+'    case',
+'        when term_years = 30 then ''fa-file-text-o''',
+'        when term_years = 20 then ''fa-calendar''',
+'        when term_years = 15 then ''fa-bar-chart''',
+'        else ''fa-home''',
+'    end as icon_class,',
+'',
+'    case',
+'        when term_years = 30 then ''mf-arrow-blue''',
+'        when term_years = 20 then ''mf-arrow-green''',
+'        when term_years = 15 then ''mf-arrow-purple''',
+'        else ''mf-arrow-blue''',
+'    end as arrow_class,',
+'',
+'    display_order',
+'',
+'from products',
+'',
+'where display_order <= 3',
+'',
+'order by display_order'))
+,p_lazy_loading=>false
+,p_plug_source_type=>'NATIVE_CARDS'
+,p_plug_query_num_rows_type=>'SCROLL'
+,p_show_total_row_count=>false
+,p_created_on=>wwv_flow_imp.dz('20261011164017Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011170426Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_card(
+ p_id=>wwv_flow_imp.id(1973228297467976435)
+,p_region_id=>wwv_flow_imp.id(1973228189777976434)
+,p_layout_type=>'GRID'
+,p_grid_column_count=>3
+,p_title_adv_formatting=>false
+,p_sub_title_adv_formatting=>false
+,p_body_adv_formatting=>true
+,p_body_html_expr=>wwv_flow_string.join(wwv_flow_t_varchar2(
+'<div class="mf-rate-card &CARD_TONE.">',
+'',
+'    <div class="mf-rate-top">',
+'',
+'        <div class="mf-rate-icon">',
+'            <span class="fa &ICON_CLASS."></span>',
+'        </div>',
+'',
+'        <div class="mf-rate-heading">',
+'',
+'            <div class="mf-product-name">',
+'                &PRODUCT_NAME.',
+'            </div>',
+'',
+'            <div class="mf-interest-rate">',
+'                &RATE_DISPLAY.',
+'            </div>',
+'',
+'        </div>',
+'',
+'        <div class="mf-rate-arrow &ARROW_CLASS.">',
+'            <span class="fa fa-angle-right"></span>',
+'        </div>',
+'',
+'    </div>',
+'',
+'',
+'    <div class="mf-rate-details">',
+'',
+'        <div class="mf-rate-detail">',
+'            <div class="mf-detail-label">',
+'                Loan Term',
+'            </div>',
+'',
+'            <div class="mf-detail-value">',
+'                &TERM_DISPLAY.',
+'            </div>',
+'        </div>',
+'',
+'',
+'        <div class="mf-rate-detail">',
+'            <div class="mf-detail-label">',
+'                Min. Loan Amount',
+'            </div>',
+'',
+'            <div class="mf-detail-value">',
+'                &MIN_LOAN_DISPLAY.',
+'            </div>',
+'        </div>',
+'',
+'',
+'        <div class="mf-rate-detail">',
+'            <div class="mf-detail-label">',
+'                Max. Loan Amount',
+'            </div>',
+'',
+'            <div class="mf-detail-value">',
+'                &MAX_LOAN_DISPLAY.',
+'            </div>',
+'        </div>',
+'',
+'    </div>',
+'',
+'</div>'))
+,p_second_body_adv_formatting=>false
+,p_media_adv_formatting=>false
+,p_updated_on=>wwv_flow_imp.dz('20261011170426Z')
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_plug(
+ p_id=>wwv_flow_imp.id(3780015095978803316)
+,p_plug_name=>'My Applications'
+,p_static_id=>'my-applications'
+,p_region_template_options=>'#DEFAULT#:t-Region--scrollBody'
+,p_plug_template=>4075786578761660127
+,p_plug_display_sequence=>20
+,p_plug_item_display_point=>'ABOVE'
+,p_query_type=>'SQL'
+,p_plug_source=>wwv_flow_string.join(wwv_flow_t_varchar2(
+'select',
+'    ma.application_id,',
+'    ma.application_number,',
+'    lp.product_name,',
+'    ma.property_value,',
+'    ma.loan_amount,',
+'    ma.submitted_at,',
+'',
+'    /* STATUS TEXT */',
+'    case ma.status',
+'        when ''DRAFT''        then ''Draft''',
+'        when ''SUBMITTED''    then ''Submitted''',
+'        when ''UNDER_REVIEW'' then ''Under Review''',
+'        when ''APPROVED''     then ''Approved''',
+'        when ''REJECTED''     then ''Rejected''',
+'    end as status_display,',
+'',
+'    /* STATUS COLOR CLASS */',
+'    case ma.status',
+'        when ''DRAFT''        then ''mf-status-draft''',
+'        when ''SUBMITTED''    then ''mf-status-submitted''',
+'        when ''UNDER_REVIEW'' then ''mf-status-review''',
+'        when ''APPROVED''     then ''mf-status-approved''',
+'        when ''REJECTED''     then ''mf-status-rejected''',
+'    end as status_class,',
+'',
+'    /* RISK TEXT */',
+'    case ma.risk_level',
+'        when ''LOW''    then ''Low''',
+'        when ''MEDIUM'' then ''Medium''',
+'        when ''HIGH''   then ''High''',
+'    end as risk_display,',
+'',
+'    /* RISK COLOR CLASS */',
+'    case ma.risk_level',
+'        when ''LOW''    then ''mf-risk-low''',
+'        when ''MEDIUM'' then ''mf-risk-medium''',
+'        when ''HIGH''   then ''mf-risk-high''',
+'    end as risk_class,',
+'',
+'    ''View Details'' as actions',
+'',
+'from mortgage_applications ma',
+'',
+'join loan_products lp',
+'    on lp.loan_product_id = ma.loan_product_id',
+'',
+'where ma.applicant_user_id = :G_USER_ID',
+'',
+'order by',
+'    ma.submitted_at desc nulls last,',
+'    ma.created_at desc',
+'',
+'fetch first 6 rows only'))
+,p_plug_source_type=>'NATIVE_IR'
+,p_prn_content_disposition=>'ATTACHMENT'
+,p_prn_units=>'INCHES'
+,p_prn_paper_size=>'LETTER'
+,p_prn_width=>11
+,p_prn_height=>8.5
+,p_prn_orientation=>'HORIZONTAL'
+,p_prn_page_header_font_color=>'#000000'
+,p_prn_page_header_font_family=>'Helvetica'
+,p_prn_page_header_font_weight=>'normal'
+,p_prn_page_header_font_size=>'12'
+,p_prn_page_footer_font_color=>'#000000'
+,p_prn_page_footer_font_family=>'Helvetica'
+,p_prn_page_footer_font_weight=>'normal'
+,p_prn_page_footer_font_size=>'12'
+,p_prn_header_bg_color=>'#EEEEEE'
+,p_prn_header_font_color=>'#000000'
+,p_prn_header_font_family=>'Helvetica'
+,p_prn_header_font_weight=>'bold'
+,p_prn_header_font_size=>'10'
+,p_prn_body_bg_color=>'#FFFFFF'
+,p_prn_body_font_color=>'#000000'
+,p_prn_body_font_family=>'Helvetica'
+,p_prn_body_font_weight=>'normal'
+,p_prn_body_font_size=>'10'
+,p_prn_border_width=>.5
+,p_prn_page_header_alignment=>'CENTER'
+,p_prn_page_footer_alignment=>'CENTER'
+,p_prn_border_color=>'#666666'
+,p_ai_enabled=>false
+,p_created_on=>wwv_flow_imp.dz('20261011161421Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011201338Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_worksheet(
+ p_id=>wwv_flow_imp.id(3780015187848803316)
+,p_max_row_count_message=>'The maximum row count for this report is #MAX_ROW_COUNT# rows.  Please apply a filter to reduce the number of records in your query.'
+,p_no_data_found_message=>'No data found.'
+,p_report_list_mode=>'TABS'
+,p_lazy_loading=>false
+,p_show_detail_link=>'N'
+,p_show_notify=>'Y'
+,p_download_formats=>'CSV:HTML:XLSX:PDF'
+,p_enable_mail_download=>'Y'
+,p_internal_uid=>3780015187848803316
+,p_created_on=>wwv_flow_imp.dz('20261011161421Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011162228Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(4091479236002514692)
+,p_db_column_name=>'ACTIONS'
+,p_display_order=>57
+,p_column_identifier=>'Y'
+,p_column_label=>'Actions'
+,p_column_type=>'STRING'
+,p_display_text_as=>'HIDDEN_ESCAPE_SC'
+,p_available_clientside=>'N'
+,p_created_on=>wwv_flow_imp.dz('20261011161421Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011162129Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(3780016938766803443)
+,p_db_column_name=>'APPLICATION_ID'
+,p_display_order=>0
+,p_is_primary_key=>'Y'
+,p_column_identifier=>'A'
+,p_column_label=>'Application ID'
+,p_column_type=>'NUMBER'
+,p_display_text_as=>'HIDDEN_ESCAPE_SC'
+,p_created_on=>wwv_flow_imp.dz('20261011161421Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011161421Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(3780017403289803445)
+,p_db_column_name=>'APPLICATION_NUMBER'
+,p_display_order=>2
+,p_column_identifier=>'B'
+,p_column_label=>'Application Number'
+,p_column_type=>'STRING'
+,p_heading_alignment=>'LEFT'
+,p_use_as_row_header=>'N'
+,p_available_clientside=>'N'
+,p_created_on=>wwv_flow_imp.dz('20261011161421Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011161421Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(3780020118868803454)
+,p_db_column_name=>'LOAN_AMOUNT'
+,p_display_order=>9
+,p_column_identifier=>'I'
+,p_column_label=>'Loan Amount'
+,p_column_type=>'NUMBER'
+,p_heading_alignment=>'RIGHT'
+,p_column_alignment=>'RIGHT'
+,p_format_mask=>'999G999G999G999G999G999G990'
+,p_use_as_row_header=>'N'
+,p_available_clientside=>'N'
+,p_created_on=>wwv_flow_imp.dz('20261011161421Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011162148Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(4091478981960514689)
+,p_db_column_name=>'PRODUCT_NAME'
+,p_display_order=>27
+,p_column_identifier=>'V'
+,p_column_label=>'Product Name'
+,p_column_type=>'STRING'
+,p_heading_alignment=>'LEFT'
+,p_use_as_row_header=>'N'
+,p_available_clientside=>'N'
+,p_created_on=>wwv_flow_imp.dz('20261011161421Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011161421Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(3780019344752803452)
+,p_db_column_name=>'PROPERTY_VALUE'
+,p_display_order=>7
+,p_column_identifier=>'G'
+,p_column_label=>'Property Value'
+,p_column_type=>'NUMBER'
+,p_heading_alignment=>'RIGHT'
+,p_column_alignment=>'RIGHT'
+,p_format_mask=>'999G999G999G999G999G999G990'
+,p_use_as_row_header=>'N'
+,p_available_clientside=>'N'
+,p_created_on=>wwv_flow_imp.dz('20261011161421Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011162148Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(4091479440016514694)
+,p_db_column_name=>'RISK_CLASS'
+,p_display_order=>77
+,p_column_identifier=>'AA'
+,p_column_label=>'Risk Class'
+,p_column_type=>'STRING'
+,p_display_text_as=>'HIDDEN_ESCAPE_SC'
+,p_available_clientside=>'N'
+,p_created_on=>wwv_flow_imp.dz('20261011161421Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011161421Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(4091479128948514691)
+,p_db_column_name=>'RISK_DISPLAY'
+,p_display_order=>47
+,p_column_identifier=>'X'
+,p_column_label=>'Risk'
+,p_column_html_expression=>'<span class="mf-risk #RISK_CLASS#">#RISK_DISPLAY#</span>'
+,p_column_type=>'STRING'
+,p_display_text_as=>'WITHOUT_MODIFICATION'
+,p_heading_alignment=>'LEFT'
+,p_use_as_row_header=>'N'
+,p_available_clientside=>'N'
+,p_created_on=>wwv_flow_imp.dz('20261011161421Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011162129Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(4091479377541514693)
+,p_db_column_name=>'STATUS_CLASS'
+,p_display_order=>67
+,p_column_identifier=>'Z'
+,p_column_label=>'Status Class'
+,p_column_type=>'STRING'
+,p_display_text_as=>'HIDDEN_ESCAPE_SC'
+,p_available_clientside=>'N'
+,p_created_on=>wwv_flow_imp.dz('20261011161421Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011161421Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(4091479024462514690)
+,p_db_column_name=>'STATUS_DISPLAY'
+,p_display_order=>37
+,p_column_identifier=>'W'
+,p_column_label=>'Status'
+,p_column_html_expression=>'<span class="mf-status #STATUS_CLASS#">#STATUS_DISPLAY#</span>'
+,p_column_type=>'STRING'
+,p_display_text_as=>'WITHOUT_MODIFICATION'
+,p_heading_alignment=>'LEFT'
+,p_use_as_row_header=>'N'
+,p_available_clientside=>'N'
+,p_created_on=>wwv_flow_imp.dz('20261011161421Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011162129Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(3780023345980803464)
+,p_db_column_name=>'SUBMITTED_AT'
+,p_display_order=>17
+,p_column_identifier=>'Q'
+,p_column_label=>'Submitted At'
+,p_column_type=>'DATE'
+,p_heading_alignment=>'LEFT'
+,p_tz_dependent=>'N'
+,p_use_as_row_header=>'N'
+,p_available_clientside=>'N'
+,p_created_on=>wwv_flow_imp.dz('20261011161421Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011161421Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_worksheet_rpt(
+ p_id=>wwv_flow_imp.id(4090853169329809332)
+,p_application_user=>'APXWS_DEFAULT'
+,p_report_seq=>10
+,p_report_alias=>'primary'
+,p_status=>'PUBLIC'
+,p_is_default=>'Y'
+,p_report_columns=>'APPLICATION_NUMBER:PROPERTY_VALUE:LOAN_AMOUNT:SUBMITTED_AT:PRODUCT_NAME:RISK_DISPLAY:STATUS_DISPLAY:ACTIONS'
+,p_created_on=>wwv_flow_imp.dz('20261011161421Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011161421Z')
 ,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
 ,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
 );
@@ -17999,15 +19200,833 @@ wwv_flow_imp_page.create_page(
 ,p_alias=>'MORTGAGE-CALCULATOR'
 ,p_step_title=>'Mortgage Calculator'
 ,p_autocomplete_on_off=>'OFF'
+,p_inline_css=>wwv_flow_string.join(wwv_flow_t_varchar2(
+'/* =========================================================',
+'   MORTGAGE CALCULATOR',
+'   ========================================================= */',
+'',
+':root {',
+'    --mf-navy: #08174a;',
+'    --mf-blue: #176ff2;',
+'    --mf-text: #526487;',
+'    --mf-border: #dce5f0;',
+'    --mf-soft: #f7f9fc;',
+'    --mf-green: #b8e313;',
+'}',
+'',
+'',
+'/* =========================================================',
+'   REGION BASE',
+'   ========================================================= */',
+'',
+'.mf-calc-panel,',
+'.mf-results-panel,',
+'.mf-amortization-panel,',
+'.mf-how-panel {',
+'    width: 100%;',
+'    max-width: 100%;',
+'    min-width: 0;',
+'',
+'    box-sizing: border-box;',
+'',
+'    background: #ffffff;',
+'',
+'    border: 1px solid var(--mf-border);',
+'    border-radius: 14px;',
+'',
+'    box-shadow: 0 3px 14px rgba(8, 23, 74, 0.05);',
+'',
+'    overflow: hidden;',
+'}',
+'',
+'',
+'/* =========================================================',
+'   REGION HEADERS',
+'   ========================================================= */',
+'',
+'.mf-calc-panel .t-Region-header,',
+'.mf-results-panel .t-Region-header,',
+'.mf-amortization-panel .t-Region-header,',
+'.mf-how-panel .t-Region-header {',
+'    padding: 16px 18px 6px;',
+'',
+'    background: transparent;',
+'',
+'    border: 0;',
+'}',
+'',
+'',
+'.mf-calc-panel .t-Region-title,',
+'.mf-results-panel .t-Region-title,',
+'.mf-amortization-panel .t-Region-title,',
+'.mf-how-panel .t-Region-title {',
+'    color: var(--mf-navy);',
+'',
+'    font-size: 18px;',
+'    font-weight: 800;',
+'}',
+'',
+'',
+'/* =========================================================',
+'   REGION BODY',
+'   ========================================================= */',
+'',
+'.mf-calc-panel .t-Region-body,',
+'.mf-results-panel .t-Region-body,',
+'.mf-amortization-panel .t-Region-body,',
+'.mf-how-panel .t-Region-body {',
+'    padding: 10px 18px 16px !important;',
+'',
+'    box-sizing: border-box;',
+'',
+'    width: 100%;',
+'    max-width: 100%;',
+'    min-width: 0;',
+'}',
+'',
+'',
+'/* =========================================================',
+'   INPUT + RESULTS SAME HEIGHT',
+'   ========================================================= */',
+'',
+'#calculator-inputs,',
+'#calculation-results {',
+'    width: 100%;',
+'    max-width: 100%;',
+'',
+'    min-height: 410px;',
+'    height: auto;',
+'',
+'    box-sizing: border-box;',
+'}',
+'',
+'',
+'/* Prevent overflow */',
+'',
+'#calculator-inputs *,',
+'#calculation-results * {',
+'    box-sizing: border-box;',
+'}',
+'',
+'',
+'#calculator-inputs .t-Region-bodyWrap,',
+'#calculation-results .t-Region-bodyWrap,',
+'#calculator-inputs .t-Region-body,',
+'#calculation-results .t-Region-body {',
+'    width: 100%;',
+'    max-width: 100%;',
+'    min-width: 0;',
+'',
+'    overflow: hidden;',
+'}',
+'',
+'',
+'/* =========================================================',
+'   CALCULATOR INPUTS',
+'   ========================================================= */',
+'',
+'#calculator-inputs .t-Form-fieldContainer {',
+'    margin-bottom: 10px;',
+'}',
+'',
+'',
+'#calculator-inputs .t-Form-label {',
+'    color: var(--mf-navy);',
+'',
+'    font-size: 14px;',
+'    font-weight: 700;',
+'',
+'    margin-bottom: 4px;',
+'}',
+'',
+'',
+'/* Input fields */',
+'',
+'#calculator-inputs input.apex-item-text,',
+'#calculator-inputs select.apex-item-select {',
+'    width: 100%;',
+'    max-width: 100%;',
+'',
+'    min-height: 40px;',
+'',
+'    padding: 7px 12px;',
+'',
+'    border: 1px solid #ccd8e8 !important;',
+'    border-radius: 8px !important;',
+'',
+'    background: #ffffff;',
+'',
+'    color: var(--mf-navy);',
+'',
+'    font-size: 14px;',
+'',
+'    box-shadow: none;',
+'',
+'    transition:',
+'        border-color 0.15s ease,',
+'        box-shadow 0.15s ease;',
+'}',
+'',
+'',
+'/* Input focus */',
+'',
+'#calculator-inputs input.apex-item-text:focus,',
+'#calculator-inputs select.apex-item-select:focus {',
+'    border-color: var(--mf-blue) !important;',
+'',
+'    box-shadow:',
+'        0 0 0 3px rgba(23, 111, 242, 0.10);',
+'}',
+'',
+'',
+'/* =========================================================',
+'   INTEREST RATE + TERM',
+'   ========================================================= */',
+'',
+'#P2_INTEREST_RATE_CONTAINER,',
+'#P2_LOAN_TERM_CONTAINER {',
+'    padding: 9px 12px !important;',
+'',
+'    background: var(--mf-soft);',
+'',
+'    border: 1px solid #e2e8f1;',
+'    border-radius: 8px;',
+'',
+'    margin-bottom: 8px !important;',
+'}',
+'',
+'',
+'#P2_INTEREST_RATE_CONTAINER .apex-item-display-only,',
+'#P2_LOAN_TERM_CONTAINER .apex-item-display-only {',
+'    display: block;',
+'',
+'    margin-top: 3px;',
+'',
+'    padding: 0 !important;',
+'',
+'    border: 0 !important;',
+'',
+'    background: transparent !important;',
+'',
+'    color: var(--mf-navy);',
+'',
+'    font-size: 16px;',
+'    font-weight: 800;',
+'}',
+'',
+'',
+'/* =========================================================',
+'   CALCULATE BUTTON',
+'   ========================================================= */',
+'',
+'.mf-btn-calculate {',
+'    min-height: 39px;',
+'',
+'    padding: 0 18px !important;',
+'',
+'    background: var(--mf-blue) !important;',
+'',
+'    border: 1px solid var(--mf-blue) !important;',
+'    border-radius: 8px !important;',
+'',
+'    color: #ffffff !important;',
+'',
+'    font-weight: 700;',
+'}',
+'',
+'',
+'.mf-btn-calculate:hover {',
+'    background: #0e5fd5 !important;',
+'    border-color: #0e5fd5 !important;',
+'}',
+'',
+'',
+'/* =========================================================',
+'   CALCULATION RESULTS',
+'   ========================================================= */',
+'',
+'#P2_LOAN_AMOUNT_CONTAINER,',
+'#P2_MONTHLY_PAYMENT_CONTAINER,',
+'#P2_LTV_CONTAINER,',
+'#P2_DTI_CONTAINER,',
+'#P2_RISK_LEVEL_CONTAINER {',
+'    width: 100%;',
+'    max-width: 100%;',
+'',
+'    min-height: 58px;',
+'',
+'    margin: 0 0 8px !important;',
+'',
+'    padding: 9px 12px !important;',
+'',
+'    background: var(--mf-soft);',
+'',
+'    border: 1px solid #e1e8f2;',
+'    border-radius: 8px;',
+'}',
+'',
+'',
+'/* Result labels */',
+'',
+'#calculation-results .t-Form-label {',
+'    color: #607096;',
+'',
+'    font-size: 12px;',
+'    font-weight: 700;',
+'',
+'    line-height: 1.2;',
+'}',
+'',
+'',
+'/* Result values */',
+'',
+'#calculation-results .apex-item-display-only {',
+'    display: block;',
+'',
+'    width: 100%;',
+'    max-width: 100%;',
+'',
+'    margin-top: 3px;',
+'',
+'    padding: 0 !important;',
+'',
+'    border: 0 !important;',
+'',
+'    background: transparent !important;',
+'',
+'    color: var(--mf-navy);',
+'',
+'    font-size: 19px;',
+'    font-weight: 800;',
+'',
+'    line-height: 1.15;',
+'',
+'    overflow-wrap: anywhere;',
+'}',
+'',
+'',
+'/* =========================================================',
+'   RISK LEVEL',
+'   ========================================================= */',
+'',
+'#P2_RISK_LEVEL_CONTAINER .apex-item-display-only {',
+'    display: inline-block;',
+'',
+'    width: auto;',
+'',
+'    margin-top: 5px;',
+'',
+'    padding: 5px 11px !important;',
+'',
+'    border-radius: 20px;',
+'',
+'    background: #fee9e7 !important;',
+'',
+'    color: #b42318 !important;',
+'',
+'    font-size: 13px;',
+'    font-weight: 800;',
+'}',
+'',
+'',
+'/* =========================================================',
+'   APPLY BUTTON',
+'   ========================================================= */',
+'',
+'.mf-btn-apply {',
+'    min-height: 39px;',
+'',
+'    padding: 0 18px !important;',
+'',
+'    background: var(--mf-green) !important;',
+'',
+'    border: 1px solid #a8d500 !important;',
+'    border-radius: 8px !important;',
+'',
+'    color: #172000 !important;',
+'',
+'    font-weight: 800;',
+'}',
+'',
+'',
+'.mf-btn-apply:hover {',
+'    background: #a8d600 !important;',
+'}',
+'',
+'',
+'/* =========================================================',
+'   AMORTIZATION REGION',
+'   ========================================================= */',
+'',
+'.mf-amortization-panel .t-Report-report {',
+'    width: 100%;',
+'}',
+'',
+'',
+'.mf-amortization-panel .t-Report-colHead {',
+'    padding: 10px 12px;',
+'',
+'    background: #f3f6fa;',
+'',
+'    color: var(--mf-navy);',
+'',
+'    font-size: 13px;',
+'    font-weight: 700;',
+'',
+'    border-bottom: 1px solid var(--mf-border);',
+'}',
+'',
+'',
+'.mf-amortization-panel .t-Report-cell {',
+'    padding: 9px 12px;',
+'',
+'    color: var(--mf-text);',
+'',
+'    font-size: 13px;',
+'',
+'    border-bottom: 1px solid #edf1f6;',
+'}',
+'',
+'',
+'/* =========================================================',
+'   HOW CALCULATIONS WORK',
+'   ========================================================= */',
+'',
+'.mf-how-list {',
+'    display: flex;',
+'',
+'    flex-direction: column;',
+'',
+'    gap: 18px;',
+'}',
+'',
+'',
+'.mf-how-row {',
+'    display: flex;',
+'',
+'    align-items: flex-start;',
+'',
+'    gap: 14px;',
+'}',
+'',
+'',
+'/* Number circles */',
+'',
+'.mf-how-number {',
+'    width: 32px;',
+'    height: 32px;',
+'',
+'    min-width: 32px;',
+'',
+'    display: flex;',
+'',
+'    align-items: center;',
+'    justify-content: center;',
+'',
+'    border-radius: 50%;',
+'',
+'    background: #eef8cf;',
+'',
+'    color: #263600;',
+'',
+'    font-size: 14px;',
+'    font-weight: 800;',
+'}',
+'',
+'',
+'/* Text */',
+'',
+'.mf-how-content {',
+'    padding-top: 1px;',
+'}',
+'',
+'',
+'.mf-how-title {',
+'    margin-bottom: 4px;',
+'',
+'    color: var(--mf-navy);',
+'',
+'    font-size: 16px;',
+'    font-weight: 800;',
+'',
+'    line-height: 1.3;',
+'}',
+'',
+'',
+'.mf-how-description {',
+'    color: #68799e;',
+'',
+'    font-size: 14px;',
+'',
+'    line-height: 1.55;',
+'}',
+'',
+'',
+'/* Lightbulb icon */',
+'',
+'.mf-how-panel .t-Region-title .fa {',
+'    margin-right: 8px;',
+'',
+'    color: #91b814;',
+'}',
+'',
+'',
+'/* =========================================================',
+'   EQUAL HEIGHT COLUMNS',
+'   ========================================================= */',
+'',
+'.t-Body-contentInner .row {',
+'    align-items: stretch;',
+'}',
+'',
+'',
+'.t-Body-contentInner .col {',
+'    min-width: 0;',
+'}',
+'',
+'',
+'/* =========================================================',
+'   RESPONSIVE',
+'   ========================================================= */',
+'',
+'@media (max-width: 900px) {',
+'',
+'    #calculator-inputs,',
+'    #calculation-results {',
+'        min-height: auto;',
+'    }',
+'',
+'    .mf-calc-panel,',
+'    .mf-results-panel,',
+'    .mf-amortization-panel,',
+'    .mf-how-panel {',
+'        margin-bottom: 14px;',
+'    }',
+'',
+'}',
+'',
+'',
+'@media (max-width: 600px) {',
+'',
+'    .mf-calc-panel .t-Region-header,',
+'    .mf-results-panel .t-Region-header,',
+'    .mf-amortization-panel .t-Region-header,',
+'    .mf-how-panel .t-Region-header {',
+'        padding: 14px 14px 6px;',
+'    }',
+'',
+'    .mf-calc-panel .t-Region-body,',
+'    .mf-results-panel .t-Region-body,',
+'    .mf-amortization-panel .t-Region-body,',
+'    .mf-how-panel .t-Region-body {',
+'        padding: 10px 14px 14px !important;',
+'    }',
+'',
+'    .mf-how-title {',
+'        font-size: 15px;',
+'    }',
+'',
+'    .mf-how-description {',
+'        font-size: 13px;',
+'    }',
+'',
+'}'))
 ,p_step_template=>4075783602716660119
 ,p_page_template_options=>'#DEFAULT#'
 ,p_required_role=>wwv_flow_imp.id(1895704909272701392)
 ,p_protection_level=>'C'
-,p_page_component_map=>'11'
+,p_page_component_map=>'18'
 ,p_created_on=>wwv_flow_imp.dz('20261010003250Z')
-,p_last_updated_on=>wwv_flow_imp.dz('20261010210912Z')
+,p_last_updated_on=>wwv_flow_imp.dz('20261011201102Z')
 ,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
 ,p_last_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_plug(
+ p_id=>wwv_flow_imp.id(2135294794225916024)
+,p_plug_name=>'Amortization Preview'
+,p_static_id=>'amortization-preview'
+,p_region_css_classes=>'mf-amortization-panel'
+,p_region_template_options=>'#DEFAULT#:t-Region--scrollBody'
+,p_plug_template=>4075786578761660127
+,p_plug_display_sequence=>60
+,p_plug_grid_column_span=>8
+,p_plug_item_display_point=>'ABOVE'
+,p_query_type=>'SQL'
+,p_plug_source=>wwv_flow_string.join(wwv_flow_t_varchar2(
+'with params as (',
+'    select',
+'        to_number(:P2_LOAN_AMOUNT)',
+'            as loan_amount,',
+'',
+'        to_number(:P2_MONTHLY_PAYMENT)',
+'            as monthly_payment,',
+'',
+'        (',
+'            to_number(:P2_INTEREST_RATE)',
+'            / 100',
+'            / 12',
+'        ) as monthly_rate',
+'',
+'    from dual',
+'),',
+'',
+'payment_numbers as (',
+'    select level as payment_no',
+'    from dual',
+'    connect by level <= 6',
+'),',
+'',
+'balances as (',
+'    select',
+'        n.payment_no,',
+'        p.loan_amount,',
+'        p.monthly_payment,',
+'        p.monthly_rate,',
+'',
+'        case',
+'',
+'            when p.monthly_rate = 0 then',
+'                greatest(',
+'                    p.loan_amount',
+'                    -',
+'                    (',
+'                        p.monthly_payment',
+'                        * (n.payment_no - 1)',
+'                    ),',
+'                    0',
+'                )',
+'',
+'            else',
+'',
+'                p.loan_amount',
+'                *',
+'                power(',
+'                    1 + p.monthly_rate,',
+'                    n.payment_no - 1',
+'                )',
+'',
+'                -',
+'',
+'                p.monthly_payment',
+'                *',
+'                (',
+'                    (',
+'                        power(',
+'                            1 + p.monthly_rate,',
+'                            n.payment_no - 1',
+'                        )',
+'                        - 1',
+'                    )',
+'                    /',
+'                    p.monthly_rate',
+'                )',
+'',
+'        end as previous_balance',
+'',
+'    from params p',
+'    cross join payment_numbers n',
+'),',
+'',
+'amounts as (',
+'    select',
+'        payment_no,',
+'        monthly_payment,',
+'        monthly_rate,',
+'        previous_balance,',
+'',
+'        case',
+'            when monthly_rate = 0',
+'                then 0',
+'            else',
+'                previous_balance',
+'                * monthly_rate',
+'        end as interest_amount',
+'',
+'    from balances',
+')',
+'',
+'select',
+'    payment_no as payment_number,',
+'',
+'    add_months(',
+'        trunc(sysdate, ''MM''),',
+'        payment_no',
+'    ) as payment_date,',
+'',
+'    round(',
+'        least(',
+'            monthly_payment - interest_amount,',
+'            previous_balance',
+'        ),',
+'        2',
+'    ) as principal,',
+'',
+'    round(',
+'        interest_amount,',
+'        2',
+'    ) as interest,',
+'',
+'    round(',
+'        greatest(',
+'            previous_balance',
+'            -',
+'            least(',
+'                monthly_payment - interest_amount,',
+'                previous_balance',
+'            ),',
+'            0',
+'        ),',
+'        2',
+'    ) as balance',
+'',
+'from amounts',
+'',
+'where :P2_LOAN_AMOUNT is not null',
+'',
+'order by payment_no'))
+,p_plug_source_type=>'NATIVE_IR'
+,p_prn_content_disposition=>'ATTACHMENT'
+,p_prn_units=>'INCHES'
+,p_prn_paper_size=>'LETTER'
+,p_prn_width=>11
+,p_prn_height=>8.5
+,p_prn_orientation=>'HORIZONTAL'
+,p_prn_page_header=>'<i class="fa fa-table"></i> Amortization Preview'
+,p_prn_page_header_font_color=>'#000000'
+,p_prn_page_header_font_family=>'Helvetica'
+,p_prn_page_header_font_weight=>'normal'
+,p_prn_page_header_font_size=>'12'
+,p_prn_page_footer_font_color=>'#000000'
+,p_prn_page_footer_font_family=>'Helvetica'
+,p_prn_page_footer_font_weight=>'normal'
+,p_prn_page_footer_font_size=>'12'
+,p_prn_header_bg_color=>'#EEEEEE'
+,p_prn_header_font_color=>'#000000'
+,p_prn_header_font_family=>'Helvetica'
+,p_prn_header_font_weight=>'bold'
+,p_prn_header_font_size=>'10'
+,p_prn_body_bg_color=>'#FFFFFF'
+,p_prn_body_font_color=>'#000000'
+,p_prn_body_font_family=>'Helvetica'
+,p_prn_body_font_weight=>'normal'
+,p_prn_body_font_size=>'10'
+,p_prn_border_width=>.5
+,p_prn_page_header_alignment=>'CENTER'
+,p_prn_page_footer_alignment=>'CENTER'
+,p_prn_border_color=>'#666666'
+,p_ai_enabled=>false
+,p_created_on=>wwv_flow_imp.dz('20261011182008Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011195341Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_worksheet(
+ p_id=>wwv_flow_imp.id(2135294831413916025)
+,p_show_search_bar=>'N'
+,p_lazy_loading=>false
+,p_show_detail_link=>'N'
+,p_enable_mail_download=>'Y'
+,p_internal_uid=>2135294831413916025
+,p_created_on=>wwv_flow_imp.dz('20261011182008Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011183343Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(2135295320312916030)
+,p_db_column_name=>'BALANCE'
+,p_display_order=>50
+,p_column_identifier=>'E'
+,p_column_label=>'Balance'
+,p_column_type=>'NUMBER'
+,p_heading_alignment=>'RIGHT'
+,p_column_alignment=>'RIGHT'
+,p_format_mask=>'FML999G999G999G990D00'
+,p_use_as_row_header=>'N'
+,p_available_clientside=>'N'
+,p_created_on=>wwv_flow_imp.dz('20261011182008Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011182008Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(2135295216407916029)
+,p_db_column_name=>'INTEREST'
+,p_display_order=>40
+,p_column_identifier=>'D'
+,p_column_label=>'Interest'
+,p_column_type=>'NUMBER'
+,p_heading_alignment=>'RIGHT'
+,p_column_alignment=>'RIGHT'
+,p_format_mask=>'FML999G999G999G990D00'
+,p_use_as_row_header=>'N'
+,p_available_clientside=>'N'
+,p_created_on=>wwv_flow_imp.dz('20261011182008Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011182008Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(2135295075717916027)
+,p_db_column_name=>'PAYMENT_DATE'
+,p_display_order=>20
+,p_column_identifier=>'B'
+,p_column_label=>'Payment Date'
+,p_column_type=>'DATE'
+,p_heading_alignment=>'LEFT'
+,p_tz_dependent=>'N'
+,p_use_as_row_header=>'N'
+,p_available_clientside=>'N'
+,p_created_on=>wwv_flow_imp.dz('20261011182008Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011182008Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(2135294931142916026)
+,p_db_column_name=>'PAYMENT_NUMBER'
+,p_display_order=>10
+,p_column_identifier=>'A'
+,p_column_label=>'Payment #'
+,p_column_type=>'NUMBER'
+,p_heading_alignment=>'RIGHT'
+,p_column_alignment=>'RIGHT'
+,p_use_as_row_header=>'N'
+,p_available_clientside=>'N'
+,p_created_on=>wwv_flow_imp.dz('20261011182008Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011182008Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(2135295196743916028)
+,p_db_column_name=>'PRINCIPAL'
+,p_display_order=>30
+,p_column_identifier=>'C'
+,p_column_label=>'Principal'
+,p_column_type=>'NUMBER'
+,p_heading_alignment=>'RIGHT'
+,p_column_alignment=>'RIGHT'
+,p_format_mask=>'FML999G999G999G990D00'
+,p_use_as_row_header=>'N'
+,p_available_clientside=>'N'
+,p_created_on=>wwv_flow_imp.dz('20261011182008Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011182008Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_worksheet_rpt(
+ p_id=>wwv_flow_imp.id(2148538848977296247)
+,p_application_user=>'APXWS_DEFAULT'
+,p_report_seq=>10
+,p_report_alias=>'primary'
+,p_status=>'PUBLIC'
+,p_is_default=>'Y'
+,p_report_columns=>'PAYMENT_NUMBER:PAYMENT_DATE:PRINCIPAL:INTEREST:BALANCE'
+,p_created_on=>wwv_flow_imp.dz('20261011182040Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011182040Z')
+,p_created_by=>'RAFAEL.BRAYNER'
+,p_updated_by=>'RAFAEL.BRAYNER'
 );
 wwv_flow_imp_page.create_page_plug(
  p_id=>wwv_flow_imp.id(1662676896734293552)
@@ -18024,6 +20043,2009 @@ wwv_flow_imp_page.create_page_plug(
 ,p_menu_template_id=>4075790987805660140
 ,p_created_on=>wwv_flow_imp.dz('20261010003250Z')
 ,p_updated_on=>wwv_flow_imp.dz('20261010003250Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_plug(
+ p_id=>wwv_flow_imp.id(2135294019237916017)
+,p_plug_name=>'Calculation Results'
+,p_static_id=>'calculation-results'
+,p_region_template_options=>'#DEFAULT#:t-Region--scrollBody'
+,p_plug_template=>4075786578761660127
+,p_plug_display_sequence=>40
+,p_plug_new_grid_row=>false
+,p_plug_grid_column_span=>6
+,p_plug_item_display_point=>'ABOVE'
+,p_location=>null
+,p_attributes=>wwv_flow_t_plugin_attributes(wwv_flow_t_varchar2(
+  'expand_shortcuts', 'N',
+  'output_as', 'HTML')).to_clob
+,p_created_on=>wwv_flow_imp.dz('20261011181738Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011184103Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_plug(
+ p_id=>wwv_flow_imp.id(2135293238305916009)
+,p_plug_name=>'Calculator Inputs'
+,p_static_id=>'calculator-inputs'
+,p_region_template_options=>'#DEFAULT#:t-Region--scrollBody'
+,p_plug_template=>4075786578761660127
+,p_plug_display_sequence=>20
+,p_plug_grid_column_span=>6
+,p_plug_item_display_point=>'ABOVE'
+,p_location=>null
+,p_attributes=>wwv_flow_t_plugin_attributes(wwv_flow_t_varchar2(
+  'expand_shortcuts', 'N',
+  'output_as', 'HTML')).to_clob
+,p_created_on=>wwv_flow_imp.dz('20261011180910Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011183548Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_plug(
+ p_id=>wwv_flow_imp.id(2135295488621916031)
+,p_plug_name=>'How calculations work'
+,p_static_id=>'how-calculations-work'
+,p_region_css_classes=>'mf-how-panel'
+,p_region_template_options=>'#DEFAULT#:t-Region--scrollBody'
+,p_plug_template=>4075786578761660127
+,p_plug_display_sequence=>70
+,p_plug_new_grid_row=>false
+,p_plug_grid_column_span=>4
+,p_plug_item_display_point=>'ABOVE'
+,p_location=>null
+,p_plug_source=>wwv_flow_string.join(wwv_flow_t_varchar2(
+'<div class="mf-how-list">',
+'',
+'    <div class="mf-how-row">',
+'',
+'        <div class="mf-how-number">',
+'            1',
+'        </div>',
+'',
+'        <div class="mf-how-content">',
+'',
+'            <div class="mf-how-title">',
+'                Monthly payment',
+'            </div>',
+'',
+'            <div class="mf-how-description">',
+'                Calculated using the loan amount, interest rate,',
+'                and loan term with a standard amortizing mortgage formula.',
+'            </div>',
+'',
+'        </div>',
+'',
+'    </div>',
+'',
+'',
+'    <div class="mf-how-row">',
+'',
+'        <div class="mf-how-number">',
+'            2',
+'        </div>',
+'',
+'        <div class="mf-how-content">',
+'',
+'            <div class="mf-how-title">',
+'                Debt-to-Income (DTI)',
+'            </div>',
+'',
+'            <div class="mf-how-description">',
+'                Compares your total monthly debt payments',
+'                to your gross monthly income.',
+'            </div>',
+'',
+'        </div>',
+'',
+'    </div>',
+'',
+'',
+'    <div class="mf-how-row">',
+'',
+'        <div class="mf-how-number">',
+'            3',
+'        </div>',
+'',
+'        <div class="mf-how-content">',
+'',
+'            <div class="mf-how-title">',
+'                Loan-to-Value (LTV)',
+'            </div>',
+'',
+'            <div class="mf-how-description">',
+'                Home loan amount divided by property value.',
+'            </div>',
+'',
+'        </div>',
+'',
+'    </div>',
+'',
+'',
+'    <div class="mf-how-row">',
+'',
+'        <div class="mf-how-number">',
+'            4',
+'        </div>',
+'',
+'        <div class="mf-how-content">',
+'',
+'            <div class="mf-how-title">',
+'                Risk level',
+'            </div>',
+'',
+'            <div class="mf-how-description">',
+'                Based on common lending guidelines',
+'                for LTV and DTI ratios.',
+'            </div>',
+'',
+'        </div>',
+'',
+'    </div>',
+'',
+'</div>'))
+,p_attributes=>wwv_flow_t_plugin_attributes(wwv_flow_t_varchar2(
+  'expand_shortcuts', 'N',
+  'output_as', 'HTML')).to_clob
+,p_created_on=>wwv_flow_imp.dz('20261011182008Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011192625Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_button(
+ p_id=>wwv_flow_imp.id(2135295688229916033)
+,p_button_sequence=>10
+,p_button_plug_id=>wwv_flow_imp.id(2135294019237916017)
+,p_button_name=>'APPLY_VALUES'
+,p_static_id=>'apply-values'
+,p_show_as_disabled=>false
+,p_button_action=>'DEFINED_BY_DA_ACTION'
+,p_button_template_options=>'#DEFAULT#:t-Button--iconLeft'
+,p_button_template_id=>2086257187394300437
+,p_button_image_alt=>'Apply with these values'
+,p_button_position=>'CHANGE'
+,p_button_execute_validations=>'N'
+,p_warn_on_unsaved_changes=>null
+,p_button_css_classes=>'mf-btn-apply'
+,p_icon_css_classes=>'fa-file-text-o'
+,p_created_on=>wwv_flow_imp.dz('20261011182459Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011201102Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_component_da_action(
+ p_id=>wwv_flow_imp.id(2135296224621916039)
+,p_button_id=>wwv_flow_imp.id(2135295688229916033)
+,p_action_sequence=>10
+,p_name=>'Confirmation'
+,p_action=>'NATIVE_JAVASCRIPT_CODE'
+,p_static_id=>'confirmation'
+,p_attributes=>wwv_flow_t_plugin_attributes(wwv_flow_t_varchar2(
+  'js_code', wwv_flow_string.join(wwv_flow_t_varchar2(
+    'apex.message.confirm(',
+    '    "Do you want to create a mortgage application using this information?",',
+    '    function (okPressed) {',
+    '',
+    '        if (!okPressed) {',
+    '            return;',
+    '        }',
+    '',
+    '        apex.server.process(',
+    '            "CREATE_MORTGAGE_DRAFT",',
+    '            {',
+    '                pageItems:',
+    '                    "#P2_LOAN_PRODUCT_ID," +',
+    '                    "#P2_ANNUAL_INCOME," +',
+    '                    "#P2_MONTHLY_DEBT," +',
+    '                    "#P2_PROPERTY_VALUE," +',
+    '                    "#P2_DOWN_PAYMENT"',
+    '            },',
+    '            {',
+    '                dataType: "json",',
+    '',
+    '                success: function (data) {',
+    '',
+    '                    if (!data.success) {',
+    '                        apex.message.alert(data.message);',
+    '                        return;',
+    '                    }',
+    '',
+    '                    apex.navigation.redirect(',
+    '                        data.redirect_url',
+    '                    );',
+    '                },',
+    '',
+    '                error: function (',
+    '                    jqXHR,',
+    '                    textStatus,',
+    '                    errorThrown',
+    '                ) {',
+    '',
+    '                    console.error(jqXHR.responseText);',
+    '',
+    '                    apex.message.alert(',
+    '                        "Server error: " +',
+    '                        (jqXHR.responseText || errorThrown)',
+    '                    );',
+    '                }',
+    '            }',
+    '        );',
+    '',
+    '    }',
+    ');')))).to_clob
+,p_created_on=>wwv_flow_imp.dz('20261011194352Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011201102Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_button(
+ p_id=>wwv_flow_imp.id(2135293955678916016)
+,p_button_sequence=>10
+,p_button_plug_id=>wwv_flow_imp.id(2135293238305916009)
+,p_button_name=>'CALCULATE'
+,p_static_id=>'calculate'
+,p_show_as_disabled=>false
+,p_button_action=>'DEFINED_BY_DA_ACTION'
+,p_button_template_options=>'#DEFAULT#:t-Button--iconLeft'
+,p_button_template_id=>2086257187394300437
+,p_button_image_alt=>'Calculate'
+,p_button_position=>'CREATE'
+,p_warn_on_unsaved_changes=>null
+,p_button_css_classes=>'mf-btn-calculate'
+,p_icon_css_classes=>'fa-calculator'
+,p_created_on=>wwv_flow_imp.dz('20261011181515Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011195515Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_component_da_action(
+ p_id=>wwv_flow_imp.id(2135294646632916023)
+,p_button_id=>wwv_flow_imp.id(2135293955678916016)
+,p_action_sequence=>10
+,p_name=>'CALCULATE'
+,p_action=>'NATIVE_EXECUTE_PLSQL_CODE'
+,p_static_id=>'native-execute-plsql-code'
+,p_attributes=>wwv_flow_t_plugin_attributes(wwv_flow_t_varchar2(
+  'items_to_return', 'P2_LOAN_AMOUNT,P2_MONTHLY_PAYMENT,P2_LTV,P2_DTI,P2_RISK_LEVEL',
+  'items_to_submit', 'P2_PROPERTY_VALUE,P2_DOWN_PAYMENT,P2_ANNUAL_INCOME,P2_MONTHLY_DEBT,P2_INTEREST_RATE,P2_LOAN_TERM',
+  'language', 'PLSQL',
+  'plsql_code', wwv_flow_string.join(wwv_flow_t_varchar2(
+    'pkg_mortgage_app.calculate_mortgage(',
+    '    p_property_value  => :P2_PROPERTY_VALUE,',
+    '    p_down_payment    => :P2_DOWN_PAYMENT,',
+    '    p_annual_income   => :P2_ANNUAL_INCOME,',
+    '    p_monthly_debt    => :P2_MONTHLY_DEBT,',
+    '    p_interest_rate   => :P2_INTEREST_RATE,',
+    '',
+    '    p_term_years      => to_number(',
+    '        regexp_replace(:P2_LOAN_TERM, ''[^0-9]'', '''')',
+    '    ),',
+    '',
+    '    p_loan_amount     => :P2_LOAN_AMOUNT,',
+    '    p_monthly_payment => :P2_MONTHLY_PAYMENT,',
+    '    p_ltv             => :P2_LTV,',
+    '    p_dti             => :P2_DTI,',
+    '    p_risk_level      => :P2_RISK_LEVEL',
+    ');')),
+  'show_processing', 'N',
+  'suppress_change_event', 'N')).to_clob
+,p_stop_execution_on_error=>false
+,p_wait_for_result=>false
+,p_created_on=>wwv_flow_imp.dz('20261011181738Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011195515Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_component_da_action(
+ p_id=>wwv_flow_imp.id(2135295537384916032)
+,p_button_id=>wwv_flow_imp.id(2135293955678916016)
+,p_action_sequence=>20
+,p_action=>'NATIVE_REFRESH'
+,p_static_id=>'native-refresh'
+,p_affected_elements_type=>'REGION'
+,p_affected_region_id=>wwv_flow_imp.id(2135294794225916024)
+,p_attributes=>wwv_flow_t_plugin_attributes(wwv_flow_t_varchar2(
+  'maintain_pagination', 'N')).to_clob
+,p_created_on=>wwv_flow_imp.dz('20261011182227Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011182227Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_component_da_action(
+ p_id=>wwv_flow_imp.id(2135296134140916038)
+,p_button_id=>wwv_flow_imp.id(2135293955678916016)
+,p_action_sequence=>30
+,p_action=>'NATIVE_REFRESH'
+,p_static_id=>'native-refresh_1'
+,p_affected_elements_type=>'REGION'
+,p_affected_region_id=>wwv_flow_imp.id(2135294019237916017)
+,p_attributes=>wwv_flow_t_plugin_attributes(wwv_flow_t_varchar2(
+  'maintain_pagination', 'N')).to_clob
+,p_created_on=>wwv_flow_imp.dz('20261011190525Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011190525Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(2135293514434916012)
+,p_name=>'P2_ANNUAL_INCOME'
+,p_item_sequence=>30
+,p_item_plug_id=>wwv_flow_imp.id(2135293238305916009)
+,p_prompt=>'Annual Income'
+,p_format_mask=>'FM999G999G999G990D00'
+,p_source_type=>'ALWAYS_NULL'
+,p_display_as=>'NATIVE_TEXT_FIELD'
+,p_cSize=>30
+,p_colspan=>6
+,p_field_template=>3034989309240569219
+,p_item_template_options=>'#DEFAULT#:margin-left-sm'
+,p_attributes=>wwv_flow_t_plugin_attributes(wwv_flow_t_varchar2(
+  'disabled', 'N',
+  'submit_when_enter_pressed', 'N',
+  'subtype', 'TEXT',
+  'trim_spaces', 'BOTH')).to_clob
+,p_created_on=>wwv_flow_imp.dz('20261011181011Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011192200Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(2135296337026916040)
+,p_name=>'P2_APPLICATION_ID'
+,p_item_sequence=>70
+,p_item_plug_id=>wwv_flow_imp.id(2135294019237916017)
+,p_source_type=>'ALWAYS_NULL'
+,p_display_as=>'NATIVE_HIDDEN'
+,p_encrypt_session_state_yn=>'N'
+,p_attributes=>wwv_flow_t_plugin_attributes(wwv_flow_t_varchar2(
+  'value_protected', 'N')).to_clob
+,p_created_on=>wwv_flow_imp.dz('20261011194352Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011195256Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(2135296491288916041)
+,p_name=>'P2_APPLICATION_NUMBER'
+,p_item_sequence=>80
+,p_item_plug_id=>wwv_flow_imp.id(2135294019237916017)
+,p_source_type=>'ALWAYS_NULL'
+,p_display_as=>'NATIVE_HIDDEN'
+,p_encrypt_session_state_yn=>'N'
+,p_attributes=>wwv_flow_t_plugin_attributes(wwv_flow_t_varchar2(
+  'value_protected', 'N')).to_clob
+,p_created_on=>wwv_flow_imp.dz('20261011194352Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011195256Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(2135293405183916011)
+,p_name=>'P2_DOWN_PAYMENT'
+,p_item_sequence=>20
+,p_item_plug_id=>wwv_flow_imp.id(2135293238305916009)
+,p_prompt=>'Down Payment'
+,p_format_mask=>'FM999G999G999G990D00'
+,p_source_type=>'ALWAYS_NULL'
+,p_display_as=>'NATIVE_TEXT_FIELD'
+,p_cSize=>30
+,p_begin_on_new_line=>'N'
+,p_colspan=>6
+,p_field_template=>3034989309240569219
+,p_item_template_options=>'#DEFAULT#:margin-left-sm'
+,p_attributes=>wwv_flow_t_plugin_attributes(wwv_flow_t_varchar2(
+  'disabled', 'N',
+  'submit_when_enter_pressed', 'N',
+  'subtype', 'TEXT',
+  'trim_spaces', 'BOTH')).to_clob
+,p_created_on=>wwv_flow_imp.dz('20261011181011Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011192200Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(2135294408456916021)
+,p_name=>'P2_DTI'
+,p_item_sequence=>40
+,p_item_plug_id=>wwv_flow_imp.id(2135294019237916017)
+,p_use_cache_before_default=>'NO'
+,p_prompt=>'Debt-to-Income (DTI)'
+,p_format_mask=>'FM990D00"%"'
+,p_source_type=>'ALWAYS_NULL'
+,p_display_as=>'NATIVE_DISPLAY_ONLY'
+,p_colspan=>6
+,p_field_template=>3034989309240569219
+,p_item_template_options=>'#DEFAULT#'
+,p_encrypt_session_state_yn=>'N'
+,p_attributes=>wwv_flow_t_plugin_attributes(wwv_flow_t_varchar2(
+  'based_on', 'VALUE',
+  'format', 'PLAIN',
+  'send_on_page_submit', 'Y',
+  'show_line_breaks', 'Y')).to_clob
+,p_created_on=>wwv_flow_imp.dz('20261011181738Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011195256Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(2135293761163916014)
+,p_name=>'P2_INTEREST_RATE'
+,p_item_sequence=>70
+,p_item_plug_id=>wwv_flow_imp.id(2135293238305916009)
+,p_prompt=>'Interest Rate %'
+,p_source_type=>'ALWAYS_NULL'
+,p_display_as=>'NATIVE_DISPLAY_ONLY'
+,p_field_template=>3034989309240569219
+,p_item_template_options=>'#DEFAULT#:margin-left-sm:margin-right-sm'
+,p_attributes=>wwv_flow_t_plugin_attributes(wwv_flow_t_varchar2(
+  'based_on', 'VALUE',
+  'format', 'PLAIN',
+  'send_on_page_submit', 'Y',
+  'show_line_breaks', 'Y')).to_clob
+,p_created_on=>wwv_flow_imp.dz('20261011181011Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011192727Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(2135294159767916018)
+,p_name=>'P2_LOAN_AMOUNT'
+,p_item_sequence=>20
+,p_item_plug_id=>wwv_flow_imp.id(2135294019237916017)
+,p_use_cache_before_default=>'NO'
+,p_prompt=>'Loan Amount'
+,p_format_mask=>'FML999G999G999G990D00'
+,p_source_type=>'ALWAYS_NULL'
+,p_display_as=>'NATIVE_DISPLAY_ONLY'
+,p_colspan=>6
+,p_field_template=>3034989309240569219
+,p_item_template_options=>'#DEFAULT#'
+,p_encrypt_session_state_yn=>'N'
+,p_attributes=>wwv_flow_t_plugin_attributes(wwv_flow_t_varchar2(
+  'based_on', 'VALUE',
+  'format', 'PLAIN',
+  'send_on_page_submit', 'Y',
+  'show_line_breaks', 'Y')).to_clob
+,p_created_on=>wwv_flow_imp.dz('20261011181738Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011195256Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(2135293866521916015)
+,p_name=>'P2_LOAN_PRODUCT_ID'
+,p_item_sequence=>50
+,p_item_plug_id=>wwv_flow_imp.id(2135293238305916009)
+,p_prompt=>'Loan Product'
+,p_source_type=>'ALWAYS_NULL'
+,p_display_as=>'NATIVE_SELECT_LIST'
+,p_lov=>wwv_flow_string.join(wwv_flow_t_varchar2(
+'select',
+'    product_name d,',
+'    loan_product_id r',
+'from loan_products',
+'where active_yn = ''Y''',
+'order by term_years'))
+,p_cHeight=>1
+,p_colspan=>6
+,p_field_template=>3034989309240569219
+,p_item_template_options=>'#DEFAULT#:margin-left-sm'
+,p_lov_display_extra=>'NO'
+,p_attributes=>wwv_flow_t_plugin_attributes(wwv_flow_t_varchar2(
+  'page_action_on_selection', 'NONE')).to_clob
+,p_created_on=>wwv_flow_imp.dz('20261011181011Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011192727Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(2135296000818916037)
+,p_name=>'P2_LOAN_TERM'
+,p_item_sequence=>80
+,p_item_plug_id=>wwv_flow_imp.id(2135293238305916009)
+,p_prompt=>'Loan Term'
+,p_source_type=>'ALWAYS_NULL'
+,p_display_as=>'NATIVE_DISPLAY_ONLY'
+,p_begin_on_new_line=>'N'
+,p_field_template=>3034989309240569219
+,p_item_template_options=>'#DEFAULT#:margin-left-sm:margin-right-sm'
+,p_attributes=>wwv_flow_t_plugin_attributes(wwv_flow_t_varchar2(
+  'based_on', 'VALUE',
+  'format', 'PLAIN',
+  'send_on_page_submit', 'Y',
+  'show_line_breaks', 'Y')).to_clob
+,p_created_on=>wwv_flow_imp.dz('20261011184103Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011192727Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(2135294396986916020)
+,p_name=>'P2_LTV'
+,p_item_sequence=>50
+,p_item_plug_id=>wwv_flow_imp.id(2135294019237916017)
+,p_use_cache_before_default=>'NO'
+,p_prompt=>'Loan-to-Value (LTV)'
+,p_format_mask=>'FM990D00"%"'
+,p_source_type=>'ALWAYS_NULL'
+,p_display_as=>'NATIVE_DISPLAY_ONLY'
+,p_begin_on_new_line=>'N'
+,p_colspan=>6
+,p_field_template=>3034989309240569219
+,p_item_template_options=>'#DEFAULT#'
+,p_encrypt_session_state_yn=>'N'
+,p_attributes=>wwv_flow_t_plugin_attributes(wwv_flow_t_varchar2(
+  'based_on', 'VALUE',
+  'format', 'PLAIN',
+  'send_on_page_submit', 'Y',
+  'show_line_breaks', 'Y')).to_clob
+,p_created_on=>wwv_flow_imp.dz('20261011181738Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011195256Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(2135293674697916013)
+,p_name=>'P2_MONTHLY_DEBT'
+,p_item_sequence=>40
+,p_item_plug_id=>wwv_flow_imp.id(2135293238305916009)
+,p_prompt=>'Monthly Debt'
+,p_format_mask=>'FM999G999G999G990D00'
+,p_source_type=>'ALWAYS_NULL'
+,p_display_as=>'NATIVE_TEXT_FIELD'
+,p_cSize=>30
+,p_begin_on_new_line=>'N'
+,p_colspan=>6
+,p_field_template=>3034989309240569219
+,p_item_template_options=>'#DEFAULT#:margin-left-sm'
+,p_attributes=>wwv_flow_t_plugin_attributes(wwv_flow_t_varchar2(
+  'disabled', 'N',
+  'submit_when_enter_pressed', 'N',
+  'subtype', 'TEXT',
+  'trim_spaces', 'BOTH')).to_clob
+,p_created_on=>wwv_flow_imp.dz('20261011181011Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011192200Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(2135294290852916019)
+,p_name=>'P2_MONTHLY_PAYMENT'
+,p_item_sequence=>30
+,p_item_plug_id=>wwv_flow_imp.id(2135294019237916017)
+,p_use_cache_before_default=>'NO'
+,p_prompt=>'Estimated Monthly Payment'
+,p_format_mask=>'FML999G999G999G990D00'
+,p_source_type=>'ALWAYS_NULL'
+,p_display_as=>'NATIVE_DISPLAY_ONLY'
+,p_begin_on_new_line=>'N'
+,p_field_template=>3034989309240569219
+,p_item_template_options=>'#DEFAULT#'
+,p_encrypt_session_state_yn=>'N'
+,p_attributes=>wwv_flow_t_plugin_attributes(wwv_flow_t_varchar2(
+  'based_on', 'VALUE',
+  'format', 'PLAIN',
+  'send_on_page_submit', 'Y',
+  'show_line_breaks', 'Y')).to_clob
+,p_created_on=>wwv_flow_imp.dz('20261011181738Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011195256Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(2135293344590916010)
+,p_name=>'P2_PROPERTY_VALUE'
+,p_item_sequence=>10
+,p_item_plug_id=>wwv_flow_imp.id(2135293238305916009)
+,p_prompt=>'Property Value'
+,p_format_mask=>'FM999G999G999G990D00'
+,p_source_type=>'ALWAYS_NULL'
+,p_display_as=>'NATIVE_TEXT_FIELD'
+,p_cSize=>30
+,p_colspan=>6
+,p_field_template=>3034989309240569219
+,p_item_template_options=>'#DEFAULT#:margin-left-sm'
+,p_attributes=>wwv_flow_t_plugin_attributes(wwv_flow_t_varchar2(
+  'disabled', 'N',
+  'submit_when_enter_pressed', 'N',
+  'subtype', 'TEXT',
+  'trim_spaces', 'BOTH')).to_clob
+,p_created_on=>wwv_flow_imp.dz('20261011181011Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011192200Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(2135294574048916022)
+,p_name=>'P2_RISK_LEVEL'
+,p_item_sequence=>60
+,p_item_plug_id=>wwv_flow_imp.id(2135294019237916017)
+,p_use_cache_before_default=>'NO'
+,p_prompt=>'Estimated Risk Level'
+,p_source_type=>'ALWAYS_NULL'
+,p_display_as=>'NATIVE_DISPLAY_ONLY'
+,p_colspan=>6
+,p_field_template=>3034989309240569219
+,p_item_template_options=>'#DEFAULT#'
+,p_encrypt_session_state_yn=>'N'
+,p_attributes=>wwv_flow_t_plugin_attributes(wwv_flow_t_varchar2(
+  'based_on', 'VALUE',
+  'format', 'PLAIN',
+  'send_on_page_submit', 'Y',
+  'show_line_breaks', 'Y')).to_clob
+,p_created_on=>wwv_flow_imp.dz('20261011181738Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011195256Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_da_event(
+ p_id=>wwv_flow_imp.id(2135295716201916034)
+,p_name=>'update'
+,p_static_id=>'new'
+,p_event_sequence=>10
+,p_triggering_element_type=>'ITEM'
+,p_triggering_element=>'P2_LOAN_PRODUCT_ID'
+,p_bind_type=>'bind'
+,p_execution_type=>'IMMEDIATE'
+,p_bind_event_type=>'change'
+,p_created_on=>wwv_flow_imp.dz('20261011183900Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011185105Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_da_action(
+ p_id=>wwv_flow_imp.id(2135295850465916035)
+,p_event_id=>wwv_flow_imp.id(2135295716201916034)
+,p_event_result=>'TRUE'
+,p_action_sequence=>10
+,p_execute_on_page_init=>'N'
+,p_static_id=>'native-execute-plsql-code'
+,p_action=>'NATIVE_EXECUTE_PLSQL_CODE'
+,p_attributes=>wwv_flow_t_plugin_attributes(wwv_flow_t_varchar2(
+  'items_to_return', 'P2_INTEREST_RATE, P2_LOAN_TERM',
+  'items_to_submit', 'P2_LOAN_PRODUCT_ID',
+  'language', 'PLSQL',
+  'plsql_code', wwv_flow_string.join(wwv_flow_t_varchar2(
+    'declare',
+    '    l_interest_rate number;',
+    '    l_term_years    number;',
+    'begin',
+    '',
+    '    pkg_mortgage_app.get_product_terms(',
+    '        p_loan_product_id => :P2_LOAN_PRODUCT_ID,',
+    '        p_interest_rate   => l_interest_rate,',
+    '        p_term_years      => l_term_years',
+    '    );',
+    '',
+    '',
+    '    :P2_INTEREST_RATE :=',
+    '        l_interest_rate;',
+    '',
+    '',
+    '    :P2_LOAN_TERM :=',
+    '        l_term_years || '' years'';',
+    '',
+    'end;')),
+  'show_processing', 'N',
+  'suppress_change_event', 'N')).to_clob
+,p_wait_for_result=>'Y'
+,p_created_on=>wwv_flow_imp.dz('20261011183900Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011185105Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_process(
+ p_id=>wwv_flow_imp.id(2135296581754916042)
+,p_process_sequence=>10
+,p_process_point=>'ON_DEMAND'
+,p_process_type=>'NATIVE_PLSQL'
+,p_process_name=>'CREATE_MORTGAGE_DRAFT'
+,p_static_id=>'create-mortgage-draft'
+,p_process_sql_clob=>wwv_flow_string.join(wwv_flow_t_varchar2(
+'declare',
+'    l_application_id      number;',
+'    l_application_number  varchar2(50);',
+'    l_redirect_url        varchar2(4000);',
+'',
+'    l_property_value      number;',
+'    l_down_payment        number;',
+'    l_annual_income       number;',
+'    l_monthly_debt        number;',
+'    l_loan_product_id     number;',
+'begin',
+'',
+'    l_property_value :=',
+'        to_number(',
+'            regexp_replace(:P2_PROPERTY_VALUE, ''[^0-9.-]'', '''')',
+'        );',
+'',
+'    l_down_payment :=',
+'        nvl(',
+'            to_number(',
+'                regexp_replace(:P2_DOWN_PAYMENT, ''[^0-9.-]'', '''')',
+'            ),',
+'            0',
+'        );',
+'',
+'    l_annual_income :=',
+'        to_number(',
+'            regexp_replace(:P2_ANNUAL_INCOME, ''[^0-9.-]'', '''')',
+'        );',
+'',
+'    l_monthly_debt :=',
+'        nvl(',
+'            to_number(',
+'                regexp_replace(:P2_MONTHLY_DEBT, ''[^0-9.-]'', '''')',
+'            ),',
+'            0',
+'        );',
+'',
+'    l_loan_product_id :=',
+'        to_number(:P2_LOAN_PRODUCT_ID);',
+'',
+'',
+'    pkg_mortgage_app.create_application(',
+'        p_applicant_user_id    => :G_USER_ID,',
+'        p_loan_product_id      => l_loan_product_id,',
+'        p_annual_income        => l_annual_income,',
+'        p_monthly_debt         => l_monthly_debt,',
+'        p_property_value       => l_property_value,',
+'        p_down_payment         => l_down_payment,',
+'',
+'        p_application_id       => l_application_id,',
+'        p_application_number   => l_application_number',
+'    );',
+'',
+'',
+'    /* Store the new ID directly in APEX session state */',
+'    apex_util.set_session_state(',
+'        p_name  => ''P3_APPLICATION_ID'',',
+'        p_value => to_char(l_application_id)',
+'    );',
+'',
+'',
+'    /*',
+'       IMPORTANT:',
+'       Do NOT pass P3_APPLICATION_ID in the URL.',
+'       Do NOT clear Page 3 here.',
+'    */',
+'    l_redirect_url :=',
+'        apex_page.get_url(',
+'            p_page    => 3,',
+'            p_session => v(''APP_SESSION'')',
+'        );',
+'',
+'',
+'    apex_json.open_object;',
+'',
+'    apex_json.write(',
+'        ''success'',',
+'        true',
+'    );',
+'',
+'    apex_json.write(',
+'        ''application_id'',',
+'        l_application_id',
+'    );',
+'',
+'    apex_json.write(',
+'        ''application_number'',',
+'        l_application_number',
+'    );',
+'',
+'    apex_json.write(',
+'        ''redirect_url'',',
+'        l_redirect_url',
+'    );',
+'',
+'    apex_json.close_object;',
+'',
+'',
+'exception',
+'    when others then',
+'',
+'        apex_json.open_object;',
+'',
+'        apex_json.write(',
+'            ''success'',',
+'            false',
+'        );',
+'',
+'        apex_json.write(',
+'            ''message'',',
+'            sqlerrm',
+'        );',
+'',
+'        apex_json.close_object;',
+'',
+'end;'))
+,p_process_clob_language=>'PLSQL'
+,p_internal_uid=>2135296581754916042
+,p_created_on=>wwv_flow_imp.dz('20261011194352Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011201035Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+end;
+/
+prompt --application/pages/page_00003
+begin
+wwv_flow_imp_page.create_page(
+ p_id=>3
+,p_name=>'New Mortgage Application'
+,p_alias=>'NEW-MORTGAGE-APPLICATION'
+,p_step_title=>'New Mortgage Application'
+,p_autocomplete_on_off=>'OFF'
+,p_inline_css=>wwv_flow_string.join(wwv_flow_t_varchar2(
+'/* =========================================================',
+'   PAGE 3 - REVIEW & SUBMIT',
+'   ========================================================= */',
+'',
+':root {',
+'    --mf-navy: #101f78;',
+'    --mf-text: #6172a4;',
+'    --mf-border: #dfe6ef;',
+'    --mf-soft: #f8fafd;',
+'    --mf-green: #55ad18;',
+'    --mf-lime: #b8e822;',
+'}',
+'',
+'',
+'/* HEADER */',
+'',
+'.mf-eyebrow {',
+'    color: #7381ae;',
+'    font-size: 11px;',
+'    font-weight: 600;',
+'    letter-spacing: 1px;',
+'}',
+'',
+'.mf-app-title {',
+'    margin-top: 3px;',
+'    color: var(--mf-navy);',
+'    font-size: 30px;',
+'    font-weight: 800;',
+'    line-height: 1.1;',
+'}',
+'',
+'.mf-app-subtitle {',
+'    margin-top: 5px;',
+'    color: var(--mf-text);',
+'    font-size: 14px;',
+'}',
+'',
+'',
+'/* PROGRESS */',
+'',
+'.mf-progress {',
+'    display: flex;',
+'    align-items: center;',
+'    margin: 18px 25px 22px;',
+'}',
+'',
+'.mf-step {',
+'    display: flex;',
+'    align-items: center;',
+'    gap: 10px;',
+'    min-width: 175px;',
+'}',
+'',
+'.mf-step-circle {',
+'    width: 34px;',
+'    height: 34px;',
+'    flex: 0 0 34px;',
+'',
+'    display: flex;',
+'    align-items: center;',
+'    justify-content: center;',
+'',
+'    border-radius: 50%;',
+'    border: 2px solid #d9e1ec;',
+'',
+'    color: var(--mf-navy);',
+'    background: #fff;',
+'',
+'    font-weight: 800;',
+'}',
+'',
+'.mf-step.complete .mf-step-circle {',
+'    background: #54ad1b;',
+'    border-color: #54ad1b;',
+'    color: #fff;',
+'}',
+'',
+'.mf-step.active .mf-step-circle {',
+'    background: #61b51e;',
+'    border: 4px solid #dff4bd;',
+'    color: #fff;',
+'}',
+'',
+'.mf-step-title {',
+'    color: var(--mf-navy);',
+'    font-size: 13px;',
+'    font-weight: 700;',
+'}',
+'',
+'.mf-step-subtitle {',
+'    margin-top: 2px;',
+'    color: #7585ad;',
+'    font-size: 11px;',
+'}',
+'',
+'.mf-progress-line {',
+'    height: 2px;',
+'    flex: 1;',
+'    margin: 0 12px;',
+'    background: #dce4ef;',
+'}',
+'',
+'.mf-progress-line.complete {',
+'    background: #54ad1b;',
+'}',
+'',
+'',
+'/* MAIN REGIONS */',
+'',
+'#application-summary,',
+'#estimated-results,',
+'#review-before-submit {',
+'    background: #fff;',
+'    border: 1px solid var(--mf-border);',
+'    border-radius: 10px;',
+'    box-shadow: 0 2px 8px rgba(15, 30, 80, .04);',
+'}',
+'',
+'#application-summary .t-Region-body,',
+'#estimated-results .t-Region-body,',
+'#review-before-submit .t-Region-body {',
+'    padding: 12px 14px 14px !important;',
+'}',
+'',
+'',
+'/* SECTION HEADINGS */',
+'',
+'.mf-section-title {',
+'    color: var(--mf-navy);',
+'    font-size: 20px;',
+'    font-weight: 800;',
+'}',
+'',
+'.mf-section-subtitle,',
+'.mf-results-subtitle {',
+'    margin-top: 2px;',
+'    color: #7180a9;',
+'    font-size: 12px;',
+'}',
+'',
+'',
+'/* REVIEW CARDS */',
+'',
+'.mf-review-card {',
+'    display: flex;',
+'    gap: 16px;',
+'',
+'    margin-top: 12px;',
+'    padding: 14px;',
+'',
+'    border: 1px solid #e0e7f0;',
+'    border-radius: 9px;',
+'',
+'    background: #fff;',
+'}',
+'',
+'.mf-review-icon {',
+'    width: 46px;',
+'    height: 46px;',
+'    min-width: 46px;',
+'',
+'    display: flex;',
+'    align-items: center;',
+'    justify-content: center;',
+'',
+'    border-radius: 50%;',
+'    background: #eef9d5;',
+'',
+'    color: var(--mf-navy);',
+'    font-size: 22px;',
+'}',
+'',
+'.mf-review-main {',
+'    flex: 1;',
+'}',
+'',
+'.mf-review-heading {',
+'    color: var(--mf-navy);',
+'    font-size: 15px;',
+'    font-weight: 800;',
+'}',
+'',
+'.mf-review-description {',
+'    margin-top: 2px;',
+'    color: #7180a9;',
+'    font-size: 12px;',
+'}',
+'',
+'.mf-review-grid {',
+'    display: grid;',
+'    margin-top: 15px;',
+'}',
+'',
+'.mf-review-grid.two {',
+'    grid-template-columns: repeat(2, 1fr);',
+'}',
+'',
+'.mf-review-grid.three {',
+'    grid-template-columns: repeat(3, 1fr);',
+'    row-gap: 14px;',
+'}',
+'',
+'.mf-review-value-block {',
+'    padding-right: 20px;',
+'    border-right: 1px solid #e3e8f0;',
+'}',
+'',
+'.mf-review-value-block:last-child {',
+'    border-right: 0;',
+'}',
+'',
+'.mf-review-label {',
+'    color: #7180a9;',
+'    font-size: 11px;',
+'}',
+'',
+'.mf-review-value {',
+'    margin-top: 3px;',
+'    color: var(--mf-navy);',
+'    font-size: 18px;',
+'    font-weight: 800;',
+'}',
+'',
+'',
+'/* ESTIMATED RESULTS */',
+'',
+'.mf-estimated-list {',
+'    margin-top: 8px;',
+'}',
+'',
+'.mf-estimated-row {',
+'    display: grid;',
+'    grid-template-columns: 24px 1fr auto;',
+'    align-items: center;',
+'',
+'    gap: 10px;',
+'',
+'    padding: 10px 4px;',
+'',
+'    border-bottom: 1px solid #e5eaf1;',
+'}',
+'',
+'.mf-estimated-row .fa {',
+'    color: #26389b;',
+'    font-size: 16px;',
+'}',
+'',
+'.mf-estimated-label {',
+'    color: #6071a4;',
+'    font-size: 12px;',
+'}',
+'',
+'.mf-estimated-row strong {',
+'    color: var(--mf-navy);',
+'    font-size: 16px;',
+'    font-weight: 800;',
+'}',
+'',
+'.mf-risk-badge {',
+'    padding: 5px 14px;',
+'',
+'    border-radius: 20px;',
+'',
+'    background: #eaf8c8;',
+'',
+'    color: #418610;',
+'',
+'    font-size: 12px;',
+'    font-weight: 800;',
+'}',
+'',
+'',
+'/* CONFIRMATION */',
+'',
+'.mf-confirmation-points {',
+'    display: grid;',
+'    grid-template-columns: repeat(3, 1fr);',
+'',
+'    gap: 20px;',
+'',
+'    margin-top: 14px;',
+'    margin-bottom: 14px;',
+'}',
+'',
+'.mf-confirm-point {',
+'    display: flex;',
+'    gap: 12px;',
+'}',
+'',
+'.mf-confirm-icon {',
+'    width: 34px;',
+'    height: 34px;',
+'    min-width: 34px;',
+'',
+'    display: flex;',
+'    align-items: center;',
+'    justify-content: center;',
+'',
+'    border-radius: 50%;',
+'',
+'    background: #ecf9d6;',
+'    color: #369512;',
+'}',
+'',
+'.mf-confirm-point strong {',
+'    display: block;',
+'    color: var(--mf-navy);',
+'    font-size: 13px;',
+'}',
+'',
+'.mf-confirm-point span {',
+'    display: block;',
+'    margin-top: 2px;',
+'    color: #7080a8;',
+'    font-size: 11px;',
+'    line-height: 1.35;',
+'}',
+'',
+'',
+'/* CHECKBOX */',
+'',
+'#P3_CONFIRM_ACCURATE_CONTAINER .t-Form-label {',
+'    color: var(--mf-navy);',
+'    font-size: 13px;',
+'    font-weight: 600;',
+'}',
+'',
+'',
+'/* SUBMIT BUTTON */',
+'',
+'.mf-submit-button {',
+'    background: var(--mf-lime) !important;',
+'    border-color: #a8d900 !important;',
+'    color: #172000 !important;',
+'',
+'    font-weight: 800;',
+'',
+'    border-radius: 7px !important;',
+'}',
+'',
+'',
+'/* RESPONSIVE */',
+'',
+'@media (max-width: 900px) {',
+'',
+'    .mf-progress {',
+'        flex-direction: column;',
+'        align-items: flex-start;',
+'        gap: 12px;',
+'    }',
+'',
+'    .mf-progress-line {',
+'        display: none;',
+'    }',
+'',
+'    .mf-review-grid.three,',
+'    .mf-confirmation-points {',
+'        grid-template-columns: 1fr;',
+'    }',
+'',
+'    .mf-review-grid.two {',
+'        grid-template-columns: 1fr;',
+'        row-gap: 14px;',
+'    }',
+'',
+'    .mf-review-value-block {',
+'        border-right: 0;',
+'    }',
+'',
+'}'))
+,p_step_template=>4075783602716660119
+,p_page_template_options=>'#DEFAULT#'
+,p_protection_level=>'C'
+,p_page_component_map=>'16'
+,p_created_on=>wwv_flow_imp.dz('20261011193958Z')
+,p_last_updated_on=>wwv_flow_imp.dz('20261011212143Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_last_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_plug(
+ p_id=>wwv_flow_imp.id(2157090324228852312)
+,p_plug_name=>'Breadcrumb'
+,p_static_id=>'application-header'
+,p_region_template_options=>'#DEFAULT#:t-BreadcrumbRegion--useBreadcrumbTitle'
+,p_component_template_options=>'#DEFAULT#'
+,p_plug_template=>2534890969069732905
+,p_plug_display_sequence=>10
+,p_plug_display_point=>'REGION_POSITION_01'
+,p_plug_item_display_point=>'ABOVE'
+,p_location=>null
+,p_menu_id=>wwv_flow_imp.id(1661520272587227881)
+,p_plug_source_type=>'NATIVE_BREADCRUMB'
+,p_menu_template_id=>4075790987805660140
+,p_created_on=>wwv_flow_imp.dz('20261011202614Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011212037Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_plug(
+ p_id=>wwv_flow_imp.id(2157090464400852313)
+,p_plug_name=>'Application Progress'
+,p_static_id=>'application-progress'
+,p_region_template_options=>'#DEFAULT#'
+,p_plug_template=>4504868307683981366
+,p_plug_display_sequence=>20
+,p_plug_display_point=>'REGION_POSITION_01'
+,p_plug_item_display_point=>'ABOVE'
+,p_location=>null
+,p_plug_source=>wwv_flow_string.join(wwv_flow_t_varchar2(
+'<div class="mf-progress">',
+'',
+'    <!-- STEP 1 -->',
+'    <div class="mf-step complete">',
+'        <div class="mf-step-circle">',
+'            <span class="fa fa-check"></span>',
+'        </div>',
+'',
+'        <div>',
+'            <div class="mf-step-title">',
+'                1. Financial Information',
+'            </div>',
+'',
+'            <div class="mf-step-subtitle">',
+'                Income, assets and debts',
+'            </div>',
+'        </div>',
+'    </div>',
+'',
+'',
+'    <div class="mf-progress-line complete"></div>',
+'',
+'',
+'    <!-- STEP 2 -->',
+'    <div class="mf-step complete">',
+'        <div class="mf-step-circle">',
+'            <span class="fa fa-check"></span>',
+'        </div>',
+'',
+'        <div>',
+'            <div class="mf-step-title">',
+'                2. Property &amp; Mortgage',
+'            </div>',
+'',
+'            <div class="mf-step-subtitle">',
+'                Property details and loan options',
+'            </div>',
+'        </div>',
+'    </div>',
+'',
+'',
+'    <div class="mf-progress-line complete"></div>',
+'',
+'',
+'    <!-- STEP 3 -->',
+'    <div class="mf-step active">',
+'        <div class="mf-step-circle">',
+'            3',
+'        </div>',
+'',
+'        <div>',
+'            <div class="mf-step-title">',
+'                3. Review &amp; Estimates',
+'            </div>',
+'',
+'            <div class="mf-step-subtitle">',
+'                Confirm your information',
+'            </div>',
+'        </div>',
+'    </div>',
+'',
+'',
+'    <div class="mf-progress-line"></div>',
+'',
+'',
+'    <!-- STEP 4 -->',
+'    <div class="mf-step">',
+'        <div class="mf-step-circle">',
+'            4',
+'        </div>',
+'',
+'        <div>',
+'            <div class="mf-step-title">',
+'                4. Confirmation',
+'            </div>',
+'',
+'            <div class="mf-step-subtitle">',
+'                Submit your application',
+'            </div>',
+'        </div>',
+'    </div>',
+'',
+'</div>'))
+,p_attributes=>wwv_flow_t_plugin_attributes(wwv_flow_t_varchar2(
+  'expand_shortcuts', 'N',
+  'output_as', 'HTML')).to_clob
+,p_created_on=>wwv_flow_imp.dz('20261011202745Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011203723Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_plug(
+ p_id=>wwv_flow_imp.id(2157090584012852314)
+,p_plug_name=>'Application Summary'
+,p_static_id=>'application-summary'
+,p_region_template_options=>'#DEFAULT#'
+,p_plug_template=>4504868307683981366
+,p_plug_display_sequence=>170
+,p_plug_grid_column_span=>8
+,p_plug_item_display_point=>'ABOVE'
+,p_location=>null
+,p_plug_source=>wwv_flow_string.join(wwv_flow_t_varchar2(
+'<div class="mf-section-heading">',
+'    <div class="mf-section-title">Application Summary</div>',
+'    <div class="mf-section-subtitle">',
+'        Review your information below before submitting your application.',
+'    </div>',
+'</div>'))
+,p_attributes=>wwv_flow_t_plugin_attributes(wwv_flow_t_varchar2(
+  'expand_shortcuts', 'N',
+  'output_as', 'HTML')).to_clob
+,p_created_on=>wwv_flow_imp.dz('20261011202745Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011203308Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_plug(
+ p_id=>wwv_flow_imp.id(2157090707066852316)
+,p_plug_name=>'Estimated Results'
+,p_static_id=>'estimated-results'
+,p_region_template_options=>'#DEFAULT#:t-Region--scrollBody'
+,p_plug_template=>4075786578761660127
+,p_plug_display_sequence=>180
+,p_plug_new_grid_row=>false
+,p_plug_grid_column_span=>4
+,p_plug_item_display_point=>'ABOVE'
+,p_location=>null
+,p_plug_source=>wwv_flow_string.join(wwv_flow_t_varchar2(
+'<div class="mf-results-subtitle">',
+'    Based on your application information.',
+'</div>',
+'',
+'<div class="mf-estimated-list">',
+'',
+'    <div class="mf-estimated-row">',
+'        <span class="fa fa-database"></span>',
+'',
+'        <span class="mf-estimated-label">',
+'            Loan Amount',
+'        </span>',
+'',
+'        <strong>',
+'            $&P3_LOAN_AMOUNT.',
+'        </strong>',
+'    </div>',
+'',
+'    <div class="mf-estimated-row">',
+'        <span class="fa fa-calendar"></span>',
+'',
+'        <span class="mf-estimated-label">',
+'            Estimated Monthly Payment',
+'        </span>',
+'',
+'        <strong>',
+'            $&P3_MONTHLY_PAYMENT.',
+'        </strong>',
+'    </div>',
+'',
+'    <div class="mf-estimated-row">',
+'        <span class="fa fa-pie-chart"></span>',
+'',
+'        <span class="mf-estimated-label">',
+'            Loan-to-Value (LTV)',
+'        </span>',
+'',
+'        <strong>',
+'            &P3_LTV.%',
+'        </strong>',
+'    </div>',
+'',
+'    <div class="mf-estimated-row">',
+'        <span class="fa fa-bar-chart"></span>',
+'',
+'        <span class="mf-estimated-label">',
+'            Debt-to-Income (DTI)',
+'        </span>',
+'',
+'        <strong>',
+'            &P3_DTI.%',
+'        </strong>',
+'    </div>',
+'',
+'    <div class="mf-estimated-row">',
+'        <span class="fa fa-shield"></span>',
+'',
+'        <span class="mf-estimated-label">',
+'            Estimated Risk Level',
+'        </span>',
+'',
+'        <span class="mf-risk-badge">',
+'            &P3_RISK_LEVEL.',
+'        </span>',
+'    </div>',
+'',
+'</div>'))
+,p_attributes=>wwv_flow_t_plugin_attributes(wwv_flow_t_varchar2(
+  'expand_shortcuts', 'N',
+  'output_as', 'HTML')).to_clob
+,p_created_on=>wwv_flow_imp.dz('20261011202745Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011202950Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_plug(
+ p_id=>wwv_flow_imp.id(2157090943387852318)
+,p_plug_name=>'Financial Review'
+,p_static_id=>'financial-review'
+,p_parent_plug_id=>wwv_flow_imp.id(2157090584012852314)
+,p_region_template_options=>'#DEFAULT#:t-Region--scrollBody'
+,p_plug_template=>4075786578761660127
+,p_plug_display_sequence=>10
+,p_plug_display_point=>'SUB_REGIONS'
+,p_plug_item_display_point=>'ABOVE'
+,p_location=>null
+,p_plug_source=>wwv_flow_string.join(wwv_flow_t_varchar2(
+'<div class="mf-review-card">',
+'',
+'    <div class="mf-review-icon">',
+'        <span class="fa fa-user"></span>',
+'    </div>',
+'',
+'    <div class="mf-review-main">',
+'',
+'        <div class="mf-review-heading">',
+'            Financial Information',
+'        </div>',
+'',
+'        <div class="mf-review-description">',
+'            Your income and current financial obligations.',
+'        </div>',
+'',
+'        <div class="mf-review-grid two">',
+'',
+'            <div class="mf-review-value-block">',
+'                <div class="mf-review-label">Annual Income</div>',
+'',
+'                <div class="mf-review-value">',
+'                    $&P3_ANNUAL_INCOME.',
+'                </div>',
+'            </div>',
+'',
+'            <div class="mf-review-value-block">',
+'                <div class="mf-review-label">Monthly Debt</div>',
+'',
+'                <div class="mf-review-value">',
+'                    $&P3_MONTHLY_DEBT.',
+'                </div>',
+'            </div>',
+'',
+'        </div>',
+'',
+'    </div>',
+'',
+'</div>'))
+,p_attributes=>wwv_flow_t_plugin_attributes(wwv_flow_t_varchar2(
+  'expand_shortcuts', 'N',
+  'output_as', 'HTML')).to_clob
+,p_created_on=>wwv_flow_imp.dz('20261011202910Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011203308Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_plug(
+ p_id=>wwv_flow_imp.id(2157091011157852319)
+,p_plug_name=>'Property & Mortgage Information'
+,p_static_id=>'mortgage-review'
+,p_parent_plug_id=>wwv_flow_imp.id(2157090584012852314)
+,p_region_template_options=>'#DEFAULT#:t-Region--scrollBody'
+,p_plug_template=>4075786578761660127
+,p_plug_display_sequence=>20
+,p_plug_display_point=>'SUB_REGIONS'
+,p_plug_item_display_point=>'ABOVE'
+,p_location=>null
+,p_plug_source=>wwv_flow_string.join(wwv_flow_t_varchar2(
+'<div class="mf-review-card">',
+'',
+'    <div class="mf-review-icon">',
+'        <span class="fa fa-home"></span>',
+'    </div>',
+'',
+'    <div class="mf-review-main">',
+'',
+'        <div class="mf-review-heading">',
+'            Property &amp; Mortgage Information',
+'        </div>',
+'',
+'        <div class="mf-review-description">',
+'            Your property details and selected loan product.',
+'        </div>',
+'',
+'        <div class="mf-review-grid three">',
+'',
+'            <div class="mf-review-value-block">',
+'                <div class="mf-review-label">Property Value</div>',
+'                <div class="mf-review-value">$&P3_PROPERTY_VALUE.</div>',
+'            </div>',
+'',
+'            <div class="mf-review-value-block">',
+'                <div class="mf-review-label">Down Payment</div>',
+'                <div class="mf-review-value">$&P3_DOWN_PAYMENT.</div>',
+'            </div>',
+'',
+'            <div class="mf-review-value-block">',
+'                <div class="mf-review-label">Loan Product</div>',
+'                <div class="mf-review-value">&P3_PRODUCT_NAME.</div>',
+'            </div>',
+'',
+'            <div class="mf-review-value-block">',
+'                <div class="mf-review-label">Interest Rate</div>',
+'                <div class="mf-review-value">&P3_INTEREST_RATE.%</div>',
+'            </div>',
+'',
+'            <div class="mf-review-value-block">',
+'                <div class="mf-review-label">Loan Term</div>',
+'                <div class="mf-review-value">&P3_LOAN_TERM. years</div>',
+'            </div>',
+'',
+'        </div>',
+'',
+'    </div>',
+'',
+'</div>'))
+,p_attributes=>wwv_flow_t_plugin_attributes(wwv_flow_t_varchar2(
+  'expand_shortcuts', 'N',
+  'output_as', 'HTML')).to_clob
+,p_created_on=>wwv_flow_imp.dz('20261011202950Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011203308Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_plug(
+ p_id=>wwv_flow_imp.id(2157091210830852321)
+,p_plug_name=>'CONFIRM'
+,p_static_id=>'new'
+,p_region_template_options=>'#DEFAULT#:t-Region--removeHeader js-removeLandmark:t-Region--scrollBody'
+,p_plug_template=>4075786578761660127
+,p_plug_display_sequence=>210
+,p_plug_item_display_point=>'ABOVE'
+,p_location=>null
+,p_attributes=>wwv_flow_t_plugin_attributes(wwv_flow_t_varchar2(
+  'expand_shortcuts', 'N',
+  'output_as', 'HTML')).to_clob
+,p_created_on=>wwv_flow_imp.dz('20261011203543Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011204019Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_plug(
+ p_id=>wwv_flow_imp.id(2157091170959852320)
+,p_plug_name=>'Review Before Submission'
+,p_static_id=>'review-before-submit'
+,p_region_template_options=>'#DEFAULT#:t-Region--removeHeader js-removeLandmark:t-Region--scrollBody'
+,p_plug_template=>4075786578761660127
+,p_plug_display_sequence=>190
+,p_plug_item_display_point=>'ABOVE'
+,p_location=>null
+,p_plug_source=>wwv_flow_string.join(wwv_flow_t_varchar2(
+'<div class="mf-section-heading">',
+'    <div class="mf-section-title">',
+'        Review Before Submission',
+'    </div>',
+'',
+'    <div class="mf-section-subtitle">',
+'        Please confirm the following before submitting your application.',
+'    </div>',
+'</div>',
+'',
+'<div class="mf-confirmation-points">',
+'',
+'    <div class="mf-confirm-point">',
+'        <div class="mf-confirm-icon">',
+'            <span class="fa fa-check"></span>',
+'        </div>',
+'',
+'        <div>',
+'            <strong>Information verified</strong>',
+'            <span>',
+'                I have reviewed all entered information and confirm it is accurate.',
+'            </span>',
+'        </div>',
+'    </div>',
+'',
+'    <div class="mf-confirm-point">',
+'        <div class="mf-confirm-icon">',
+'            <span class="fa fa-check"></span>',
+'        </div>',
+'',
+'        <div>',
+'            <strong>Loan estimates reviewed</strong>',
+'            <span>',
+'                I have reviewed the estimated loan terms, payments and costs.',
+'            </span>',
+'        </div>',
+'    </div>',
+'',
+'    <div class="mf-confirm-point">',
+'        <div class="mf-confirm-icon">',
+'            <span class="fa fa-check"></span>',
+'        </div>',
+'',
+'        <div>',
+'            <strong>Ready to submit</strong>',
+'            <span>',
+'                I understand this application will be submitted for review.',
+'            </span>',
+'        </div>',
+'    </div>',
+'',
+'</div>'))
+,p_attributes=>wwv_flow_t_plugin_attributes(wwv_flow_t_varchar2(
+  'expand_shortcuts', 'N',
+  'output_as', 'HTML')).to_clob
+,p_created_on=>wwv_flow_imp.dz('20261011203020Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011203357Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_button(
+ p_id=>wwv_flow_imp.id(2157091341985852322)
+,p_button_sequence=>10
+,p_button_plug_id=>wwv_flow_imp.id(2157091210830852321)
+,p_button_name=>'PREVIOUS'
+,p_static_id=>'previous'
+,p_show_as_disabled=>false
+,p_button_action=>'REDIRECT_PAGE'
+,p_button_template_options=>'#DEFAULT#:t-Button--iconLeft'
+,p_button_template_id=>2086257187394300437
+,p_button_image_alt=>'Previous'
+,p_button_position=>'CHANGE'
+,p_button_redirect_url=>'f?p=&APP_ID.:4:&SESSION.::&DEBUG.:::'
+,p_warn_on_unsaved_changes=>null
+,p_icon_css_classes=>'fa-arrow-left'
+,p_created_on=>wwv_flow_imp.dz('20261011204019Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011212143Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_button(
+ p_id=>wwv_flow_imp.id(2157091400317852323)
+,p_button_sequence=>30
+,p_button_plug_id=>wwv_flow_imp.id(2157091210830852321)
+,p_button_name=>'SUBMIT_APPLICATION'
+,p_static_id=>'submit-application'
+,p_show_as_disabled=>false
+,p_button_action=>'SUBMIT'
+,p_button_template_options=>'#DEFAULT#:t-Button--iconLeft'
+,p_button_template_id=>2086257187394300437
+,p_button_is_hot=>'Y'
+,p_button_image_alt=>'Submit Application'
+,p_button_position=>'CHANGE'
+,p_confirm_message=>'Are you sure you want to submit this mortgage application?'
+,p_button_css_classes=>'mf-submit-button'
+,p_icon_css_classes=>'fa-arrow-right'
+,p_created_on=>wwv_flow_imp.dz('20261011204019Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011204302Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_branch(
+ p_id=>wwv_flow_imp.id(2157092239166852331)
+,p_branch_name=>'Go to Application Details'
+,p_branch_action=>'f?p=&APP_ID.:5:&SESSION.::&DEBUG.::P5_APPLICATION_ID:&P3_APPLICATION_ID.&success_msg=#SUCCESS_MSG#'
+,p_branch_point=>'AFTER_PROCESSING'
+,p_branch_type=>'REDIRECT_URL'
+,p_branch_when_button_id=>wwv_flow_imp.id(2157091400317852323)
+,p_branch_sequence=>20
+,p_created_on=>wwv_flow_imp.dz('20261011205809Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011205905Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(2135296988889916046)
+,p_name=>'P3_ANNUAL_INCOME'
+,p_item_sequence=>40
+,p_source_type=>'ALWAYS_NULL'
+,p_display_as=>'NATIVE_HIDDEN'
+,p_attributes=>wwv_flow_t_plugin_attributes(wwv_flow_t_varchar2(
+  'value_protected', 'N')).to_clob
+,p_created_on=>wwv_flow_imp.dz('20261011194658Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011203046Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(2135296767205916044)
+,p_name=>'P3_APPLICATION_ID'
+,p_item_sequence=>20
+,p_source_type=>'ALWAYS_NULL'
+,p_display_as=>'NATIVE_HIDDEN'
+,p_attributes=>wwv_flow_t_plugin_attributes(wwv_flow_t_varchar2(
+  'value_protected', 'N')).to_clob
+,p_created_on=>wwv_flow_imp.dz('20261011194514Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011202614Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(2135296886868916045)
+,p_name=>'P3_APPLICATION_NUMBER'
+,p_item_sequence=>30
+,p_source_type=>'ALWAYS_NULL'
+,p_display_as=>'NATIVE_HIDDEN'
+,p_attributes=>wwv_flow_t_plugin_attributes(wwv_flow_t_varchar2(
+  'value_protected', 'N')).to_clob
+,p_created_on=>wwv_flow_imp.dz('20261011194658Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011203046Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(2157089911181852308)
+,p_name=>'P3_CONFIRM_ACCURATE'
+,p_item_sequence=>10
+,p_item_plug_id=>wwv_flow_imp.id(2157091210830852321)
+,p_prompt=>'I confirm that the information provided is accurate.'
+,p_source=>'STATIC2:;Y'
+,p_source_type=>'STATIC'
+,p_display_as=>'NATIVE_SINGLE_CHECKBOX'
+,p_field_template=>1612549609962752680
+,p_item_template_options=>'#DEFAULT#'
+,p_attributes=>wwv_flow_t_plugin_attributes(wwv_flow_t_varchar2(
+  'use_defaults', 'Y')).to_clob
+,p_created_on=>wwv_flow_imp.dz('20261011194658Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011203615Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(2135297238396916049)
+,p_name=>'P3_DOWN_PAYMENT'
+,p_item_sequence=>70
+,p_source_type=>'ALWAYS_NULL'
+,p_display_as=>'NATIVE_HIDDEN'
+,p_attributes=>wwv_flow_t_plugin_attributes(wwv_flow_t_varchar2(
+  'value_protected', 'N')).to_clob
+,p_created_on=>wwv_flow_imp.dz('20261011194658Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011203046Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(2157089795608852306)
+,p_name=>'P3_DTI'
+,p_item_sequence=>140
+,p_source_type=>'ALWAYS_NULL'
+,p_display_as=>'NATIVE_HIDDEN'
+,p_attributes=>wwv_flow_t_plugin_attributes(wwv_flow_t_varchar2(
+  'value_protected', 'N')).to_clob
+,p_created_on=>wwv_flow_imp.dz('20261011194658Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011203046Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(2157089213701852301)
+,p_name=>'P3_INTEREST_RATE'
+,p_item_sequence=>90
+,p_source_type=>'ALWAYS_NULL'
+,p_display_as=>'NATIVE_HIDDEN'
+,p_attributes=>wwv_flow_t_plugin_attributes(wwv_flow_t_varchar2(
+  'value_protected', 'N')).to_clob
+,p_created_on=>wwv_flow_imp.dz('20261011194658Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011203046Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(2157089442078852303)
+,p_name=>'P3_LOAN_AMOUNT'
+,p_item_sequence=>110
+,p_source_type=>'ALWAYS_NULL'
+,p_display_as=>'NATIVE_HIDDEN'
+,p_attributes=>wwv_flow_t_plugin_attributes(wwv_flow_t_varchar2(
+  'value_protected', 'N')).to_clob
+,p_created_on=>wwv_flow_imp.dz('20261011194658Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011203046Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(2157089391501852302)
+,p_name=>'P3_LOAN_TERM'
+,p_item_sequence=>100
+,p_source_type=>'ALWAYS_NULL'
+,p_display_as=>'NATIVE_HIDDEN'
+,p_attributes=>wwv_flow_t_plugin_attributes(wwv_flow_t_varchar2(
+  'value_protected', 'N')).to_clob
+,p_created_on=>wwv_flow_imp.dz('20261011194658Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011203046Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(2157089687997852305)
+,p_name=>'P3_LTV'
+,p_item_sequence=>130
+,p_source_type=>'ALWAYS_NULL'
+,p_display_as=>'NATIVE_HIDDEN'
+,p_attributes=>wwv_flow_t_plugin_attributes(wwv_flow_t_varchar2(
+  'value_protected', 'N')).to_clob
+,p_created_on=>wwv_flow_imp.dz('20261011194658Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011203046Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(2135297027116916047)
+,p_name=>'P3_MONTHLY_DEBT'
+,p_item_sequence=>50
+,p_source_type=>'ALWAYS_NULL'
+,p_display_as=>'NATIVE_HIDDEN'
+,p_attributes=>wwv_flow_t_plugin_attributes(wwv_flow_t_varchar2(
+  'value_protected', 'N')).to_clob
+,p_created_on=>wwv_flow_imp.dz('20261011194658Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011203046Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(2157089515743852304)
+,p_name=>'P3_MONTHLY_PAYMENT'
+,p_item_sequence=>120
+,p_source_type=>'ALWAYS_NULL'
+,p_display_as=>'NATIVE_HIDDEN'
+,p_attributes=>wwv_flow_t_plugin_attributes(wwv_flow_t_varchar2(
+  'value_protected', 'N')).to_clob
+,p_created_on=>wwv_flow_imp.dz('20261011194658Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011203046Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(2135297305690916050)
+,p_name=>'P3_PRODUCT_NAME'
+,p_item_sequence=>80
+,p_source_type=>'ALWAYS_NULL'
+,p_display_as=>'NATIVE_HIDDEN'
+,p_attributes=>wwv_flow_t_plugin_attributes(wwv_flow_t_varchar2(
+  'value_protected', 'N')).to_clob
+,p_created_on=>wwv_flow_imp.dz('20261011194658Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011203046Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(2135297160098916048)
+,p_name=>'P3_PROPERTY_VALUE'
+,p_item_sequence=>60
+,p_source_type=>'ALWAYS_NULL'
+,p_display_as=>'NATIVE_HIDDEN'
+,p_attributes=>wwv_flow_t_plugin_attributes(wwv_flow_t_varchar2(
+  'value_protected', 'N')).to_clob
+,p_created_on=>wwv_flow_imp.dz('20261011194658Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011203046Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(2157089811125852307)
+,p_name=>'P3_RISK_LEVEL'
+,p_item_sequence=>150
+,p_source_type=>'ALWAYS_NULL'
+,p_display_as=>'NATIVE_HIDDEN'
+,p_attributes=>wwv_flow_t_plugin_attributes(wwv_flow_t_varchar2(
+  'value_protected', 'N')).to_clob
+,p_created_on=>wwv_flow_imp.dz('20261011194658Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011203046Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_process(
+ p_id=>wwv_flow_imp.id(2157090274376852311)
+,p_process_sequence=>10
+,p_process_point=>'BEFORE_HEADER'
+,p_process_type=>'NATIVE_PLSQL'
+,p_process_name=>'Load Mortgage Application'
+,p_static_id=>'load-mortgage-application'
+,p_process_sql_clob=>wwv_flow_string.join(wwv_flow_t_varchar2(
+'begin',
+'',
+'    select',
+'        ma.application_number,',
+'        ma.annual_income,',
+'        ma.monthly_debt,',
+'        ma.property_value,',
+'        ma.down_payment,',
+'        lp.product_name,',
+'        ma.interest_rate,',
+'        ma.loan_term_years,',
+'        ma.loan_amount,',
+'        ma.monthly_payment,',
+'        ma.ltv,',
+'        ma.dti,',
+'        ma.risk_level',
+'',
+'    into',
+'        :P3_APPLICATION_NUMBER,',
+'        :P3_ANNUAL_INCOME,',
+'        :P3_MONTHLY_DEBT,',
+'        :P3_PROPERTY_VALUE,',
+'        :P3_DOWN_PAYMENT,',
+'        :P3_PRODUCT_NAME,',
+'        :P3_INTEREST_RATE,',
+'        :P3_LOAN_TERM,',
+'        :P3_LOAN_AMOUNT,',
+'        :P3_MONTHLY_PAYMENT,',
+'        :P3_LTV,',
+'        :P3_DTI,',
+'        :P3_RISK_LEVEL',
+'',
+'    from mortgage_applications ma',
+'',
+'    join loan_products lp',
+'        on lp.loan_product_id = ma.loan_product_id',
+'',
+'    where ma.application_id = :P3_APPLICATION_ID',
+'      and ma.applicant_user_id = :G_USER_ID',
+'      and ma.status = ''DRAFT'';',
+'',
+'exception',
+'',
+'    when no_data_found then',
+'        raise_application_error(',
+'            -20001,',
+'            ''Draft application not found or access is not allowed.''',
+'        );',
+'',
+'end;'))
+,p_process_clob_language=>'PLSQL'
+,p_internal_uid=>2157090274376852311
+,p_created_on=>wwv_flow_imp.dz('20261011201231Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011201231Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_process(
+ p_id=>wwv_flow_imp.id(2157091710123852326)
+,p_process_sequence=>10
+,p_process_point=>'AFTER_SUBMIT'
+,p_process_type=>'NATIVE_PLSQL'
+,p_process_name=>'SUBMIT_APPLICATION'
+,p_static_id=>'submit-mortgage-application'
+,p_process_sql_clob=>wwv_flow_string.join(wwv_flow_t_varchar2(
+'begin',
+'',
+'    pkg_mortgage_app.submit_application(',
+'        p_application_id => :P3_APPLICATION_ID,',
+'        p_user_id        => :G_USER_ID,',
+'        p_comments       => ''Application reviewed and submitted by applicant.''',
+'    );',
+'',
+'end;'))
+,p_process_clob_language=>'PLSQL'
+,p_error_display_location=>'INLINE_IN_NOTIFICATION'
+,p_process_when_button_id=>wwv_flow_imp.id(2157091400317852323)
+,p_internal_uid=>2157091710123852326
+,p_created_on=>wwv_flow_imp.dz('20261011204136Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011205809Z')
 ,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
 ,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
 );
@@ -18121,7 +22143,7 @@ wwv_flow_imp_page.create_page(
 ,p_protection_level=>'C'
 ,p_page_component_map=>'18'
 ,p_created_on=>wwv_flow_imp.dz('20261010003525Z')
-,p_last_updated_on=>wwv_flow_imp.dz('20261011042532Z')
+,p_last_updated_on=>wwv_flow_imp.dz('20261011204844Z')
 ,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
 ,p_last_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
 );
@@ -18155,15 +22177,10 @@ wwv_flow_imp_page.create_page_plug(
 ,p_plug_source=>wwv_flow_string.join(wwv_flow_t_varchar2(
 'select',
 '    ma.application_id,',
-'',
 '    ma.application_number,',
-'',
 '    lp.product_name,',
-'',
 '    ma.property_value,',
-'',
 '    ma.loan_amount,',
-'',
 '    ma.submitted_at,',
 '',
 '    /* STATUS TEXT */',
@@ -18198,14 +22215,32 @@ wwv_flow_imp_page.create_page_plug(
 '        when ''HIGH''   then ''mf-risk-high''',
 '    end as risk_class,',
 '',
-'    ''View Details'' as actions',
+'    /* ACTION LINK */',
+'    case',
+'        when ma.status = ''DRAFT'' then',
+'            ''<a href="'' ||',
+'            apex_page.get_url(',
+'                p_page   => 3,',
+'                p_items  => ''P3_APPLICATION_ID'',',
+'                p_values => ma.application_id',
+'            ) ||',
+'            ''">View Details</a>''',
+'',
+'        else',
+'            ''<a href="'' ||',
+'            apex_page.get_url(',
+'                p_page   => 5,',
+'                p_items  => ''P5_APPLICATION_ID'',',
+'                p_values => ma.application_id',
+'            ) ||',
+'            ''">View Details</a>''',
+'    end as actions',
 '',
 'from mortgage_applications ma',
-'',
 'join loan_products lp',
 '    on lp.loan_product_id = ma.loan_product_id',
 '',
-'--where ma.applicant_user_id = :G_USER_ID',
+'where ma.applicant_user_id = :G_USER_ID',
 '',
 'order by',
 '    ma.submitted_at desc nulls last,',
@@ -18241,7 +22276,7 @@ wwv_flow_imp_page.create_page_plug(
 ,p_prn_border_color=>'#666666'
 ,p_ai_enabled=>false
 ,p_created_on=>wwv_flow_imp.dz('20261010003530Z')
-,p_updated_on=>wwv_flow_imp.dz('20261011042532Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011204844Z')
 ,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
 ,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
 );
@@ -18259,7 +22294,7 @@ wwv_flow_imp_page.create_worksheet(
 ,p_enable_mail_download=>'Y'
 ,p_internal_uid=>1661763576986265053
 ,p_created_on=>wwv_flow_imp.dz('20261010003530Z')
-,p_updated_on=>wwv_flow_imp.dz('20261011042532Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011204844Z')
 ,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
 ,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
 );
@@ -18269,15 +22304,14 @@ wwv_flow_imp_page.create_worksheet_column(
 ,p_display_order=>57
 ,p_column_identifier=>'Y'
 ,p_column_label=>'Actions'
-,p_column_link=>'f?p=&APP_ID.:22:&SESSION.::&DEBUG.:::'
-,p_column_linktext=>'<i class="fa fa-eye"></i> View Details'
 ,p_column_type=>'STRING'
+,p_display_text_as=>'WITHOUT_MODIFICATION'
 ,p_heading_alignment=>'LEFT'
 ,p_column_alignment=>'CENTER'
 ,p_use_as_row_header=>'N'
 ,p_available_clientside=>'N'
 ,p_created_on=>wwv_flow_imp.dz('20261011042142Z')
-,p_updated_on=>wwv_flow_imp.dz('20261011042532Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011204801Z')
 ,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
 ,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
 );
@@ -18376,7 +22410,7 @@ wwv_flow_imp_page.create_worksheet_column(
 ,p_db_column_name=>'RISK_DISPLAY'
 ,p_display_order=>47
 ,p_column_identifier=>'X'
-,p_column_label=>'Risk Display'
+,p_column_label=>'Risk'
 ,p_column_html_expression=>'<span class="mf-risk #RISK_CLASS#">#RISK_DISPLAY#</span>'
 ,p_column_type=>'STRING'
 ,p_display_text_as=>'WITHOUT_MODIFICATION'
@@ -18384,7 +22418,7 @@ wwv_flow_imp_page.create_worksheet_column(
 ,p_use_as_row_header=>'N'
 ,p_available_clientside=>'N'
 ,p_created_on=>wwv_flow_imp.dz('20261011041807Z')
-,p_updated_on=>wwv_flow_imp.dz('20261011042457Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011204844Z')
 ,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
 ,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
 );
@@ -18407,7 +22441,7 @@ wwv_flow_imp_page.create_worksheet_column(
 ,p_db_column_name=>'STATUS_DISPLAY'
 ,p_display_order=>37
 ,p_column_identifier=>'W'
-,p_column_label=>'Status Display'
+,p_column_label=>'Status'
 ,p_column_html_expression=>'<span class="mf-status #STATUS_CLASS#">#STATUS_DISPLAY#</span>'
 ,p_column_type=>'STRING'
 ,p_display_text_as=>'WITHOUT_MODIFICATION'
@@ -18415,7 +22449,7 @@ wwv_flow_imp_page.create_worksheet_column(
 ,p_use_as_row_header=>'N'
 ,p_available_clientside=>'N'
 ,p_created_on=>wwv_flow_imp.dz('20261011041807Z')
-,p_updated_on=>wwv_flow_imp.dz('20261011042457Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011204844Z')
 ,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
 ,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
 );
@@ -18442,10 +22476,1733 @@ wwv_flow_imp_page.create_worksheet_rpt(
 ,p_report_alias=>'primary'
 ,p_status=>'PUBLIC'
 ,p_is_default=>'Y'
-,p_report_columns=>'APPLICATION_ID:APPLICATION_NUMBER:PROPERTY_VALUE:LOAN_AMOUNT:SUBMITTED_AT'
+,p_report_columns=>'APPLICATION_NUMBER:PROPERTY_VALUE:LOAN_AMOUNT:SUBMITTED_AT:PRODUCT_NAME:RISK_DISPLAY:STATUS_DISPLAY:ACTIONS'
 ,p_created_on=>wwv_flow_imp.dz('20261011041545Z')
-,p_updated_on=>wwv_flow_imp.dz('20261011041807Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011155911Z')
 ,p_created_by=>'RAFAEL.BRAYNER'
+,p_updated_by=>'RAFAEL.BRAYNER'
+);
+end;
+/
+prompt --application/pages/page_00005
+begin
+wwv_flow_imp_page.create_page(
+ p_id=>5
+,p_name=>'Application Details'
+,p_alias=>'APPLICATION-DETAILS'
+,p_step_title=>'Application Details'
+,p_autocomplete_on_off=>'OFF'
+,p_inline_css=>wwv_flow_string.join(wwv_flow_t_varchar2(
+'/* =========================================================',
+'   PAGE',
+'   ========================================================= */',
+'',
+'#application-page-heading,',
+'#application-overview,',
+'#application-left,',
+'#application-right {',
+'    margin-bottom: 16px;',
+'}',
+'',
+'#application-page-heading .t-Region-body,',
+'#application-overview .t-Region-body,',
+'#application-left .t-Region-body,',
+'#application-right .t-Region-body,',
+'#financial-summary .t-Region-body,',
+'#application-details .t-Region-body,',
+'#application-timeline .t-Region-body,',
+'#next-steps .t-Region-body {',
+'    padding: 0 !important;',
+'}',
+'',
+'',
+'/* =========================================================',
+'   PAGE HEADER',
+'   ========================================================= */',
+'',
+'.mf-page-heading {',
+'    display: flex;',
+'    align-items: center;',
+'    justify-content: space-between;',
+'    gap: 24px;',
+'}',
+'',
+'.mf-page-heading h1 {',
+'    margin: 7px 0 4px;',
+'    font-size: 32px;',
+'    line-height: 1.15;',
+'    font-weight: 700;',
+'    color: #0b1b68;',
+'}',
+'',
+'.mf-page-heading p {',
+'    margin: 0;',
+'    color: #62709a;',
+'    font-size: 16px;',
+'}',
+'',
+'.mf-breadcrumb {',
+'    display: flex;',
+'    align-items: center;',
+'    gap: 10px;',
+'    font-size: 13px;',
+'    color: #53618d;',
+'}',
+'',
+'.mf-breadcrumb a {',
+'    color: #53618d;',
+'    text-decoration: none;',
+'}',
+'',
+'.mf-breadcrumb a:hover {',
+'    color: #1f56e5;',
+'}',
+'',
+'.mf-breadcrumb .fa {',
+'    font-size: 10px;',
+'}',
+'',
+'.mf-back-button {',
+'    border: 1px solid #d6deeb;',
+'    border-radius: 7px;',
+'    padding: 12px 18px;',
+'    background: #fff;',
+'    color: #13276b;',
+'    text-decoration: none;',
+'    font-weight: 500;',
+'    white-space: nowrap;',
+'}',
+'',
+'.mf-back-button .fa {',
+'    margin-right: 8px;',
+'}',
+'',
+'.mf-back-button:hover {',
+'    background: #f7f9fd;',
+'    text-decoration: none;',
+'}',
+'',
+'',
+'/* =========================================================',
+'   APPLICATION OVERVIEW',
+'   ========================================================= */',
+'',
+'.mf-overview-card {',
+'    background: #fff;',
+'    border: 1px solid #e1e6ef;',
+'    border-radius: 9px;',
+'    box-shadow: 0 2px 8px rgba(26, 43, 80, 0.04);',
+'',
+'    display: grid;',
+'    grid-template-columns: 1.55fr 0.95fr 0.95fr 0.95fr 0.85fr;',
+'',
+'    align-items: center;',
+'    min-height: 105px;',
+'    padding: 18px 24px;',
+'    gap: 20px;',
+'}',
+'',
+'.mf-overview-number {',
+'    display: flex;',
+'    align-items: center;',
+'    gap: 18px;',
+'}',
+'',
+'.mf-overview-icon {',
+'    width: 58px;',
+'    height: 58px;',
+'    border-radius: 50%;',
+'    background: #edf4ff;',
+'    color: #1559e8;',
+'',
+'    display: flex;',
+'    align-items: center;',
+'    justify-content: center;',
+'',
+'    font-size: 27px;',
+'    flex-shrink: 0;',
+'}',
+'',
+'.mf-overview-label {',
+'    color: #65729b;',
+'    font-size: 13px;',
+'    margin-bottom: 5px;',
+'}',
+'',
+'.mf-overview-id {',
+'    font-size: 26px;',
+'    font-weight: 700;',
+'    color: #0a1b6a;',
+'}',
+'',
+'.mf-overview-value {',
+'    color: #0d1d67;',
+'    font-size: 16px;',
+'    font-weight: 500;',
+'}',
+'',
+'.mf-overview-risk {',
+'    border-left: 1px solid #dce3ee;',
+'    padding-left: 28px;',
+'}',
+'',
+'',
+'/* =========================================================',
+'   STATUS / RISK PILLS',
+'   ========================================================= */',
+'',
+'.mf-status-pill,',
+'.mf-risk-pill {',
+'    display: inline-flex;',
+'    align-items: center;',
+'    justify-content: center;',
+'',
+'    border-radius: 7px;',
+'    padding: 7px 15px;',
+'',
+'    font-size: 13px;',
+'    font-weight: 600;',
+'}',
+'',
+'.mf-status-draft {',
+'    background: #f1f3f5;',
+'    color: #5d6470;',
+'}',
+'',
+'.mf-status-submitted {',
+'    background: #e8f0ff;',
+'    color: #1d58d8;',
+'}',
+'',
+'.mf-status-review {',
+'    background: #dfeaff;',
+'    color: #1358df;',
+'}',
+'',
+'.mf-status-approved {',
+'    background: #e2f7e6;',
+'    color: #16802a;',
+'}',
+'',
+'.mf-status-rejected {',
+'    background: #fde8e8;',
+'    color: #c52b2b;',
+'}',
+'',
+'.mf-risk-low {',
+'    background: #e3f8e5;',
+'    color: #16852b;',
+'}',
+'',
+'.mf-risk-medium {',
+'    background: #fff4d5;',
+'    color: #a86c00;',
+'}',
+'',
+'.mf-risk-high {',
+'    background: #fde5e5;',
+'    color: #c52b2b;',
+'}',
+'',
+'',
+'/* =========================================================',
+'   CARD / SECTIONS',
+'   ========================================================= */',
+'',
+'.mf-card {',
+'    background: #fff;',
+'    border: 1px solid #e1e6ef;',
+'    border-radius: 9px;',
+'    padding: 18px;',
+'    box-shadow: 0 2px 8px rgba(26, 43, 80, 0.04);',
+'    margin-bottom: 16px;',
+'}',
+'',
+'.mf-section-heading {',
+'    color: #0a1b69;',
+'    font-size: 18px;',
+'    line-height: 1.2;',
+'    font-weight: 700;',
+'',
+'    display: flex;',
+'    align-items: center;',
+'    gap: 11px;',
+'',
+'    margin-bottom: 16px;',
+'}',
+'',
+'.mf-section-heading .fa {',
+'    font-size: 20px;',
+'}',
+'',
+'',
+'/* =========================================================',
+'   FINANCIAL SUMMARY',
+'   ========================================================= */',
+'',
+'.mf-summary-grid {',
+'    display: grid;',
+'    grid-template-columns: repeat(3, 1fr);',
+'    gap: 9px;',
+'}',
+'',
+'.mf-summary-item {',
+'    min-height: 77px;',
+'    border: 1px solid #e1e7ef;',
+'    border-radius: 7px;',
+'    padding: 12px;',
+'',
+'    display: flex;',
+'    align-items: center;',
+'    gap: 13px;',
+'}',
+'',
+'.mf-summary-icon {',
+'    width: 48px;',
+'    height: 48px;',
+'    border-radius: 50%;',
+'',
+'    display: flex;',
+'    align-items: center;',
+'    justify-content: center;',
+'',
+'    font-size: 21px;',
+'    flex-shrink: 0;',
+'}',
+'',
+'.mf-summary-icon.blue {',
+'    background: #eaf2ff;',
+'    color: #1657e8;',
+'}',
+'',
+'.mf-summary-icon.green {',
+'    background: #e4f8e5;',
+'    color: #12912a;',
+'}',
+'',
+'.mf-summary-icon.purple {',
+'    background: #f2eaff;',
+'    color: #7136e8;',
+'}',
+'',
+'.mf-summary-label {',
+'    color: #596990;',
+'    font-size: 12px;',
+'    margin-bottom: 4px;',
+'}',
+'',
+'.mf-summary-value {',
+'    color: #0a1b69;',
+'    font-size: 17px;',
+'    font-weight: 700;',
+'}',
+'',
+'.mf-small {',
+'    font-size: 14px;',
+'    font-weight: 500;',
+'}',
+'',
+'.mf-ratio-strip {',
+'    display: grid;',
+'    grid-template-columns: repeat(3, 1fr);',
+'',
+'    margin-top: 10px;',
+'    padding: 14px 20px;',
+'',
+'    border-radius: 7px;',
+'    background: linear-gradient(',
+'        90deg,',
+'        #f0fbf1 0%,',
+'        #f8fcf7 100%',
+'    );',
+'}',
+'',
+'.mf-ratio-strip > div {',
+'    display: flex;',
+'    flex-direction: column;',
+'    gap: 5px;',
+'    padding: 0 18px;',
+'}',
+'',
+'.mf-ratio-strip > div + div {',
+'    border-left: 1px solid #cfe7d2;',
+'}',
+'',
+'.mf-ratio-strip span {',
+'    color: #596990;',
+'    font-size: 12px;',
+'}',
+'',
+'.mf-ratio-strip strong {',
+'    color: #0a1b69;',
+'    font-size: 17px;',
+'}',
+'',
+'.mf-ratio-strip .mf-risk-text.mf-risk-low {',
+'    background: none;',
+'    color: #16852b;',
+'}',
+'',
+'.mf-ratio-strip .mf-risk-text.mf-risk-medium {',
+'    background: none;',
+'    color: #a86c00;',
+'}',
+'',
+'.mf-ratio-strip .mf-risk-text.mf-risk-high {',
+'    background: none;',
+'    color: #c52b2b;',
+'}',
+'',
+'',
+'/* =========================================================',
+'   APPLICATION DETAILS',
+'   ========================================================= */',
+'',
+'.mf-details-columns {',
+'    display: grid;',
+'    grid-template-columns: 1fr 1fr;',
+'    gap: 16px;',
+'}',
+'',
+'.mf-details-table {',
+'    border: 1px solid #e1e6ef;',
+'    border-radius: 7px;',
+'    overflow: hidden;',
+'}',
+'',
+'.mf-detail-row {',
+'    display: grid;',
+'    grid-template-columns: 43% 57%;',
+'',
+'    min-height: 36px;',
+'    align-items: center;',
+'',
+'    padding: 5px 14px;',
+'    border-bottom: 1px solid #e7ebf2;',
+'}',
+'',
+'.mf-detail-row:last-child {',
+'    border-bottom: 0;',
+'}',
+'',
+'.mf-detail-row span {',
+'    color: #596990;',
+'    font-size: 12px;',
+'}',
+'',
+'.mf-detail-row strong {',
+'    color: #263d78;',
+'    font-size: 12px;',
+'    font-weight: 500;',
+'}',
+'',
+'',
+'/* =========================================================',
+'   TIMELINE',
+'   ========================================================= */',
+'',
+'.mf-timeline {',
+'    padding: 4px 2px 0;',
+'}',
+'',
+'.mf-timeline-step {',
+'    position: relative;',
+'    display: flex;',
+'    gap: 16px;',
+'    padding-bottom: 28px;',
+'}',
+'',
+'.mf-timeline-step:last-child {',
+'    padding-bottom: 4px;',
+'}',
+'',
+'.mf-timeline-step::before {',
+'    content: "";',
+'    position: absolute;',
+'',
+'    left: 12px;',
+'    top: 25px;',
+'    bottom: 0;',
+'',
+'    width: 2px;',
+'    background: #d6deeb;',
+'}',
+'',
+'.mf-timeline-step:last-child::before {',
+'    display: none;',
+'}',
+'',
+'.mf-timeline-step.complete::before {',
+'    background: #38bd58;',
+'}',
+'',
+'.mf-timeline-dot {',
+'    width: 26px;',
+'    height: 26px;',
+'    min-width: 26px;',
+'',
+'    border-radius: 50%;',
+'    background: #aab7ce;',
+'    color: #fff;',
+'',
+'    display: flex;',
+'    align-items: center;',
+'    justify-content: center;',
+'',
+'    z-index: 1;',
+'    font-size: 12px;',
+'}',
+'',
+'.mf-timeline-step.complete .mf-timeline-dot {',
+'    background: #31bb50;',
+'}',
+'',
+'.mf-timeline-step.active .mf-timeline-dot {',
+'    background: #2464ee;',
+'    box-shadow: 0 0 0 5px #e6edff;',
+'}',
+'',
+'.mf-timeline-step.rejected .mf-timeline-dot {',
+'    background: #d73b3b;',
+'}',
+'',
+'.mf-timeline-title {',
+'    color: #071b65;',
+'    font-size: 14px;',
+'    font-weight: 700;',
+'    margin-bottom: 3px;',
+'}',
+'',
+'.mf-timeline-description {',
+'    color: #62719b;',
+'    font-size: 12px;',
+'    line-height: 1.45;',
+'}',
+'',
+'.mf-timeline-date {',
+'    margin-top: 4px;',
+'    color: #6d7ba1;',
+'    font-size: 11px;',
+'}',
+'',
+'',
+'/* =========================================================',
+'   NEXT STEPS',
+'   ========================================================= */',
+'',
+'.mf-next-steps p {',
+'    color: #5d6d96;',
+'    font-size: 13px;',
+'    line-height: 1.55;',
+'    margin: 0;',
+'}',
+'',
+'',
+'/* =========================================================',
+'   RESPONSIVE',
+'   ========================================================= */',
+'',
+'@media (max-width: 900px) {',
+'',
+'    .mf-page-heading {',
+'        flex-direction: column;',
+'        align-items: flex-start;',
+'    }',
+'',
+'    .mf-overview-card {',
+'        grid-template-columns: 1fr 1fr;',
+'    }',
+'',
+'    .mf-overview-number {',
+'        grid-column: 1 / -1;',
+'    }',
+'',
+'    .mf-overview-risk {',
+'        border-left: 0;',
+'        padding-left: 0;',
+'    }',
+'',
+'    .mf-summary-grid {',
+'        grid-template-columns: 1fr 1fr;',
+'    }',
+'',
+'    .mf-details-columns {',
+'        grid-template-columns: 1fr;',
+'    }',
+'}',
+'',
+'@media (max-width: 600px) {',
+'',
+'    .mf-overview-card,',
+'    .mf-summary-grid,',
+'    .mf-ratio-strip {',
+'        grid-template-columns: 1fr;',
+'    }',
+'',
+'    .mf-ratio-strip > div {',
+'        padding: 10px 0;',
+'    }',
+'',
+'    .mf-ratio-strip > div + div {',
+'        border-left: 0;',
+'        border-top: 1px solid #cfe7d2;',
+'    }',
+'',
+'    .mf-page-heading h1 {',
+'        font-size: 27px;',
+'    }',
+'}'))
+,p_step_template=>4075783602716660119
+,p_page_template_options=>'#DEFAULT#'
+,p_protection_level=>'C'
+,p_page_component_map=>'25'
+,p_created_on=>wwv_flow_imp.dz('20261011173423Z')
+,p_last_updated_on=>wwv_flow_imp.dz('20261011211719Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_last_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_plug(
+ p_id=>wwv_flow_imp.id(2168201261253355408)
+,p_plug_name=>'Application Details  '
+,p_static_id=>'application-details'
+,p_parent_plug_id=>wwv_flow_imp.id(2168200930529355405)
+,p_region_template_options=>'#DEFAULT#'
+,p_plug_template=>4504868307683981366
+,p_plug_display_sequence=>20
+,p_plug_display_point=>'SUB_REGIONS'
+,p_plug_item_display_point=>'ABOVE'
+,p_location=>null
+,p_plug_source=>wwv_flow_string.join(wwv_flow_t_varchar2(
+'<div class="mf-card">',
+'',
+'    <div class="mf-section-heading">',
+'        <span class="fa fa-file-text-o"></span>',
+'        Application Details',
+'    </div>',
+'',
+'',
+'    <div class="mf-details-columns">',
+'',
+'        <div class="mf-details-table">',
+'',
+'            <div class="mf-detail-row">',
+'                <span>Application Number</span>',
+'                <strong>&P5_APPLICATION_NUMBER.</strong>',
+'            </div>',
+'',
+'            <div class="mf-detail-row">',
+'                <span>Product</span>',
+'                <strong>&P5_PRODUCT_NAME.</strong>',
+'            </div>',
+'',
+'            <div class="mf-detail-row">',
+'                <span>Property Value</span>',
+'                <strong>&P5_PROPERTY_VALUE_DISPLAY.</strong>',
+'            </div>',
+'',
+'            <div class="mf-detail-row">',
+'                <span>Down Payment</span>',
+'                <strong>',
+'                    &P5_DOWN_PAYMENT_DISPLAY.',
+'                    (&P5_DOWN_PAYMENT_PERCENT.)',
+'                </strong>',
+'            </div>',
+'',
+'            <div class="mf-detail-row">',
+'                <span>Loan Amount</span>',
+'                <strong>&P5_LOAN_AMOUNT_DISPLAY.</strong>',
+'            </div>',
+'',
+'            <div class="mf-detail-row">',
+'                <span>Annual Income</span>',
+'                <strong>&P5_ANNUAL_INCOME_DISPLAY.</strong>',
+'            </div>',
+'',
+'        </div>',
+'',
+'',
+'        <div class="mf-details-table">',
+'',
+'            <div class="mf-detail-row">',
+'                <span>Interest Rate</span>',
+'                <strong>&P5_INTEREST_RATE_DISPLAY.</strong>',
+'            </div>',
+'',
+'            <div class="mf-detail-row">',
+'                <span>Term</span>',
+'                <strong>&P5_TERM_DISPLAY.</strong>',
+'            </div>',
+'',
+'            <div class="mf-detail-row">',
+'                <span>Estimated Monthly Payment</span>',
+'                <strong>&P5_MONTHLY_PAYMENT_DISPLAY.</strong>',
+'            </div>',
+'',
+'            <div class="mf-detail-row">',
+'                <span>LTV</span>',
+'                <strong>&P5_LTV_DISPLAY.</strong>',
+'            </div>',
+'',
+'            <div class="mf-detail-row">',
+'                <span>DTI</span>',
+'                <strong>&P5_DTI_DISPLAY.</strong>',
+'            </div>',
+'',
+'            <div class="mf-detail-row">',
+'                <span>Monthly Debt</span>',
+'                <strong>&P5_MONTHLY_DEBT_DISPLAY.</strong>',
+'            </div>',
+'',
+'            <div class="mf-detail-row">',
+'                <span>Submission Date</span>',
+'                <strong>&P5_SUBMITTED_DISPLAY.</strong>',
+'            </div>',
+'',
+'        </div>',
+'',
+'    </div>',
+'',
+'</div>'))
+,p_attributes=>wwv_flow_t_plugin_attributes(wwv_flow_t_varchar2(
+  'expand_shortcuts', 'N',
+  'output_as', 'HTML')).to_clob
+,p_created_on=>wwv_flow_imp.dz('20261011211416Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011211647Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_plug(
+ p_id=>wwv_flow_imp.id(2168200749216355403)
+,p_plug_name=>'Application Overview'
+,p_static_id=>'application-overview'
+,p_region_template_options=>'#DEFAULT#'
+,p_plug_template=>4504868307683981366
+,p_plug_display_sequence=>20
+,p_plug_display_point=>'REGION_POSITION_01'
+,p_plug_item_display_point=>'ABOVE'
+,p_location=>null
+,p_plug_source=>wwv_flow_string.join(wwv_flow_t_varchar2(
+'<div class="mf-overview-card">',
+'',
+'    <div class="mf-overview-number">',
+'',
+'        <div class="mf-overview-icon">',
+'            <span class="fa fa-file-text-o"></span>',
+'        </div>',
+'',
+'        <div>',
+'            <div class="mf-overview-label">Application #</div>',
+'            <div class="mf-overview-id">',
+'                &P5_APPLICATION_NUMBER.',
+'            </div>',
+'        </div>',
+'',
+'    </div>',
+'',
+'',
+'    <div class="mf-overview-field">',
+'        <div class="mf-overview-label">Status</div>',
+'',
+'        <span class="mf-status-pill &P5_STATUS_CLASS.">',
+'            &P5_STATUS_DISPLAY.',
+'        </span>',
+'    </div>',
+'',
+'',
+'    <div class="mf-overview-field">',
+'        <div class="mf-overview-label">Submitted</div>',
+'        <div class="mf-overview-value">',
+'            &P5_SUBMITTED_DISPLAY.',
+'        </div>',
+'    </div>',
+'',
+'',
+'    <div class="mf-overview-field">',
+'        <div class="mf-overview-label">Product</div>',
+'        <div class="mf-overview-value">',
+'            &P5_PRODUCT_NAME.',
+'        </div>',
+'    </div>',
+'',
+'',
+'    <div class="mf-overview-field mf-overview-risk">',
+'        <div class="mf-overview-label">Risk Level</div>',
+'',
+'        <span class="mf-risk-pill &P5_RISK_CLASS.">',
+'            &P5_RISK_DISPLAY.',
+'        </span>',
+'    </div>',
+'',
+'</div>'))
+,p_attributes=>wwv_flow_t_plugin_attributes(wwv_flow_t_varchar2(
+  'expand_shortcuts', 'N',
+  'output_as', 'HTML')).to_clob
+,p_created_on=>wwv_flow_imp.dz('20261011211111Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011211647Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_plug(
+ p_id=>wwv_flow_imp.id(2168201331358355409)
+,p_plug_name=>'Application Status Timeline'
+,p_static_id=>'application-status-timeline'
+,p_parent_plug_id=>wwv_flow_imp.id(2168201053910355406)
+,p_region_template_options=>'#DEFAULT#'
+,p_plug_template=>4504868307683981366
+,p_plug_display_sequence=>10
+,p_plug_display_point=>'SUB_REGIONS'
+,p_plug_item_display_point=>'ABOVE'
+,p_location=>null
+,p_function_body_language=>'PLSQL'
+,p_plug_source=>wwv_flow_string.join(wwv_flow_t_varchar2(
+'declare',
+'',
+'    l_status        mortgage_applications.status%type;',
+'    l_submitted_at  timestamp;',
+'    l_review_at     timestamp;',
+'    l_decision_at   timestamp;',
+'',
+'    procedure print_step (',
+'        p_class       varchar2,',
+'        p_icon        varchar2,',
+'        p_title       varchar2,',
+'        p_description varchar2,',
+'        p_date        varchar2',
+'    )',
+'    is',
+'    begin',
+'',
+'        htp.p(',
+'            ''<div class="mf-timeline-step '' || p_class || ''">'' ||',
+'',
+'                ''<div class="mf-timeline-dot">'' ||',
+'                    ''<span class="'' || p_icon || ''"></span>'' ||',
+'                ''</div>'' ||',
+'',
+'                ''<div class="mf-timeline-content">'' ||',
+'',
+'                    ''<div class="mf-timeline-title">'' ||',
+'                        apex_escape.html(p_title) ||',
+'                    ''</div>'' ||',
+'',
+'                    ''<div class="mf-timeline-description">'' ||',
+'                        apex_escape.html(p_description) ||',
+'                    ''</div>'' ||',
+'',
+'                    ''<div class="mf-timeline-date">'' ||',
+'                        apex_escape.html(p_date) ||',
+'                    ''</div>'' ||',
+'',
+'                ''</div>'' ||',
+'',
+'            ''</div>''',
+'        );',
+'',
+'    end;',
+'',
+'begin',
+'',
+'    select',
+'        ma.status,',
+'        ma.submitted_at,',
+'',
+'        (',
+'            select max(h.changed_at)',
+'            from application_status_history h',
+'            where h.application_id = ma.application_id',
+'              and h.new_status = ''UNDER_REVIEW''',
+'        ),',
+'',
+'        (',
+'            select max(h.changed_at)',
+'            from application_status_history h',
+'            where h.application_id = ma.application_id',
+'              and h.new_status in (''APPROVED'', ''REJECTED'')',
+'        )',
+'',
+'    into',
+'        l_status,',
+'        l_submitted_at,',
+'        l_review_at,',
+'        l_decision_at',
+'',
+'    from mortgage_applications ma',
+'',
+'    where ma.application_id = :P5_APPLICATION_ID',
+'      and ma.applicant_user_id = :G_USER_ID;',
+'',
+'',
+'    htp.p(',
+'        ''<div class="mf-card">'' ||',
+'',
+'            ''<div class="mf-section-heading">'' ||',
+'                ''<span class="fa fa-clock-o"></span>'' ||',
+'                '' Application Status Timeline'' ||',
+'            ''</div>'' ||',
+'',
+'            ''<div class="mf-timeline">''',
+'    );',
+'',
+'',
+'    /* APPLICATION SUBMITTED */',
+'',
+'    if l_status in (',
+'        ''SUBMITTED'',',
+'        ''UNDER_REVIEW'',',
+'        ''APPROVED'',',
+'        ''REJECTED''',
+'    ) then',
+'',
+'        print_step(',
+'            ''complete'',',
+'            ''fa fa-check'',',
+'            ''Application Submitted'',',
+'            ''Your application has been submitted successfully.'',',
+'            to_char(',
+'                l_submitted_at,',
+'                ''Mon DD, YYYY HH:MI AM'',',
+'                ''NLS_DATE_LANGUAGE=English''',
+'            )',
+'        );',
+'',
+'    else',
+'',
+'        print_step(',
+'            ''pending'',',
+'            ''fa fa-circle'',',
+'            ''Application Submitted'',',
+'            ''Waiting for submission.'',',
+'            ''Pending''',
+'        );',
+'',
+'    end if;',
+'',
+'',
+'    /* UNDER REVIEW */',
+'',
+'    if l_status in (''APPROVED'', ''REJECTED'') then',
+'',
+'        print_step(',
+'            ''complete'',',
+'            ''fa fa-check'',',
+'            ''Under Review'',',
+'            ''Your application review has been completed.'',',
+'            to_char(',
+'                l_review_at,',
+'                ''Mon DD, YYYY HH:MI AM'',',
+'                ''NLS_DATE_LANGUAGE=English''',
+'            )',
+'        );',
+'',
+'    elsif l_status = ''UNDER_REVIEW'' then',
+'',
+'        print_step(',
+'            ''active'',',
+'            ''fa fa-circle'',',
+'            ''Under Review'',',
+'            ''Your application is currently under review.'',',
+'            to_char(',
+'                l_review_at,',
+'                ''Mon DD, YYYY HH:MI AM'',',
+'                ''NLS_DATE_LANGUAGE=English''',
+'            )',
+'        );',
+'',
+'    else',
+'',
+'        print_step(',
+'            ''pending'',',
+'            ''fa fa-circle'',',
+'            ''Under Review'',',
+'            ''Review has not started yet.'',',
+'            ''Pending''',
+'        );',
+'',
+'    end if;',
+'',
+'',
+'    /* FINAL DECISION */',
+'',
+'    if l_status = ''APPROVED'' then',
+'',
+'        print_step(',
+'            ''complete'',',
+'            ''fa fa-check'',',
+'            ''Final Decision'',',
+'            ''Your mortgage application has been approved.'',',
+'            to_char(',
+'                l_decision_at,',
+'                ''Mon DD, YYYY HH:MI AM'',',
+'                ''NLS_DATE_LANGUAGE=English''',
+'            )',
+'        );',
+'',
+'    elsif l_status = ''REJECTED'' then',
+'',
+'        print_step(',
+'            ''rejected'',',
+'            ''fa fa-times'',',
+'            ''Final Decision'',',
+'            ''Your mortgage application was not approved.'',',
+'            to_char(',
+'                l_decision_at,',
+'                ''Mon DD, YYYY HH:MI AM'',',
+'                ''NLS_DATE_LANGUAGE=English''',
+'            )',
+'        );',
+'',
+'    else',
+'',
+'        print_step(',
+'            ''pending'',',
+'            ''fa fa-circle'',',
+'            ''Final Decision'',',
+'            ''A final decision has not been made yet.'',',
+'            ''Pending''',
+'        );',
+'',
+'    end if;',
+'',
+'',
+'    htp.p(',
+'            ''</div>'' ||',
+'        ''</div>''',
+'    );',
+'',
+'end;'))
+,p_lazy_loading=>false
+,p_plug_source_type=>'NATIVE_DYNAMIC_CONTENT'
+,p_created_on=>wwv_flow_imp.dz('20261011211416Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011211622Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_plug(
+ p_id=>wwv_flow_imp.id(2138720985701062814)
+,p_plug_name=>'Breadcrumb'
+,p_static_id=>'breadcrumb'
+,p_region_template_options=>'#DEFAULT#:t-BreadcrumbRegion--useBreadcrumbTitle'
+,p_component_template_options=>'#DEFAULT#'
+,p_plug_template=>2534890969069732905
+,p_plug_display_sequence=>10
+,p_plug_display_point=>'REGION_POSITION_01'
+,p_plug_item_display_point=>'ABOVE'
+,p_menu_id=>wwv_flow_imp.id(1661520272587227881)
+,p_plug_source_type=>'NATIVE_BREADCRUMB'
+,p_menu_template_id=>4075790987805660140
+,p_created_on=>wwv_flow_imp.dz('20261011173423Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011173423Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_plug(
+ p_id=>wwv_flow_imp.id(2168201122239355407)
+,p_plug_name=>'Financial Summary'
+,p_static_id=>'financial-summary'
+,p_parent_plug_id=>wwv_flow_imp.id(2168200930529355405)
+,p_region_template_options=>'#DEFAULT#'
+,p_plug_template=>4504868307683981366
+,p_plug_display_sequence=>10
+,p_plug_display_point=>'SUB_REGIONS'
+,p_plug_item_display_point=>'ABOVE'
+,p_location=>null
+,p_plug_source=>wwv_flow_string.join(wwv_flow_t_varchar2(
+'<div class="mf-card">',
+'',
+'    <div class="mf-section-heading">',
+'        <span class="fa fa-coins"></span>',
+'        Financial Summary',
+'    </div>',
+'',
+'',
+'    <div class="mf-summary-grid">',
+'',
+'        <div class="mf-summary-item">',
+'            <div class="mf-summary-icon blue">',
+'                <span class="fa fa-home"></span>',
+'            </div>',
+'',
+'            <div>',
+'                <div class="mf-summary-label">Property Value</div>',
+'                <div class="mf-summary-value">',
+'                    &P5_PROPERTY_VALUE_DISPLAY.',
+'                </div>',
+'            </div>',
+'        </div>',
+'',
+'',
+'        <div class="mf-summary-item">',
+'            <div class="mf-summary-icon green">',
+'                <span class="fa fa-dollar"></span>',
+'            </div>',
+'',
+'            <div>',
+'                <div class="mf-summary-label">Down Payment</div>',
+'                <div class="mf-summary-value">',
+'                    &P5_DOWN_PAYMENT_DISPLAY.',
+'                    <span class="mf-small">',
+'                        (&P5_DOWN_PAYMENT_PERCENT.)',
+'                    </span>',
+'                </div>',
+'            </div>',
+'        </div>',
+'',
+'',
+'        <div class="mf-summary-item">',
+'            <div class="mf-summary-icon blue">',
+'                <span class="fa fa-file-text-o"></span>',
+'            </div>',
+'',
+'            <div>',
+'                <div class="mf-summary-label">Loan Amount</div>',
+'                <div class="mf-summary-value">',
+'                    &P5_LOAN_AMOUNT_DISPLAY.',
+'                </div>',
+'            </div>',
+'        </div>',
+'',
+'',
+'        <div class="mf-summary-item">',
+'            <div class="mf-summary-icon purple">',
+'                <span class="fa fa-percent"></span>',
+'            </div>',
+'',
+'            <div>',
+'                <div class="mf-summary-label">Interest Rate</div>',
+'                <div class="mf-summary-value">',
+'                    &P5_INTEREST_RATE_DISPLAY.',
+'                </div>',
+'            </div>',
+'        </div>',
+'',
+'',
+'        <div class="mf-summary-item">',
+'            <div class="mf-summary-icon blue">',
+'                <span class="fa fa-calendar"></span>',
+'            </div>',
+'',
+'            <div>',
+'                <div class="mf-summary-label">Term</div>',
+'                <div class="mf-summary-value">',
+'                    &P5_TERM_DISPLAY.',
+'                </div>',
+'            </div>',
+'        </div>',
+'',
+'',
+'        <div class="mf-summary-item">',
+'            <div class="mf-summary-icon purple">',
+'                <span class="fa fa-calculator"></span>',
+'            </div>',
+'',
+'            <div>',
+'                <div class="mf-summary-label">',
+'                    Estimated Monthly Payment',
+'                </div>',
+'',
+'                <div class="mf-summary-value">',
+'                    &P5_MONTHLY_PAYMENT_DISPLAY.',
+'                </div>',
+'            </div>',
+'        </div>',
+'',
+'    </div>',
+'',
+'',
+'    <div class="mf-ratio-strip">',
+'',
+'        <div>',
+'            <span>LTV</span>',
+'            <strong>&P5_LTV_DISPLAY.</strong>',
+'        </div>',
+'',
+'        <div>',
+'            <span>DTI</span>',
+'            <strong>&P5_DTI_DISPLAY.</strong>',
+'        </div>',
+'',
+'        <div>',
+'            <span>Risk Level</span>',
+'',
+'            <strong class="&P5_RISK_CLASS. mf-risk-text">',
+'                &P5_RISK_DISPLAY.',
+'            </strong>',
+'        </div>',
+'',
+'    </div>',
+'',
+'</div>'))
+,p_attributes=>wwv_flow_t_plugin_attributes(wwv_flow_t_varchar2(
+  'expand_shortcuts', 'N',
+  'output_as', 'HTML')).to_clob
+,p_created_on=>wwv_flow_imp.dz('20261011211416Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011211622Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_plug(
+ p_id=>wwv_flow_imp.id(2168200930529355405)
+,p_plug_name=>'Left Column'
+,p_static_id=>'left-column'
+,p_region_template_options=>'#DEFAULT#'
+,p_plug_template=>4504868307683981366
+,p_plug_display_sequence=>10
+,p_plug_item_display_point=>'ABOVE'
+,p_location=>null
+,p_attributes=>wwv_flow_t_plugin_attributes(wwv_flow_t_varchar2(
+  'expand_shortcuts', 'N',
+  'output_as', 'HTML')).to_clob
+,p_created_on=>wwv_flow_imp.dz('20261011211240Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011211444Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_plug(
+ p_id=>wwv_flow_imp.id(2168201527331355411)
+,p_plug_name=>'Next Steps'
+,p_static_id=>'next-steps'
+,p_parent_plug_id=>wwv_flow_imp.id(2168201053910355406)
+,p_region_template_options=>'#DEFAULT#'
+,p_plug_template=>4504868307683981366
+,p_plug_display_sequence=>20
+,p_plug_display_point=>'SUB_REGIONS'
+,p_plug_item_display_point=>'ABOVE'
+,p_location=>null
+,p_plug_source=>wwv_flow_string.join(wwv_flow_t_varchar2(
+'<div class="mf-card mf-next-steps">',
+'',
+'    <div class="mf-section-heading">',
+'        <span class="fa fa-flag-o"></span>',
+'        Next Steps',
+'    </div>',
+'',
+'    <p>',
+'        &P5_NEXT_STEPS.',
+'    </p>',
+'',
+'</div>'))
+,p_attributes=>wwv_flow_t_plugin_attributes(wwv_flow_t_varchar2(
+  'expand_shortcuts', 'N',
+  'output_as', 'HTML')).to_clob
+,p_created_on=>wwv_flow_imp.dz('20261011211416Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011211647Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_plug(
+ p_id=>wwv_flow_imp.id(2168201053910355406)
+,p_plug_name=>'Right Column'
+,p_static_id=>'right-column'
+,p_region_template_options=>'#DEFAULT#'
+,p_plug_template=>4504868307683981366
+,p_plug_display_sequence=>20
+,p_plug_new_grid_row=>false
+,p_plug_grid_column_span=>4
+,p_plug_item_display_point=>'ABOVE'
+,p_location=>null
+,p_attributes=>wwv_flow_t_plugin_attributes(wwv_flow_t_varchar2(
+  'expand_shortcuts', 'N',
+  'output_as', 'HTML')).to_clob
+,p_created_on=>wwv_flow_imp.dz('20261011211240Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011211444Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(2157093736288852346)
+,p_name=>'P5_ANNUAL_INCOME_DISPLAY'
+,p_item_sequence=>200
+,p_source_type=>'ALWAYS_NULL'
+,p_display_as=>'NATIVE_HIDDEN'
+,p_attributes=>wwv_flow_t_plugin_attributes(wwv_flow_t_varchar2(
+  'value_protected', 'N')).to_clob
+,p_created_on=>wwv_flow_imp.dz('20261011211036Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011211719Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(2157091989541852328)
+,p_name=>'P5_APPLICATION_ID'
+,p_item_sequence=>40
+,p_source_type=>'ALWAYS_NULL'
+,p_display_as=>'NATIVE_HIDDEN'
+,p_attributes=>wwv_flow_t_plugin_attributes(wwv_flow_t_varchar2(
+  'value_protected', 'N')).to_clob
+,p_created_on=>wwv_flow_imp.dz('20261011204325Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011211718Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(2157092369319852332)
+,p_name=>'P5_APPLICATION_NUMBER'
+,p_item_sequence=>50
+,p_source_type=>'ALWAYS_NULL'
+,p_display_as=>'NATIVE_HIDDEN'
+,p_attributes=>wwv_flow_t_plugin_attributes(wwv_flow_t_varchar2(
+  'value_protected', 'N')).to_clob
+,p_created_on=>wwv_flow_imp.dz('20261011211035Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011211718Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(2168200507924355401)
+,p_name=>'P5_BACK_URL'
+,p_item_sequence=>250
+,p_source_type=>'ALWAYS_NULL'
+,p_display_as=>'NATIVE_HIDDEN'
+,p_attributes=>wwv_flow_t_plugin_attributes(wwv_flow_t_varchar2(
+  'value_protected', 'N')).to_clob
+,p_created_on=>wwv_flow_imp.dz('20261011211036Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011211719Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(2157093083688852339)
+,p_name=>'P5_DOWN_PAYMENT_DISPLAY'
+,p_item_sequence=>120
+,p_source_type=>'ALWAYS_NULL'
+,p_display_as=>'NATIVE_HIDDEN'
+,p_attributes=>wwv_flow_t_plugin_attributes(wwv_flow_t_varchar2(
+  'value_protected', 'N')).to_clob
+,p_created_on=>wwv_flow_imp.dz('20261011211036Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011211719Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(2168200807818355404)
+,p_name=>'P5_DOWN_PAYMENT_PERCENT'
+,p_item_sequence=>140
+,p_source_type=>'ALWAYS_NULL'
+,p_display_as=>'NATIVE_HIDDEN'
+,p_attributes=>wwv_flow_t_plugin_attributes(wwv_flow_t_varchar2(
+  'value_protected', 'N')).to_clob
+,p_created_on=>wwv_flow_imp.dz('20261011211141Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011211719Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(2157093628322852345)
+,p_name=>'P5_DTI_DISPLAY'
+,p_item_sequence=>190
+,p_source_type=>'ALWAYS_NULL'
+,p_display_as=>'NATIVE_HIDDEN'
+,p_attributes=>wwv_flow_t_plugin_attributes(wwv_flow_t_varchar2(
+  'value_protected', 'N')).to_clob
+,p_created_on=>wwv_flow_imp.dz('20261011211036Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011211719Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(2157093212168852341)
+,p_name=>'P5_INTEREST_RATE_DISPLAY'
+,p_item_sequence=>150
+,p_source_type=>'ALWAYS_NULL'
+,p_display_as=>'NATIVE_HIDDEN'
+,p_attributes=>wwv_flow_t_plugin_attributes(wwv_flow_t_varchar2(
+  'value_protected', 'N')).to_clob
+,p_created_on=>wwv_flow_imp.dz('20261011211036Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011211719Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(2157093184107852340)
+,p_name=>'P5_LOAN_AMOUNT_DISPLAY'
+,p_item_sequence=>130
+,p_source_type=>'ALWAYS_NULL'
+,p_display_as=>'NATIVE_HIDDEN'
+,p_attributes=>wwv_flow_t_plugin_attributes(wwv_flow_t_varchar2(
+  'value_protected', 'N')).to_clob
+,p_created_on=>wwv_flow_imp.dz('20261011211036Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011211719Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(2157093534299852344)
+,p_name=>'P5_LTV_DISPLAY'
+,p_item_sequence=>180
+,p_source_type=>'ALWAYS_NULL'
+,p_display_as=>'NATIVE_HIDDEN'
+,p_attributes=>wwv_flow_t_plugin_attributes(wwv_flow_t_varchar2(
+  'value_protected', 'N')).to_clob
+,p_created_on=>wwv_flow_imp.dz('20261011211036Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011211719Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(2157093894998852347)
+,p_name=>'P5_MONTHLY_DEBT_DISPLAY'
+,p_item_sequence=>210
+,p_source_type=>'ALWAYS_NULL'
+,p_display_as=>'NATIVE_HIDDEN'
+,p_attributes=>wwv_flow_t_plugin_attributes(wwv_flow_t_varchar2(
+  'value_protected', 'N')).to_clob
+,p_created_on=>wwv_flow_imp.dz('20261011211036Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011211719Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(2157093401107852343)
+,p_name=>'P5_MONTHLY_PAYMENT_DISPLAY'
+,p_item_sequence=>170
+,p_source_type=>'ALWAYS_NULL'
+,p_display_as=>'NATIVE_HIDDEN'
+,p_attributes=>wwv_flow_t_plugin_attributes(wwv_flow_t_varchar2(
+  'value_protected', 'N')).to_clob
+,p_created_on=>wwv_flow_imp.dz('20261011211036Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011211719Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(2157094185656852350)
+,p_name=>'P5_NEXT_STEPS'
+,p_item_sequence=>240
+,p_source_type=>'ALWAYS_NULL'
+,p_display_as=>'NATIVE_HIDDEN'
+,p_attributes=>wwv_flow_t_plugin_attributes(wwv_flow_t_varchar2(
+  'value_protected', 'N')).to_clob
+,p_created_on=>wwv_flow_imp.dz('20261011211036Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011211719Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(2157092430332852333)
+,p_name=>'P5_PRODUCT_NAME'
+,p_item_sequence=>60
+,p_source_type=>'ALWAYS_NULL'
+,p_display_as=>'NATIVE_HIDDEN'
+,p_attributes=>wwv_flow_t_plugin_attributes(wwv_flow_t_varchar2(
+  'value_protected', 'N')).to_clob
+,p_created_on=>wwv_flow_imp.dz('20261011211036Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011211718Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(2157092991635852338)
+,p_name=>'P5_PROPERTY_VALUE_DISPLAY'
+,p_item_sequence=>110
+,p_source_type=>'ALWAYS_NULL'
+,p_display_as=>'NATIVE_HIDDEN'
+,p_attributes=>wwv_flow_t_plugin_attributes(wwv_flow_t_varchar2(
+  'value_protected', 'N')).to_clob
+,p_created_on=>wwv_flow_imp.dz('20261011211036Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011211718Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(2157094093347852349)
+,p_name=>'P5_RISK_CLASS'
+,p_item_sequence=>230
+,p_source_type=>'ALWAYS_NULL'
+,p_display_as=>'NATIVE_HIDDEN'
+,p_attributes=>wwv_flow_t_plugin_attributes(wwv_flow_t_varchar2(
+  'value_protected', 'N')).to_clob
+,p_created_on=>wwv_flow_imp.dz('20261011211036Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011211719Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(2157093951178852348)
+,p_name=>'P5_RISK_DISPLAY'
+,p_item_sequence=>220
+,p_source_type=>'ALWAYS_NULL'
+,p_display_as=>'NATIVE_HIDDEN'
+,p_attributes=>wwv_flow_t_plugin_attributes(wwv_flow_t_varchar2(
+  'value_protected', 'N')).to_clob
+,p_created_on=>wwv_flow_imp.dz('20261011211036Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011211719Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(2157092593141852334)
+,p_name=>'P5_STATUS'
+,p_item_sequence=>70
+,p_source_type=>'ALWAYS_NULL'
+,p_display_as=>'NATIVE_HIDDEN'
+,p_attributes=>wwv_flow_t_plugin_attributes(wwv_flow_t_varchar2(
+  'value_protected', 'N')).to_clob
+,p_created_on=>wwv_flow_imp.dz('20261011211036Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011211718Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(2157092725497852336)
+,p_name=>'P5_STATUS_CLASS'
+,p_item_sequence=>90
+,p_source_type=>'ALWAYS_NULL'
+,p_display_as=>'NATIVE_HIDDEN'
+,p_attributes=>wwv_flow_t_plugin_attributes(wwv_flow_t_varchar2(
+  'value_protected', 'N')).to_clob
+,p_created_on=>wwv_flow_imp.dz('20261011211036Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011211718Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(2157092612690852335)
+,p_name=>'P5_STATUS_DISPLAY'
+,p_item_sequence=>80
+,p_source_type=>'ALWAYS_NULL'
+,p_display_as=>'NATIVE_HIDDEN'
+,p_attributes=>wwv_flow_t_plugin_attributes(wwv_flow_t_varchar2(
+  'value_protected', 'N')).to_clob
+,p_created_on=>wwv_flow_imp.dz('20261011211036Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011211718Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(2157092838588852337)
+,p_name=>'P5_SUBMITTED_DISPLAY'
+,p_item_sequence=>100
+,p_source_type=>'ALWAYS_NULL'
+,p_display_as=>'NATIVE_HIDDEN'
+,p_attributes=>wwv_flow_t_plugin_attributes(wwv_flow_t_varchar2(
+  'value_protected', 'N')).to_clob
+,p_created_on=>wwv_flow_imp.dz('20261011211036Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011211718Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(2157093369985852342)
+,p_name=>'P5_TERM_DISPLAY'
+,p_item_sequence=>160
+,p_source_type=>'ALWAYS_NULL'
+,p_display_as=>'NATIVE_HIDDEN'
+,p_attributes=>wwv_flow_t_plugin_attributes(wwv_flow_t_varchar2(
+  'value_protected', 'N')).to_clob
+,p_created_on=>wwv_flow_imp.dz('20261011211036Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011211719Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_process(
+ p_id=>wwv_flow_imp.id(2168200684022355402)
+,p_process_sequence=>10
+,p_process_point=>'BEFORE_HEADER'
+,p_process_type=>'NATIVE_PLSQL'
+,p_process_name=>'Load Application Details'
+,p_static_id=>'load-application-details'
+,p_process_sql_clob=>wwv_flow_string.join(wwv_flow_t_varchar2(
+'begin',
+'',
+'    select',
+'        ma.application_number,',
+'        lp.product_name,',
+'        ma.status,',
+'',
+'        /* STATUS LABEL */',
+'        case ma.status',
+'            when ''DRAFT''        then ''Draft''',
+'            when ''SUBMITTED''    then ''Submitted''',
+'            when ''UNDER_REVIEW'' then ''Under Review''',
+'            when ''APPROVED''     then ''Approved''',
+'            when ''REJECTED''     then ''Rejected''',
+'        end,',
+'',
+'        /* STATUS CSS CLASS */',
+'        case ma.status',
+'            when ''DRAFT''        then ''mf-status-draft''',
+'            when ''SUBMITTED''    then ''mf-status-submitted''',
+'            when ''UNDER_REVIEW'' then ''mf-status-review''',
+'            when ''APPROVED''     then ''mf-status-approved''',
+'            when ''REJECTED''     then ''mf-status-rejected''',
+'        end,',
+'',
+'        /* SUBMISSION DATE */',
+'        case',
+'            when ma.submitted_at is not null then',
+'                to_char(',
+'                    ma.submitted_at,',
+'                    ''Mon DD, YYYY HH:MI AM'',',
+'                    ''NLS_DATE_LANGUAGE=English''',
+'                )',
+'            else',
+'                ''Not submitted''',
+'        end,',
+'',
+'        /* PROPERTY VALUE */',
+'        ''$'' || to_char(',
+'            ma.property_value,',
+'            ''FM999G999G990'',',
+'            ''NLS_NUMERIC_CHARACTERS=''''.,''''''',
+'        ),',
+'',
+'        /* DOWN PAYMENT */',
+'        ''$'' || to_char(',
+'            ma.down_payment,',
+'            ''FM999G999G990'',',
+'            ''NLS_NUMERIC_CHARACTERS=''''.,''''''',
+'        ),',
+'',
+'        /* DOWN PAYMENT % */',
+'        case',
+'            when ma.property_value > 0 then',
+'                to_char(',
+'                    (ma.down_payment / ma.property_value) * 100,',
+'                    ''FM990D0'',',
+'                    ''NLS_NUMERIC_CHARACTERS=''''.,''''''',
+'                ) || ''%''',
+'        end,',
+'',
+'        /* LOAN AMOUNT */',
+'        ''$'' || to_char(',
+'            ma.loan_amount,',
+'            ''FM999G999G990'',',
+'            ''NLS_NUMERIC_CHARACTERS=''''.,''''''',
+'        ),',
+'',
+'        /* INTEREST RATE */',
+'        to_char(',
+'            ma.interest_rate,',
+'            ''FM990D000'',',
+'            ''NLS_NUMERIC_CHARACTERS=''''.,''''''',
+'        ) || ''%'',',
+'',
+'        /* TERM */',
+'        ma.loan_term_years || '' years'',',
+'',
+'        /* MONTHLY PAYMENT */',
+'        ''$'' || to_char(',
+'            ma.monthly_payment,',
+'            ''FM999G999G990'',',
+'            ''NLS_NUMERIC_CHARACTERS=''''.,''''''',
+'        ),',
+'',
+'        /* LTV */',
+'        to_char(',
+'            ma.ltv,',
+'            ''FM990D0'',',
+'            ''NLS_NUMERIC_CHARACTERS=''''.,''''''',
+'        ) || ''%'',',
+'',
+'        /* DTI */',
+'        to_char(',
+'            ma.dti,',
+'            ''FM990D0'',',
+'            ''NLS_NUMERIC_CHARACTERS=''''.,''''''',
+'        ) || ''%'',',
+'',
+'        /* ANNUAL INCOME */',
+'        ''$'' || to_char(',
+'            ma.annual_income,',
+'            ''FM999G999G990'',',
+'            ''NLS_NUMERIC_CHARACTERS=''''.,''''''',
+'        ),',
+'',
+'        /* MONTHLY DEBT */',
+'        ''$'' || to_char(',
+'            ma.monthly_debt,',
+'            ''FM999G999G990'',',
+'            ''NLS_NUMERIC_CHARACTERS=''''.,''''''',
+'        ),',
+'',
+'        /* RISK LABEL */',
+'        case ma.risk_level',
+'            when ''LOW''    then ''Low''',
+'            when ''MEDIUM'' then ''Medium''',
+'            when ''HIGH''   then ''High''',
+'        end,',
+'',
+'        /* RISK CSS */',
+'        case ma.risk_level',
+'            when ''LOW''    then ''mf-risk-low''',
+'            when ''MEDIUM'' then ''mf-risk-medium''',
+'            when ''HIGH''   then ''mf-risk-high''',
+'        end,',
+'',
+'        /* NEXT STEPS */',
+'        case ma.status',
+'',
+'            when ''DRAFT'' then',
+'                ''Complete and submit your application to begin the review process.''',
+'',
+'            when ''SUBMITTED'' then',
+'                ''Your application has been submitted successfully and is waiting for review.''',
+'',
+'            when ''UNDER_REVIEW'' then',
+'                ''We are reviewing your application and may contact you if additional information is needed.''',
+'',
+'            when ''APPROVED'' then',
+'                ''Your application has been approved. Our team will contact you with the next steps.''',
+'',
+'            when ''REJECTED'' then',
+'                ''A final decision has been made on your application. Please review your application status for details.''',
+'',
+'        end',
+'',
+'    into',
+'        :P5_APPLICATION_NUMBER,',
+'        :P5_PRODUCT_NAME,',
+'        :P5_STATUS,',
+'        :P5_STATUS_DISPLAY,',
+'        :P5_STATUS_CLASS,',
+'        :P5_SUBMITTED_DISPLAY,',
+'',
+'        :P5_PROPERTY_VALUE_DISPLAY,',
+'        :P5_DOWN_PAYMENT_DISPLAY,',
+'        :P5_DOWN_PAYMENT_PERCENT,',
+'        :P5_LOAN_AMOUNT_DISPLAY,',
+'        :P5_INTEREST_RATE_DISPLAY,',
+'        :P5_TERM_DISPLAY,',
+'        :P5_MONTHLY_PAYMENT_DISPLAY,',
+'        :P5_LTV_DISPLAY,',
+'        :P5_DTI_DISPLAY,',
+'',
+'        :P5_ANNUAL_INCOME_DISPLAY,',
+'        :P5_MONTHLY_DEBT_DISPLAY,',
+'',
+'        :P5_RISK_DISPLAY,',
+'        :P5_RISK_CLASS,',
+'',
+'        :P5_NEXT_STEPS',
+'',
+'    from mortgage_applications ma',
+'',
+'    join loan_products lp',
+'        on lp.loan_product_id = ma.loan_product_id',
+'',
+'    where ma.application_id = :P5_APPLICATION_ID',
+'      and ma.applicant_user_id = :G_USER_ID;',
+'',
+'',
+'    /* Change 4 if your My Applications page has another number */',
+'    :P5_BACK_URL := apex_page.get_url(',
+'        p_page        => 4,',
+'        p_clear_cache => ''4''',
+'    );',
+'',
+'',
+'exception',
+'    when no_data_found then',
+'        raise_application_error(',
+'            -20001,',
+'            ''Application not found or access is not allowed.''',
+'        );',
+'end;'))
+,p_process_clob_language=>'PLSQL'
+,p_internal_uid=>2168200684022355402
+,p_created_on=>wwv_flow_imp.dz('20261011211036Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011211036Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
 ,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
 );
 end;
@@ -18458,13 +24215,202 @@ wwv_flow_imp_page.create_page(
 ,p_alias=>'LOAN-PRODUCTS'
 ,p_step_title=>'Loan Products'
 ,p_autocomplete_on_off=>'OFF'
+,p_inline_css=>wwv_flow_string.join(wwv_flow_t_varchar2(
+'/* Remove native card visuals */',
+'#mortgage-product-cards .a-CardView,',
+'#mortgage-product-cards .t-CardsRegion,',
+'#mortgage-product-cards .t-Card {',
+'    background: transparent !important;',
+'    border: 0 !important;',
+'    box-shadow: none !important;',
+'}',
+'',
+'#mortgage-product-cards .a-CardView-header {',
+'    display: none !important;',
+'}',
+'',
+'#mortgage-product-cards .a-CardView-body {',
+'    padding: 0 !important;',
+'}',
+'',
+'#mortgage-product-cards .a-CardView-items {',
+'    gap: 14px;',
+'}',
+'',
+'#mortgage-product-cards .a-CardView-item {',
+'    margin: 0 !important;',
+'}',
+'',
+'/* Card */',
+'.mf-product-card {',
+'    background: #ffffff;',
+'    border: 1px solid #dbe5ef;',
+'    border-radius: 10px;',
+'    box-shadow: 0 1px 3px rgba(15, 23, 42, 0.04);',
+'    padding: 16px 16px 14px 16px;',
+'    min-height: 300px;',
+'}',
+'',
+'/* Top */',
+'.mf-product-top {',
+'    display: grid;',
+'    grid-template-columns: 52px 1fr auto;',
+'    gap: 12px;',
+'    align-items: start;',
+'}',
+'',
+'.mf-product-icon-wrap {',
+'    width: 44px;',
+'    height: 44px;',
+'    border-radius: 50%;',
+'    background: #eef5d9;',
+'    display: flex;',
+'    align-items: center;',
+'    justify-content: center;',
+'}',
+'',
+'.mf-product-icon {',
+'    font-size: 24px;',
+'    color: #182b8f;',
+'}',
+'',
+'.mf-product-title {',
+'    font-size: 18px;',
+'    font-weight: 700;',
+'    color: #1d2c8f;',
+'    line-height: 1.2;',
+'    margin-top: 2px;',
+'}',
+'',
+'.mf-product-subtitle {',
+'    font-size: 14px;',
+'    color: #6477b5;',
+'    margin-top: 4px;',
+'    line-height: 1.3;',
+'}',
+'',
+'.mf-product-status {',
+'    background: #eef7d9;',
+'    color: #3a7b19;',
+'    border-radius: 999px;',
+'    padding: 7px 12px;',
+'    font-size: 14px;',
+'    font-weight: 600;',
+'    display: inline-flex;',
+'    align-items: center;',
+'    gap: 7px;',
+'    white-space: nowrap;',
+'}',
+'',
+'.mf-status-dot {',
+'    width: 10px;',
+'    height: 10px;',
+'    border-radius: 50%;',
+'    background: #2ea31c;',
+'    display: inline-block;',
+'}',
+'',
+'/* Rate */',
+'.mf-rate-label-row {',
+'    margin-top: 22px;',
+'    display: flex;',
+'    align-items: center;',
+'    gap: 8px;',
+'}',
+'',
+'.mf-rate-label {',
+'    font-size: 15px;',
+'    color: #6777b0;',
+'    font-weight: 500;',
+'}',
+'',
+'.mf-info-icon {',
+'    font-size: 16px;',
+'    color: #7e8dc1;',
+'}',
+'',
+'.mf-rate-value {',
+'    margin-top: 6px;',
+'    font-size: 28px;',
+'    font-weight: 800;',
+'    color: #131f8c;',
+'    line-height: 1;',
+'}',
+'',
+'.mf-product-description {',
+'    margin-top: 14px;',
+'    font-size: 15px;',
+'    color: #6070a8;',
+'    line-height: 1.35;',
+'    min-height: 54px;',
+'}',
+'',
+'/* Details */',
+'.mf-product-details {',
+'    margin-top: 14px;',
+'    border-top: 1px solid #e7edf5;',
+'}',
+'',
+'.mf-detail-row {',
+'    display: flex;',
+'    justify-content: space-between;',
+'    align-items: center;',
+'    gap: 12px;',
+'    padding: 10px 0;',
+'    border-bottom: 1px solid #e7edf5;',
+'}',
+'',
+'.mf-detail-left {',
+'    display: flex;',
+'    align-items: center;',
+'    gap: 10px;',
+'    color: #5d6ea7;',
+'    font-size: 14px;',
+'}',
+'',
+'.mf-detail-icon {',
+'    color: #213299;',
+'    font-size: 14px;',
+'    width: 16px;',
+'    text-align: center;',
+'}',
+'',
+'.mf-detail-right {',
+'    color: #1b2b8f;',
+'    font-size: 15px;',
+'    font-weight: 700;',
+'    white-space: nowrap;',
+'}',
+'',
+'/* Responsive */',
+'@media (max-width: 1024px) {',
+'    #mortgage-product-cards .a-CardView-items {',
+'        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;',
+'    }',
+'}',
+'',
+'@media (max-width: 680px) {',
+'    #mortgage-product-cards .a-CardView-items {',
+'        grid-template-columns: 1fr !important;',
+'    }',
+'',
+'    .mf-product-top {',
+'        grid-template-columns: 52px 1fr;',
+'    }',
+'',
+'    .mf-product-status {',
+'        grid-column: 1 / -1;',
+'        justify-self: start;',
+'        margin-top: 6px;',
+'    }',
+'}'))
 ,p_step_template=>4075783602716660119
 ,p_page_template_options=>'#DEFAULT#'
 ,p_required_role=>wwv_flow_imp.id(1895704909272701392)
 ,p_protection_level=>'C'
-,p_page_component_map=>'11'
+,p_page_component_map=>'23'
 ,p_created_on=>wwv_flow_imp.dz('20261010003813Z')
-,p_last_updated_on=>wwv_flow_imp.dz('20261010210958Z')
+,p_last_updated_on=>wwv_flow_imp.dz('20261011171819Z')
 ,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
 ,p_last_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
 );
@@ -18486,43 +24432,385 @@ wwv_flow_imp_page.create_page_plug(
 ,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
 ,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
 );
-end;
-/
-prompt --application/pages/page_00009
-begin
-wwv_flow_imp_page.create_page(
- p_id=>9
-,p_name=>'My Profile'
-,p_alias=>'MY-PROFILE'
-,p_step_title=>'My Profile'
-,p_autocomplete_on_off=>'OFF'
-,p_step_template=>4075783602716660119
-,p_page_template_options=>'#DEFAULT#'
-,p_required_role=>wwv_flow_imp.id(1895704909272701392)
-,p_protection_level=>'C'
-,p_page_component_map=>'11'
-,p_created_on=>wwv_flow_imp.dz('20261010003841Z')
-,p_last_updated_on=>wwv_flow_imp.dz('20261010211849Z')
-,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
-,p_last_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
-);
 wwv_flow_imp_page.create_page_plug(
- p_id=>wwv_flow_imp.id(1664151074419328692)
-,p_plug_name=>'Breadcrumb'
-,p_static_id=>'breadcrumb'
-,p_region_template_options=>'#DEFAULT#:t-BreadcrumbRegion--useBreadcrumbTitle'
-,p_component_template_options=>'#DEFAULT#'
-,p_plug_template=>2534890969069732905
+ p_id=>wwv_flow_imp.id(1973228338314976436)
+,p_plug_name=>'Mortgage Products'
+,p_static_id=>'mortgage-product-cards'
+,p_region_template_options=>'#DEFAULT#:t-CardsRegion--hideHeader js-addHiddenHeadingRoleDesc'
+,p_plug_template=>2076152157930740558
 ,p_plug_display_sequence=>10
-,p_plug_display_point=>'REGION_POSITION_01'
 ,p_plug_item_display_point=>'ABOVE'
-,p_menu_id=>wwv_flow_imp.id(1661520272587227881)
-,p_plug_source_type=>'NATIVE_BREADCRUMB'
-,p_menu_template_id=>4075790987805660140
-,p_created_on=>wwv_flow_imp.dz('20261010003842Z')
-,p_updated_on=>wwv_flow_imp.dz('20261010003842Z')
+,p_query_type=>'SQL'
+,p_plug_source=>wwv_flow_string.join(wwv_flow_t_varchar2(
+'with current_rates as (',
+'    select',
+'        ir.loan_product_id,',
+'        ir.interest_rate,',
+'        row_number() over (',
+'            partition by ir.loan_product_id',
+'            order by ir.effective_from desc',
+'        ) as rn',
+'    from interest_rates ir',
+'    where ir.active_yn = ''Y''',
+'      and ir.effective_from <= sysdate',
+'      and (ir.effective_to is null or ir.effective_to >= sysdate)',
+')',
+'select',
+'    lp.loan_product_id,',
+'    lp.product_name,',
+'    lp.term_years,',
+'',
+'    to_char(',
+'        cr.interest_rate,',
+'        ''FM990D000'',',
+'        ''NLS_NUMERIC_CHARACTERS=''''.,''''''',
+'    ) || ''%'' as rate_display,',
+'',
+'    ''$50,000''    as min_loan_display,',
+'    ''$1,500,000'' as max_loan_display,',
+'    lp.term_years || '' years'' as term_display,',
+'',
+'    ''Active'' as status_display,',
+'',
+'    case',
+'        when lp.term_years = 15 then ''Build equity faster''',
+'        when lp.term_years = 20 then ''Balance payments and flexibility''',
+'        when lp.term_years = 30 then ''Lower monthly payments''',
+'        else ''Flexible mortgage option''',
+'    end as subtitle_display,',
+'',
+'    case',
+'        when lp.term_years = 15 then ''A lower rate and shorter term help you build equity faster and pay less interest over time.''',
+'        when lp.term_years = 20 then ''A great balance between lower monthly payments and total interest savings.''',
+'        when lp.term_years = 30 then ''Our most popular option with lower monthly payments and long-term stability.''',
+'        else ''Designed to support different borrower profiles and financing needs.''',
+'    end as description_display,',
+'',
+'    case',
+'        when lp.term_years = 15 then ''fa-home''',
+'        when lp.term_years = 20 then ''fa-building-o''',
+'        when lp.term_years = 30 then ''fa-home''',
+'        else ''fa-file-text-o''',
+'    end as icon_class',
+'',
+'from loan_products lp',
+'join current_rates cr',
+'    on cr.loan_product_id = lp.loan_product_id',
+'   and cr.rn = 1',
+'where lp.active_yn = ''Y''',
+'order by lp.term_years'))
+,p_lazy_loading=>false
+,p_plug_source_type=>'NATIVE_CARDS'
+,p_plug_query_num_rows_type=>'SCROLL'
+,p_show_total_row_count=>false
+,p_created_on=>wwv_flow_imp.dz('20261011170233Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011170233Z')
 ,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
 ,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_card(
+ p_id=>wwv_flow_imp.id(1973228404633976437)
+,p_region_id=>wwv_flow_imp.id(1973228338314976436)
+,p_layout_type=>'GRID'
+,p_grid_column_count=>3
+,p_title_adv_formatting=>false
+,p_sub_title_adv_formatting=>false
+,p_body_adv_formatting=>true
+,p_body_html_expr=>wwv_flow_string.join(wwv_flow_t_varchar2(
+'<div class="mf-product-card">',
+'',
+'    <div class="mf-product-top">',
+'        <div class="mf-product-icon-wrap">',
+'            <span class="fa &ICON_CLASS. mf-product-icon"></span>',
+'        </div>',
+'',
+'        <div class="mf-product-heading">',
+'            <div class="mf-product-title">&PRODUCT_NAME.</div>',
+'            <div class="mf-product-subtitle">&SUBTITLE_DISPLAY.</div>',
+'        </div>',
+'',
+'        <div class="mf-product-status">',
+'            <span class="mf-status-dot"></span>',
+'            <span>&STATUS_DISPLAY.</span>',
+'        </div>',
+'    </div>',
+'',
+'    <div class="mf-rate-label-row">',
+'        <span class="mf-rate-label">Interest Rate</span>',
+'        <span class="fa fa-info-circle mf-info-icon"></span>',
+'    </div>',
+'',
+'    <div class="mf-rate-value">&RATE_DISPLAY.</div>',
+'',
+'    <div class="mf-product-description">',
+'        &DESCRIPTION_DISPLAY.',
+'    </div>',
+'',
+'    <div class="mf-product-details">',
+'        <div class="mf-detail-row">',
+'            <div class="mf-detail-left">',
+'                <span class="fa fa-database mf-detail-icon"></span>',
+'                <span>Min Loan Amount</span>',
+'            </div>',
+'            <div class="mf-detail-right">&MIN_LOAN_DISPLAY.</div>',
+'        </div>',
+'',
+'        <div class="mf-detail-row">',
+'            <div class="mf-detail-left">',
+'                <span class="fa fa-database mf-detail-icon"></span>',
+'                <span>Max Loan Amount</span>',
+'            </div>',
+'            <div class="mf-detail-right">&MAX_LOAN_DISPLAY.</div>',
+'        </div>',
+'',
+'        <div class="mf-detail-row">',
+'            <div class="mf-detail-left">',
+'                <span class="fa fa-file-text-o mf-detail-icon"></span>',
+'                <span>Term</span>',
+'            </div>',
+'            <div class="mf-detail-right">&TERM_DISPLAY.</div>',
+'        </div>',
+'    </div>',
+'',
+'</div>'))
+,p_second_body_adv_formatting=>false
+,p_media_adv_formatting=>false
+,p_updated_on=>wwv_flow_imp.dz('20261011170233Z')
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_plug(
+ p_id=>wwv_flow_imp.id(1973228564036976438)
+,p_plug_name=>'Product Comparison'
+,p_static_id=>'product-comparison'
+,p_region_template_options=>'#DEFAULT#:t-Region--scrollBody'
+,p_plug_template=>4075786578761660127
+,p_plug_display_sequence=>20
+,p_plug_item_display_point=>'ABOVE'
+,p_query_type=>'SQL'
+,p_plug_source=>wwv_flow_string.join(wwv_flow_t_varchar2(
+'with current_rates as (',
+'    select',
+'        ir.loan_product_id,',
+'        ir.interest_rate,',
+'        row_number() over (',
+'            partition by ir.loan_product_id',
+'            order by ir.effective_from desc',
+'        ) as rn',
+'    from interest_rates ir',
+'    where ir.active_yn = ''Y''',
+'      and ir.effective_from <= sysdate',
+'      and (',
+'            ir.effective_to is null',
+'            or ir.effective_to >= sysdate',
+'          )',
+')',
+'select',
+'    lp.product_name,',
+'',
+'    lp.term_years || '' years'' as term,',
+'',
+'    to_char(',
+'        cr.interest_rate,',
+'        ''FM990D000'',',
+'        ''NLS_NUMERIC_CHARACTERS=''''.,''''''',
+'    ) || ''%'' as interest_rate,',
+'',
+'    /* APR display value for demo */',
+'    case lp.term_years',
+'        when 15 then ''5.895%''',
+'        when 20 then ''6.280%''',
+'        when 30 then ''6.672%''',
+'    end as apr,',
+'',
+'    ''$50,000'' as min_loan,',
+'',
+'    ''$1,500,000'' as max_loan,',
+'',
+'    case lp.term_years',
+'        when 15 then',
+'            ''Lower total interest and build equity faster''',
+'        when 20 then',
+'            ''Balance of payments and long-term savings''',
+'        when 30 then',
+'            ''Lower monthly payments and flexibility''',
+'    end as best_for',
+'',
+'from loan_products lp',
+'',
+'join current_rates cr',
+'    on cr.loan_product_id = lp.loan_product_id',
+'   and cr.rn = 1',
+'',
+'where lp.active_yn = ''Y''',
+'  and lp.term_years in (15, 20, 30)',
+'',
+'order by lp.term_years'))
+,p_plug_source_type=>'NATIVE_IR'
+,p_prn_content_disposition=>'ATTACHMENT'
+,p_prn_units=>'INCHES'
+,p_prn_paper_size=>'LETTER'
+,p_prn_width=>11
+,p_prn_height=>8.5
+,p_prn_orientation=>'HORIZONTAL'
+,p_prn_page_header_font_color=>'#000000'
+,p_prn_page_header_font_family=>'Helvetica'
+,p_prn_page_header_font_weight=>'normal'
+,p_prn_page_header_font_size=>'12'
+,p_prn_page_footer_font_color=>'#000000'
+,p_prn_page_footer_font_family=>'Helvetica'
+,p_prn_page_footer_font_weight=>'normal'
+,p_prn_page_footer_font_size=>'12'
+,p_prn_header_bg_color=>'#EEEEEE'
+,p_prn_header_font_color=>'#000000'
+,p_prn_header_font_family=>'Helvetica'
+,p_prn_header_font_weight=>'bold'
+,p_prn_header_font_size=>'10'
+,p_prn_body_bg_color=>'#FFFFFF'
+,p_prn_body_font_color=>'#000000'
+,p_prn_body_font_family=>'Helvetica'
+,p_prn_body_font_weight=>'normal'
+,p_prn_body_font_size=>'10'
+,p_prn_border_width=>.5
+,p_prn_page_header_alignment=>'CENTER'
+,p_prn_page_footer_alignment=>'CENTER'
+,p_prn_border_color=>'#666666'
+,p_ai_enabled=>false
+,p_created_on=>wwv_flow_imp.dz('20261011171706Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011171819Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_worksheet(
+ p_id=>wwv_flow_imp.id(1973229445841976447)
+,p_report_list_mode=>'TABS'
+,p_lazy_loading=>false
+,p_show_detail_link=>'N'
+,p_show_notify=>'Y'
+,p_download_formats=>'CSV:HTML:XLSX:PDF'
+,p_enable_mail_download=>'Y'
+,p_internal_uid=>1973229445841976447
+,p_created_on=>wwv_flow_imp.dz('20261011171728Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011171819Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(2135292457378916001)
+,p_db_column_name=>'APR'
+,p_display_order=>40
+,p_column_identifier=>'D'
+,p_column_label=>'Apr'
+,p_column_type=>'STRING'
+,p_heading_alignment=>'LEFT'
+,p_use_as_row_header=>'N'
+,p_available_clientside=>'N'
+,p_created_on=>wwv_flow_imp.dz('20261011171728Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011171728Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(2135292795826916004)
+,p_db_column_name=>'BEST_FOR'
+,p_display_order=>70
+,p_column_identifier=>'G'
+,p_column_label=>'Best For'
+,p_column_type=>'STRING'
+,p_heading_alignment=>'LEFT'
+,p_use_as_row_header=>'N'
+,p_available_clientside=>'N'
+,p_created_on=>wwv_flow_imp.dz('20261011171728Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011171728Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(1973229783460976450)
+,p_db_column_name=>'INTEREST_RATE'
+,p_display_order=>30
+,p_column_identifier=>'C'
+,p_column_label=>'Interest Rate'
+,p_column_type=>'STRING'
+,p_heading_alignment=>'LEFT'
+,p_use_as_row_header=>'N'
+,p_available_clientside=>'N'
+,p_created_on=>wwv_flow_imp.dz('20261011171728Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011171728Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(2135292694538916003)
+,p_db_column_name=>'MAX_LOAN'
+,p_display_order=>60
+,p_column_identifier=>'F'
+,p_column_label=>'Max Loan'
+,p_column_type=>'STRING'
+,p_heading_alignment=>'LEFT'
+,p_use_as_row_header=>'N'
+,p_available_clientside=>'N'
+,p_created_on=>wwv_flow_imp.dz('20261011171728Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011171728Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(2135292544357916002)
+,p_db_column_name=>'MIN_LOAN'
+,p_display_order=>50
+,p_column_identifier=>'E'
+,p_column_label=>'Min Loan'
+,p_column_type=>'STRING'
+,p_heading_alignment=>'LEFT'
+,p_use_as_row_header=>'N'
+,p_available_clientside=>'N'
+,p_created_on=>wwv_flow_imp.dz('20261011171728Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011171728Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(1973229506763976448)
+,p_db_column_name=>'PRODUCT_NAME'
+,p_display_order=>10
+,p_column_identifier=>'A'
+,p_column_label=>'Product Name'
+,p_column_type=>'STRING'
+,p_heading_alignment=>'LEFT'
+,p_use_as_row_header=>'N'
+,p_available_clientside=>'N'
+,p_created_on=>wwv_flow_imp.dz('20261011171728Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011171728Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(1973229626764976449)
+,p_db_column_name=>'TERM'
+,p_display_order=>20
+,p_column_identifier=>'B'
+,p_column_label=>'Term'
+,p_column_type=>'STRING'
+,p_heading_alignment=>'LEFT'
+,p_use_as_row_header=>'N'
+,p_available_clientside=>'N'
+,p_created_on=>wwv_flow_imp.dz('20261011171728Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011171728Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_worksheet_rpt(
+ p_id=>wwv_flow_imp.id(2135406164331961731)
+,p_application_user=>'APXWS_DEFAULT'
+,p_report_seq=>10
+,p_report_alias=>'primary'
+,p_status=>'PUBLIC'
+,p_is_default=>'Y'
+,p_report_columns=>'PRODUCT_NAME:TERM:INTEREST_RATE:APR:MIN_LOAN:MAX_LOAN:BEST_FOR'
+,p_created_on=>wwv_flow_imp.dz('20261011171732Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011171732Z')
+,p_created_by=>'RAFAEL.BRAYNER'
+,p_updated_by=>'RAFAEL.BRAYNER'
 );
 end;
 /
@@ -19333,130 +25621,385 @@ wwv_flow_imp_page.create_page(
 ,p_autocomplete_on_off=>'OFF'
 ,p_inline_css=>wwv_flow_string.join(wwv_flow_t_varchar2(
 '/* =========================================================',
-'   MORTGAGEFLOW BUTTON COLORS',
+'   PAGE 22 - APPLICATION REVIEW',
 '   ========================================================= */',
 '',
-'/* Default button */',
+'',
+'/* PAGE BACKGROUND */',
+'',
+'.t-Body,',
+'.t-Body-main,',
+'.t-Body-content,',
+'.t-Body-contentInner {',
+'    background: #f5f8fc !important;',
+'}',
+'',
+'',
+'/* =========================================================',
+'   BUTTONS',
+'   ========================================================= */',
+'',
 '.t-Button {',
-'    border-radius: 8px;',
-'    font-weight: 700;',
+'    border-radius: 6px !important;',
+'    font-weight: 600 !important;',
+'    min-height: 38px !important;',
+'    padding-left: 18px !important;',
+'    padding-right: 18px !important;',
 '}',
 '',
 '',
-'/* PRIMARY / HOT BUTTON',
-'   Example: Sign In, New Application, Save, Apply',
+'/* START REVIEW',
+'   APEX class = WARNING',
 '*/',
-'.t-Button--hot {',
-'    background: #b8e313 !important;',
-'    border-color: #a7d600 !important;',
-'    color: #102000 !important;',
-'}',
 '',
-'.t-Button--hot:hover,',
-'.t-Button--hot:focus {',
-'    background: #a7d600 !important;',
-'    border-color: #96c000 !important;',
-'    color: #102000 !important;',
-'}',
-'',
-'',
-'/* SUCCESS BUTTON',
-'   Example: Approve',
-'*/',
-'.t-Button--success {',
-'    background: #35b34a !important;',
-'    border-color: #2f9d41 !important;',
-'    color: #ffffff !important;',
-'}',
-'',
-'.t-Button--success:hover,',
-'.t-Button--success:focus {',
-'    background: #2f9d41 !important;',
-'    border-color: #278636 !important;',
-'    color: #ffffff !important;',
-'}',
-'',
-'',
-'/* DANGER BUTTON',
-'   Example: Reject, Deactivate',
-'*/',
-'.t-Button--danger {',
-'    background: #e94a4a !important;',
-'    border-color: #d93c3c !important;',
-'    color: #ffffff !important;',
-'}',
-'',
-'.t-Button--danger:hover,',
-'.t-Button--danger:focus {',
-'    background: #d93c3c !important;',
-'    border-color: #c62e2e !important;',
-'    color: #ffffff !important;',
-'}',
-'',
-'',
-'/* WARNING BUTTON',
-'   Example: Start Review',
-'*/',
 '.t-Button--warning {',
-'    background: #ffc845 !important;',
-'    border-color: #e2ac27 !important;',
-'    color: #3a2b00 !important;',
+'    background: #ffffff !important;',
+'    border: 1px solid #1769ff !important;',
+'    color: #075cff !important;',
+'}',
+'',
+'.t-Button--warning .t-Icon {',
+'    color: #075cff !important;',
 '}',
 '',
 '.t-Button--warning:hover,',
 '.t-Button--warning:focus {',
-'    background: #e2ac27 !important;',
-'    border-color: #c99620 !important;',
+'    background: #eef5ff !important;',
+'    border-color: #075cff !important;',
+'    color: #075cff !important;',
 '}',
 '',
 '',
-'/* BLUE BUTTON',
-'   Add CSS class: mf-btn-blue',
+'/* APPROVE',
+'   APEX class = SUCCESS',
 '*/',
-'.mf-btn-blue {',
-'    background: #2f80ed !important;',
-'    border-color: #236fd6 !important;',
-'    color: #ffffff !important;',
+'',
+'.t-Button--success {',
+'    background: #a8e61d !important;',
+'    border: 1px solid #9bd314 !important;',
+'    color: #152600 !important;',
 '}',
 '',
-'.mf-btn-blue:hover,',
-'.mf-btn-blue:focus {',
-'    background: #236fd6 !important;',
-'    border-color: #1f61ba !important;',
-'    color: #ffffff !important;',
+'.t-Button--success .t-Icon {',
+'    color: #152600 !important;',
+'}',
+'',
+'.t-Button--success:hover,',
+'.t-Button--success:focus {',
+'    background: #99d416 !important;',
+'    border-color: #8bc30d !important;',
+'    color: #152600 !important;',
 '}',
 '',
 '',
-'/* PURPLE BUTTON',
-'   Add CSS class: mf-btn-purple',
+'/* REJECT',
+'   APEX class = DANGER',
 '*/',
-'.mf-btn-purple {',
-'    background: #7c4ae2 !important;',
-'    border-color: #6938c9 !important;',
-'    color: #ffffff !important;',
-'}',
 '',
-'.mf-btn-purple:hover,',
-'.mf-btn-purple:focus {',
-'    background: #6938c9 !important;',
-'    border-color: #592db0 !important;',
-'}',
-'',
-'',
-'/* OUTLINE BUTTON',
-'   Example: Cancel, Recalculate, View Details',
-'*/',
-'.mf-btn-outline {',
+'.t-Button--danger {',
 '    background: #ffffff !important;',
-'    border: 1px solid #d8e1ee !important;',
-'    color: #08174a !important;',
+'    border: 1px solid #ff4a54 !important;',
+'    color: #ed2832 !important;',
 '}',
 '',
-'.mf-btn-outline:hover,',
-'.mf-btn-outline:focus {',
-'    background: #f7faff !important;',
-'    border-color: #b8c6da !important;',
-'    color: #08174a !important;',
+'.t-Button--danger .t-Icon {',
+'    color: #ed2832 !important;',
+'}',
+'',
+'.t-Button--danger:hover,',
+'.t-Button--danger:focus {',
+'    background: #fff2f3 !important;',
+'    border-color: #e42932 !important;',
+'    color: #e42932 !important;',
+'}',
+'',
+'',
+'/* =========================================================',
+'   NORMAL REGIONS',
+'   ========================================================= */',
+'',
+'.t-Region {',
+'    border-radius: 9px !important;',
+'}',
+'',
+'',
+'/* ONLY OUR PAGE 22 INFORMATION REGIONS */',
+'',
+'#applicant-information,',
+'#property-information,',
+'#mortgage-details,',
+'#application-history {',
+'    background: #ffffff !important;',
+'    border: 1px solid #e1e8f2 !important;',
+'    border-radius: 9px !important;',
+'    box-shadow: 0 2px 8px rgba(20, 50, 100, 0.06) !important;',
+'    overflow: hidden !important;',
+'}',
+'',
+'',
+'/* REGION HEADERS */',
+'',
+'#applicant-information .t-Region-header,',
+'#property-information .t-Region-header,',
+'#mortgage-details .t-Region-header,',
+'#application-history .t-Region-header {',
+'    background: #ffffff !important;',
+'    border-bottom: 1px solid #edf1f6 !important;',
+'}',
+'',
+'',
+'/* TITLE */',
+'',
+'#applicant-information .t-Region-title,',
+'#property-information .t-Region-title,',
+'#mortgage-details .t-Region-title,',
+'#application-history .t-Region-title {',
+'    color: #07185e !important;',
+'    font-weight: 700 !important;',
+'    font-size: 14px !important;',
+'}',
+'',
+'',
+'/* ICON IN TITLE */',
+'',
+'#applicant-information .t-Region-title .fa,',
+'#property-information .t-Region-title .fa,',
+'#mortgage-details .t-Region-title .fa,',
+'#application-history .t-Region-title .fa {',
+'    color: #1769ff !important;',
+'    margin-right: 6px !important;',
+'}',
+'',
+'',
+'/* =========================================================',
+'   APPLICANT / PROPERTY / MORTGAGE REPORTS',
+'   ========================================================= */',
+'',
+'.t-Report-report {',
+'    border-collapse: collapse !important;',
+'}',
+'',
+'',
+'/* headings */',
+'',
+'#applicant-information .t-Report-report th,',
+'#property-information .t-Report-report th,',
+'#mortgage-details .t-Report-report th {',
+'    background: #ffffff !important;',
+'    color: #6576a1 !important;',
+'',
+'    font-size: 11px !important;',
+'    font-weight: 500 !important;',
+'',
+'    border: 0 !important;',
+'    border-bottom: 1px solid #edf1f6 !important;',
+'',
+'    padding: 9px 12px !important;',
+'}',
+'',
+'',
+'/* values */',
+'',
+'#applicant-information .t-Report-report td,',
+'#property-information .t-Report-report td,',
+'#mortgage-details .t-Report-report td {',
+'    background: #ffffff !important;',
+'    color: #07185e !important;',
+'',
+'    font-size: 11px !important;',
+'    font-weight: 600 !important;',
+'',
+'    border: 0 !important;',
+'    border-bottom: 1px solid #edf1f6 !important;',
+'',
+'    padding: 9px 12px !important;',
+'}',
+'',
+'',
+'/* =========================================================',
+'   APPLICATION SUMMARY CARDS',
+'   ========================================================= */',
+'',
+'#application-summary {',
+'    background: transparent !important;',
+'    border: 0 !important;',
+'    box-shadow: none !important;',
+'}',
+'',
+'',
+'#application-summary .a-CardView-item {',
+'    background: #ffffff !important;',
+'',
+'    border: 1px solid #e2e9f3 !important;',
+'    border-radius: 8px !important;',
+'',
+'    box-shadow: 0 1px 5px rgba(20, 50, 100, .05) !important;',
+'}',
+'',
+'',
+'#application-summary .a-CardView-title {',
+'    color: #6576a1 !important;',
+'    font-size: 10px !important;',
+'    font-weight: 500 !important;',
+'}',
+'',
+'',
+'#application-summary .a-CardView-subTitle {',
+'    color: #07185e !important;',
+'    font-size: 12px !important;',
+'    font-weight: 700 !important;',
+'}',
+'',
+'',
+'/* ICON */',
+'',
+'#application-summary .a-CardView-icon {',
+'    background: #eef5ff !important;',
+'    color: #1769ff !important;',
+'',
+'    border-radius: 7px !important;',
+'',
+'    width: 36px !important;',
+'    height: 36px !important;',
+'}',
+'',
+'',
+'/* =========================================================',
+'   SUMMARY COLORS',
+'   ========================================================= */',
+'',
+'.mf-summary-blue .a-CardView-icon {',
+'    background: #eef5ff !important;',
+'    color: #1769ff !important;',
+'}',
+'',
+'.mf-summary-orange .a-CardView-icon {',
+'    background: #fff4df !important;',
+'    color: #f59e0b !important;',
+'}',
+'',
+'.mf-summary-purple .a-CardView-icon {',
+'    background: #f1edff !important;',
+'    color: #7138f2 !important;',
+'}',
+'',
+'.mf-summary-green .a-CardView-icon {',
+'    background: #effbea !important;',
+'    color: #48ae2c !important;',
+'}',
+'',
+'.mf-summary-red .a-CardView-icon {',
+'    background: #fff0f1 !important;',
+'    color: #e33b43 !important;',
+'}',
+'',
+'',
+'/* =========================================================',
+'   FINANCIAL ANALYSIS',
+'   ========================================================= */',
+'',
+'#financial-analysis {',
+'    background: #ffffff !important;',
+'',
+'    border: 1px solid #e1e8f2 !important;',
+'    border-radius: 9px !important;',
+'',
+'    box-shadow: 0 2px 8px rgba(20, 50, 100, .06) !important;',
+'}',
+'',
+'',
+'#financial-analysis .a-CardView-item {',
+'    background: #ffffff !important;',
+'',
+'    border: 1px solid #e4eaf3 !important;',
+'    border-radius: 8px !important;',
+'',
+'    box-shadow: 0 1px 4px rgba(20, 50, 100, .04) !important;',
+'}',
+'',
+'',
+'#financial-analysis .a-CardView-title {',
+'    color: #213873 !important;',
+'    font-weight: 600 !important;',
+'    font-size: 11px !important;',
+'}',
+'',
+'',
+'#financial-analysis .a-CardView-subTitle {',
+'    color: #07185e !important;',
+'',
+'    font-size: 24px !important;',
+'    font-weight: 800 !important;',
+'',
+'    line-height: 28px !important;',
+'}',
+'',
+'',
+'#financial-analysis .a-CardView-body {',
+'    color: #7180a3 !important;',
+'    font-size: 10px !important;',
+'}',
+'',
+'',
+'/* GREEN METRIC */',
+'',
+'#financial-analysis .mf-metric-green .a-CardView-subTitle,',
+'#financial-analysis .mf-metric-green .a-CardView-icon {',
+'    color: #49ad2d !important;',
+'}',
+'',
+'',
+'/* ORANGE METRIC */',
+'',
+'#financial-analysis .mf-metric-orange .a-CardView-subTitle,',
+'#financial-analysis .mf-metric-orange .a-CardView-icon {',
+'    color: #f39b0b !important;',
+'}',
+'',
+'',
+'/* RED METRIC */',
+'',
+'#financial-analysis .mf-metric-red .a-CardView-subTitle,',
+'#financial-analysis .mf-metric-red .a-CardView-icon {',
+'    color: #e33b43 !important;',
+'}',
+'',
+'',
+'/* =========================================================',
+'   APPLICATION HISTORY / INTERACTIVE REPORT',
+'   ========================================================= */',
+'',
+'#application-history .a-IRR-toolbar {',
+'    background: #f8faff !important;',
+'    border-bottom: 1px solid #e3eaf3 !important;',
+'}',
+'',
+'',
+'#application-history .a-IRR-header {',
+'    background: #f7f9fc !important;',
+'',
+'    color: #566995 !important;',
+'',
+'    font-size: 11px !important;',
+'    font-weight: 600 !important;',
+'}',
+'',
+'',
+'#application-history .a-IRR-table td {',
+'    background: #ffffff !important;',
+'',
+'    color: #14275f !important;',
+'',
+'    font-size: 11px !important;',
+'',
+'    border-bottom: 1px solid #edf1f6 !important;',
+'}',
+'',
+'',
+'/* ROW HOVER */',
+'',
+'#application-history .a-IRR-table tr:hover td {',
+'    background: #f8fbff !important;',
 '}'))
 ,p_step_template=>4075783602716660119
 ,p_page_template_options=>'#DEFAULT#'
@@ -19464,7 +26007,7 @@ wwv_flow_imp_page.create_page(
 ,p_protection_level=>'C'
 ,p_page_component_map=>'23'
 ,p_created_on=>wwv_flow_imp.dz('20261010004049Z')
-,p_last_updated_on=>wwv_flow_imp.dz('20261011041302Z')
+,p_last_updated_on=>wwv_flow_imp.dz('20261011223804Z')
 ,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
 ,p_last_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
 );
@@ -19892,135 +26435,10 @@ wwv_flow_imp_page.create_page_plug(
 ,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
 ,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
 );
-wwv_flow_imp_page.create_report_region(
- p_id=>wwv_flow_imp.id(1936920017629179728)
-,p_name=>'Mortgage Details'
-,p_static_id=>'mortgage-details'
-,p_title=>'<i class="fa fa-file-text-o"></i> Mortgage Details'
-,p_template=>4075786578761660127
-,p_display_sequence=>170
-,p_icon_css_classes=>'fa-file-text-o'
-,p_region_template_options=>'#DEFAULT#:t-Region--scrollBody'
-,p_component_template_options=>'#DEFAULT#:t-AVPList--rightAligned'
-,p_new_grid_row=>false
-,p_source_type=>'NATIVE_SQL_REPORT'
-,p_query_type=>'SQL'
-,p_source=>wwv_flow_string.join(wwv_flow_t_varchar2(
-'select',
-'    lp.product_name',
-'        as product,',
-'',
-'    to_char(',
-'        ma.loan_amount,',
-'        ''FM$999G999G999G990D00''',
-'    ) as loan_amount,',
-'',
-'    to_char(',
-'        ma.interest_rate,',
-'        ''FM990D000''',
-'    ) || ''%'' as interest_rate,',
-'',
-'    ma.loan_term_years',
-'        || '' Years (''',
-'        || (ma.loan_term_years * 12)',
-'        || '' months)''',
-'        as term,',
-'',
-'    to_char(',
-'        ma.monthly_payment,',
-'        ''FM$999G999G999G990D00''',
-'    ) as estimated_monthly_payment',
-'',
-'from mortgage_applications ma',
-'',
-'join loan_products lp',
-'  on lp.loan_product_id = ma.loan_product_id',
-'',
-'where ma.application_id = :P22_APPLICATION_ID'))
-,p_ajax_enabled=>'Y'
-,p_lazy_loading=>false
-,p_query_row_template=>2103943081508282569
-,p_query_num_rows=>15
-,p_query_options=>'DERIVED_REPORT_COLUMNS'
-,p_query_num_rows_type=>'SHOW_ALL'
-,p_csv_output=>'N'
-,p_prn_output=>'N'
-,p_sort_null=>'L'
-,p_plug_query_strip_html=>'N'
-,p_created_on=>wwv_flow_imp.dz('20261011030645Z')
-,p_updated_on=>wwv_flow_imp.dz('20261011035637Z')
-,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
-,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
-);
-wwv_flow_imp_page.create_report_columns(
- p_id=>wwv_flow_imp.id(1936921257795179740)
-,p_query_column_id=>5
-,p_column_alias=>'ESTIMATED_MONTHLY_PAYMENT'
-,p_column_display_sequence=>50
-,p_column_heading=>'Estimated Monthly Payment'
-,p_heading_alignment=>'LEFT'
-,p_disable_sort_column=>'N'
-,p_derived_column=>'N'
-,p_include_in_export=>'Y'
-,p_updated_on=>wwv_flow_imp.dz('20261011033325Z')
-,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
-);
-wwv_flow_imp_page.create_report_columns(
- p_id=>wwv_flow_imp.id(1936921096154179738)
-,p_query_column_id=>3
-,p_column_alias=>'INTEREST_RATE'
-,p_column_display_sequence=>30
-,p_column_heading=>'Interest Rate'
-,p_heading_alignment=>'LEFT'
-,p_disable_sort_column=>'N'
-,p_derived_column=>'N'
-,p_include_in_export=>'Y'
-,p_updated_on=>wwv_flow_imp.dz('20261011033325Z')
-,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
-);
-wwv_flow_imp_page.create_report_columns(
- p_id=>wwv_flow_imp.id(1936920984371179737)
-,p_query_column_id=>2
-,p_column_alias=>'LOAN_AMOUNT'
-,p_column_display_sequence=>20
-,p_column_heading=>'Loan Amount'
-,p_heading_alignment=>'LEFT'
-,p_disable_sort_column=>'N'
-,p_derived_column=>'N'
-,p_include_in_export=>'Y'
-,p_updated_on=>wwv_flow_imp.dz('20261011033325Z')
-,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
-);
-wwv_flow_imp_page.create_report_columns(
- p_id=>wwv_flow_imp.id(1936920830878179736)
-,p_query_column_id=>1
-,p_column_alias=>'PRODUCT'
-,p_column_display_sequence=>10
-,p_column_heading=>'Product'
-,p_heading_alignment=>'LEFT'
-,p_disable_sort_column=>'N'
-,p_derived_column=>'N'
-,p_include_in_export=>'Y'
-,p_updated_on=>wwv_flow_imp.dz('20261011033325Z')
-,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
-);
-wwv_flow_imp_page.create_report_columns(
- p_id=>wwv_flow_imp.id(1936921182391179739)
-,p_query_column_id=>4
-,p_column_alias=>'TERM'
-,p_column_display_sequence=>40
-,p_column_heading=>'Term'
-,p_heading_alignment=>'LEFT'
-,p_disable_sort_column=>'N'
-,p_derived_column=>'N'
-,p_include_in_export=>'Y'
-,p_updated_on=>wwv_flow_imp.dz('20261011033325Z')
-,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
-);
 wwv_flow_imp_page.create_page_plug(
  p_id=>wwv_flow_imp.id(1973225805717976411)
 ,p_plug_name=>'Financial Analysis'
-,p_static_id=>'new'
+,p_static_id=>'financial-analysis'
 ,p_title=>'<i class="fa fa-line-chart"></i> Financial Analysis / Calculated Metrics'
 ,p_region_template_options=>'#DEFAULT#:t-CardsRegion--hideHeader js-addHiddenHeadingRoleDesc'
 ,p_plug_template=>2076152157930740558
@@ -20301,7 +26719,7 @@ wwv_flow_imp_page.create_page_plug(
 ,p_plug_query_num_rows_type=>'SCROLL'
 ,p_show_total_row_count=>false
 ,p_created_on=>wwv_flow_imp.dz('20261011035748Z')
-,p_updated_on=>wwv_flow_imp.dz('20261011041302Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011213839Z')
 ,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
 ,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
 );
@@ -20322,6 +26740,131 @@ wwv_flow_imp_page.create_card(
 ,p_icon_position=>'START'
 ,p_media_adv_formatting=>false
 ,p_updated_on=>wwv_flow_imp.dz('20261011041204Z')
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_report_region(
+ p_id=>wwv_flow_imp.id(1936920017629179728)
+,p_name=>'Mortgage Details'
+,p_static_id=>'mortgage-details'
+,p_title=>'<i class="fa fa-file-text-o"></i> Mortgage Details'
+,p_template=>4075786578761660127
+,p_display_sequence=>170
+,p_icon_css_classes=>'fa-file-text-o'
+,p_region_template_options=>'#DEFAULT#:t-Region--scrollBody'
+,p_component_template_options=>'#DEFAULT#:t-AVPList--rightAligned'
+,p_new_grid_row=>false
+,p_source_type=>'NATIVE_SQL_REPORT'
+,p_query_type=>'SQL'
+,p_source=>wwv_flow_string.join(wwv_flow_t_varchar2(
+'select',
+'    lp.product_name',
+'        as product,',
+'',
+'    to_char(',
+'        ma.loan_amount,',
+'        ''FM$999G999G999G990D00''',
+'    ) as loan_amount,',
+'',
+'    to_char(',
+'        ma.interest_rate,',
+'        ''FM990D000''',
+'    ) || ''%'' as interest_rate,',
+'',
+'    ma.loan_term_years',
+'        || '' Years (''',
+'        || (ma.loan_term_years * 12)',
+'        || '' months)''',
+'        as term,',
+'',
+'    to_char(',
+'        ma.monthly_payment,',
+'        ''FM$999G999G999G990D00''',
+'    ) as estimated_monthly_payment',
+'',
+'from mortgage_applications ma',
+'',
+'join loan_products lp',
+'  on lp.loan_product_id = ma.loan_product_id',
+'',
+'where ma.application_id = :P22_APPLICATION_ID'))
+,p_ajax_enabled=>'Y'
+,p_lazy_loading=>false
+,p_query_row_template=>2103943081508282569
+,p_query_num_rows=>15
+,p_query_options=>'DERIVED_REPORT_COLUMNS'
+,p_query_num_rows_type=>'SHOW_ALL'
+,p_csv_output=>'N'
+,p_prn_output=>'N'
+,p_sort_null=>'L'
+,p_plug_query_strip_html=>'N'
+,p_created_on=>wwv_flow_imp.dz('20261011030645Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011035637Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_report_columns(
+ p_id=>wwv_flow_imp.id(1936921257795179740)
+,p_query_column_id=>5
+,p_column_alias=>'ESTIMATED_MONTHLY_PAYMENT'
+,p_column_display_sequence=>50
+,p_column_heading=>'Estimated Monthly Payment'
+,p_heading_alignment=>'LEFT'
+,p_disable_sort_column=>'N'
+,p_derived_column=>'N'
+,p_include_in_export=>'Y'
+,p_updated_on=>wwv_flow_imp.dz('20261011033325Z')
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_report_columns(
+ p_id=>wwv_flow_imp.id(1936921096154179738)
+,p_query_column_id=>3
+,p_column_alias=>'INTEREST_RATE'
+,p_column_display_sequence=>30
+,p_column_heading=>'Interest Rate'
+,p_heading_alignment=>'LEFT'
+,p_disable_sort_column=>'N'
+,p_derived_column=>'N'
+,p_include_in_export=>'Y'
+,p_updated_on=>wwv_flow_imp.dz('20261011033325Z')
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_report_columns(
+ p_id=>wwv_flow_imp.id(1936920984371179737)
+,p_query_column_id=>2
+,p_column_alias=>'LOAN_AMOUNT'
+,p_column_display_sequence=>20
+,p_column_heading=>'Loan Amount'
+,p_heading_alignment=>'LEFT'
+,p_disable_sort_column=>'N'
+,p_derived_column=>'N'
+,p_include_in_export=>'Y'
+,p_updated_on=>wwv_flow_imp.dz('20261011033325Z')
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_report_columns(
+ p_id=>wwv_flow_imp.id(1936920830878179736)
+,p_query_column_id=>1
+,p_column_alias=>'PRODUCT'
+,p_column_display_sequence=>10
+,p_column_heading=>'Product'
+,p_heading_alignment=>'LEFT'
+,p_disable_sort_column=>'N'
+,p_derived_column=>'N'
+,p_include_in_export=>'Y'
+,p_updated_on=>wwv_flow_imp.dz('20261011033325Z')
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_report_columns(
+ p_id=>wwv_flow_imp.id(1936921182391179739)
+,p_query_column_id=>4
+,p_column_alias=>'TERM'
+,p_column_display_sequence=>40
+,p_column_heading=>'Term'
+,p_heading_alignment=>'LEFT'
+,p_disable_sort_column=>'N'
+,p_derived_column=>'N'
+,p_include_in_export=>'Y'
+,p_updated_on=>wwv_flow_imp.dz('20261011033325Z')
 ,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
 );
 wwv_flow_imp_page.create_report_region(
@@ -20444,10 +26987,17 @@ wwv_flow_imp_page.create_page_button(
 ,p_button_template_id=>2086257187394300437
 ,p_button_image_alt=>'Approve'
 ,p_button_position=>'NEXT'
+,p_confirm_message=>'Are you sure you want to approve this mortgage application?'
+,p_button_condition=>wwv_flow_string.join(wwv_flow_t_varchar2(
+'select 1',
+'from mortgage_applications',
+'where application_id = :P22_APPLICATION_ID',
+'  and status = ''UNDER_REVIEW'''))
+,p_button_condition_type=>'EXISTS'
 ,p_button_css_classes=>'t-Button--success'
 ,p_icon_css_classes=>'fa-check'
 ,p_created_on=>wwv_flow_imp.dz('20261011023145Z')
-,p_updated_on=>wwv_flow_imp.dz('20261011040902Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011214207Z')
 ,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
 ,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
 );
@@ -20463,10 +27013,17 @@ wwv_flow_imp_page.create_page_button(
 ,p_button_template_id=>2086257187394300437
 ,p_button_image_alt=>'Reject'
 ,p_button_position=>'NEXT'
+,p_confirm_message=>'Are you sure you want to reject this mortgage application?'
+,p_button_condition=>wwv_flow_string.join(wwv_flow_t_varchar2(
+'select 1',
+'from mortgage_applications',
+'where application_id = :P22_APPLICATION_ID',
+'  and status = ''UNDER_REVIEW'''))
+,p_button_condition_type=>'EXISTS'
 ,p_button_css_classes=>'t-Button--danger'
 ,p_icon_css_classes=>'fa-times'
 ,p_created_on=>wwv_flow_imp.dz('20261011023145Z')
-,p_updated_on=>wwv_flow_imp.dz('20261011040902Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011215756Z')
 ,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
 ,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
 );
@@ -20482,10 +27039,17 @@ wwv_flow_imp_page.create_page_button(
 ,p_button_template_id=>2086257187394300437
 ,p_button_image_alt=>'Start Review'
 ,p_button_position=>'NEXT'
+,p_confirm_message=>'Start reviewing this application?'
+,p_button_condition=>wwv_flow_string.join(wwv_flow_t_varchar2(
+'select 1',
+'from mortgage_applications',
+'where application_id = :P22_APPLICATION_ID',
+'  and status = ''SUBMITTED'''))
+,p_button_condition_type=>'EXISTS'
 ,p_button_css_classes=>'t-Button--warning'
 ,p_icon_css_classes=>'fa-play'
 ,p_created_on=>wwv_flow_imp.dz('20261011023145Z')
-,p_updated_on=>wwv_flow_imp.dz('20261011040902Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011214058Z')
 ,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
 ,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
 );
@@ -20594,6 +27158,33 @@ wwv_flow_imp_page.create_page_item(
 ,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
 );
 wwv_flow_imp_page.create_page_process(
+ p_id=>wwv_flow_imp.id(2168201706226355413)
+,p_process_sequence=>20
+,p_process_point=>'AFTER_SUBMIT'
+,p_process_type=>'NATIVE_PLSQL'
+,p_process_name=>'Approve Application'
+,p_static_id=>'approve-application'
+,p_process_sql_clob=>wwv_flow_string.join(wwv_flow_t_varchar2(
+'begin',
+'',
+'    pkg_mortgage_app.approve_application(',
+'        p_application_id => :P22_APPLICATION_ID,',
+'        p_user_id        => :G_USER_ID,',
+'        p_comments       => ''Application approved by loan officer.''',
+'    );',
+'',
+'end;'))
+,p_process_clob_language=>'PLSQL'
+,p_error_display_location=>'INLINE_IN_NOTIFICATION'
+,p_process_when_button_id=>wwv_flow_imp.id(1936919688189179724)
+,p_process_success_message=>'Application approved successfully.'
+,p_internal_uid=>2168201706226355413
+,p_created_on=>wwv_flow_imp.dz('20261011214141Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011214324Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_process(
  p_id=>wwv_flow_imp.id(1936919119966179719)
 ,p_process_sequence=>10
 ,p_process_point=>'BEFORE_HEADER'
@@ -20648,6 +27239,58 @@ wwv_flow_imp_page.create_page_process(
 ,p_internal_uid=>1936919119966179719
 ,p_created_on=>wwv_flow_imp.dz('20261011022721Z')
 ,p_updated_on=>wwv_flow_imp.dz('20261011022721Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_process(
+ p_id=>wwv_flow_imp.id(2168201854767355414)
+,p_process_sequence=>30
+,p_process_point=>'AFTER_SUBMIT'
+,p_process_type=>'NATIVE_PLSQL'
+,p_process_name=>'Reject Application'
+,p_static_id=>'reject-application'
+,p_process_sql_clob=>wwv_flow_string.join(wwv_flow_t_varchar2(
+'begin',
+'    pkg_mortgage_app.reject_application(',
+'        p_application_id => :P22_APPLICATION_ID,',
+'        p_user_id        => :G_USER_ID,',
+'        p_comments       => ''Application rejected by loan officer.''',
+'    );',
+'end;'))
+,p_process_clob_language=>'PLSQL'
+,p_error_display_location=>'INLINE_IN_NOTIFICATION'
+,p_process_when_button_id=>wwv_flow_imp.id(1936919516645179723)
+,p_process_success_message=>'Application rejected.'
+,p_internal_uid=>2168201854767355414
+,p_created_on=>wwv_flow_imp.dz('20261011214324Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011214708Z')
+,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
+,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_process(
+ p_id=>wwv_flow_imp.id(2168201671185355412)
+,p_process_sequence=>10
+,p_process_point=>'AFTER_SUBMIT'
+,p_process_type=>'NATIVE_PLSQL'
+,p_process_name=>'Start Application Review'
+,p_static_id=>'start-application-review'
+,p_process_sql_clob=>wwv_flow_string.join(wwv_flow_t_varchar2(
+'begin',
+'',
+'    pkg_mortgage_app.start_review(',
+'        p_application_id => :P22_APPLICATION_ID,',
+'        p_user_id        => :G_USER_ID,',
+'        p_comments       => ''Application review started.''',
+'    );',
+'',
+'end;'))
+,p_process_clob_language=>'PLSQL'
+,p_error_display_location=>'INLINE_IN_NOTIFICATION'
+,p_process_when_button_id=>wwv_flow_imp.id(1936919495816179722)
+,p_process_success_message=>'Application review started successfully.'
+,p_internal_uid=>2168201671185355412
+,p_created_on=>wwv_flow_imp.dz('20261011213903Z')
+,p_updated_on=>wwv_flow_imp.dz('20261011214008Z')
 ,p_created_by=>'RAFAELBRAYNER23@GMAIL.COM'
 ,p_updated_by=>'RAFAELBRAYNER23@GMAIL.COM'
 );
